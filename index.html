@@ -6,739 +6,710 @@
   <title>R6RS Cheat Sheet</title>
 </head>
 <body>
-  Essentials
+
   <div>
-    <table>
-      <tr>
+    <h1>Essentials</h1>
+      <dl>
         <td>Sites</td>
         <td>main download docs git</td>
-      </tr>
-      <tr>
+      </dl>
+      <dl>
         <td>Community</td>
         <td>packages irc slack twitter</td>
-      </tr>
-      <tr>
+      </dl>
+      <dl>
         <td>Running</td>
         <td>Put #lang racket "Hello, world!" in hello.rkt and run racket hello.rkt</td>
-      </tr>
-    </table>
+      </dl>
   </div>
+
   <div>
-    Primitives
+    <h1>Primitives</h1>
     <div>
       <h2>Numbers</h2>
-      <table>
-        <tr>
+        <dl>
           <td>Literals</td>
           <td>integer 1 rational 1/2 complex 1+2i floating 3.14 double 6.02e+23 hex #x29 octal #o32 binary #b010101</td>
-        </tr>
-        <tr>
+        </dl>
+        <dl>
           <td>Arithmetic</td>
           <td>+ - * / quotient remainder modulo add1 sub1 max min round floor ceiling sqrt expt exp log sin ... atan</td>
-        </tr>
-        <tr>
+        </dl>
+        <dl>
           <td>Compare</td>
           <td>= &lt; &lt;= &gt; &gt;=</td>
-        </tr>
-        <tr>
+        </dl>
+        <dl>
           <td>Bitwise</td>
           <td>bitwise-ior bitwise-and bitwise-xor bitwise-not arithmetic-shift integer-length</td>
-        </tr>
-        <tr>
+        </dl>
+        <dl>
           <td>Format</td>
           <td>number-&gt;string string-&gt;number real-&gt;decimal-string</td>
-        </tr>
-        <tr>
+        </dl>
+        <dl>
           <td>Test</td>
           <td>number? complex? ... exact-nonnegative-integer? ... zero? positive? negative? even? odd? exact? inexact?</td>
-        </tr>
-        <tr>
+        </dl>
+        <dl>
           <td>Misc</td>
           <td>random</td>
-        </tr>
-        <tr>
+        </dl>
+        <dl>
           <td>Match Pattern</td>
           <td>(? number? n) 42</td>
-        </tr>
-      </table>
+        </dl>
     </div>
+
     <div>
       <h2>Strings</h2>
-      <table>
-        <tr>
+        <dl>
           <td>Literals</td>
           <td>"Racket" quoting "a \" approaches!" unicode "λx:(μα.α→α).xx"</td>
-        </tr>
-        <tr>
+        </dl>
+        <dl>
           <td>Create</td>
           <td>make-string string string-append build-string string-join</td>
-        </tr>
-        <tr>
+        </dl>
+        <dl>
           <td>Observe</td>
           <td>string-length string-ref substring string-split in-string</td>
-        </tr>
-        <tr>
+        </dl>
+        <dl>
           <td>Modify</td>
           <td>string-downcase string-upcase string-trim</td>
-        </tr>
-        <tr>
+        </dl>
+        <dl>
           <td>Test</td>
           <td>string? string=? string&lt;=? string-ci&lt;=?</td>
-        </tr>
-        <tr>
+        </dl>
+        <dl>
           <td>Regexp</td>
           <td>#rx"a|b" #rx"^c(a|d)+r$" regexp-quote regexp-match regexp-split regexp-replace regexp-replace*</td>
-        </tr>
-        <tr>
+        </dl>
+        <dl>
           <td>Match Pattern</td>
           <td>(? string? s) "Banana?"</td>
-        </tr>
-      </table>
+        </dl>
     </div>
+
     <div>
       <h2>Bytes</h2>
-      <table>
-        <tr>
+        <dl>
           <td>Literals</td>
           <td>#"rawbytes\0"</td>
-        </tr>
-        <tr>
+        </dl>
+        <dl>
           <td>Create</td>
           <td>make-bytes bytes</td>
-        </tr>
-        <tr>
+        </dl>
+        <dl>
           <td>Numbers</td>
           <td>integer-&gt;integer-bytes real-&gt;floating-point-bytes</td>
-        </tr>
-        <tr>
+        </dl>
+        <dl>
           <td>Observe</td>
           <td>bytes-length bytes-ref subbytes in-bytes</td>
-        </tr>
-        <tr>
+        </dl>
+        <dl>
           <td>Modify</td>
           <td>bytes-set! bytes-copy! bytes-fill!</td>
-        </tr>
-        <tr>
+        </dl>
+        <dl>
           <td>Conversion</td>
           <td>bytes-&gt;string/utf-8<br>
           string-&gt;bytes/utf-8</td>
-        </tr>
-        <tr>
+        </dl>
+        <dl>
           <td>Test</td>
           <td>bytes? bytes=?</td>
-        </tr>
-        <tr>
+        </dl>
+        <dl>
           <td>Match Pattern</td>
           <td>(? bytes? b) #"0xDEADBEEF"</td>
-        </tr>
-      </table>
+        </dl>
     </div>
+
     <div>
       <h2>Other</h2>
-      <table>
-        <tr>
+        <dl>
           <td>Booleans</td>
           <td>#t #f not equal?</td>
-        </tr>
-        <tr>
+        </dl>
+        <dl>
           <td>Characters</td>
           <td>#\a #\tab #\λ char? char-&gt;integer integer-&gt;char char&lt;=? ... char-alphabetic? ...</td>
-        </tr>
-        <tr>
+        </dl>
+        <dl>
           <td>Symbols</td>
           <td>'Racket symbol? eq? string-&gt;symbol gensym</td>
-        </tr>
-        <tr>
+        </dl>
+        <dl>
           <td>Boxes</td>
           <td>box? box unbox set-box! box-cas!</td>
-        </tr>
-        <tr>
+        </dl>
+        <dl>
           <td>Procedures</td>
           <td>procedure? apply compose compose1 keyword-apply procedure-rename procedure-arity curry arity-includes?</td>
-        </tr>
-        <tr>
+        </dl>
+        <dl>
           <td>Void</td>
           <td>void? void</td>
-        </tr>
-        <tr>
+        </dl>
+        <dl>
           <td>Undefined</td>
           <td>undefined</td>
-        </tr>
-      </table>
+        </dl>
     </div>
   </div>
+
   <div>
-    Data
+    <h1>Data</h1>
     <div>
       <h2>Lists</h2>
-      <table>
-        <tr>
+        <dl>
           <td>Create</td>
           <td>empty list list* build-list for/list</td>
-        </tr>
-        <tr>
+        </dl>
+        <dl>
           <td>Observe</td>
           <td>empty? list? pair? length list-ref member count argmin argmax</td>
-        </tr>
-        <tr>
+        </dl>
+        <dl>
           <td>Use</td>
           <td>append reverse map andmap ormap foldr in-list</td>
-        </tr>
-        <tr>
+        </dl>
+        <dl>
           <td>Modify</td>
           <td>filter remove ... sort take drop split-at partition remove-duplicates shuffle</td>
-        </tr>
-        <tr>
+        </dl>
+        <dl>
           <td>Match Pattern</td>
           <td>(list a b c) (list* a b more) (list top more ...)</td>
-        </tr>
-      </table>
+        </dl>
     </div>
+
     <div>
       <h2>Immutable Hash</h2>
-      <table>
-        <tr>
+        <dl>
           <td>Create</td>
           <td>hash hasheq</td>
-        </tr>
-        <tr>
+        </dl>
+        <dl>
           <td>Observe</td>
           <td>hash? hash-ref hash-has-key? hash-count in-hash in-hash-keys in-hash-values</td>
-        </tr>
-        <tr>
+        </dl>
+        <dl>
           <td>Modify</td>
           <td>hash-set hash-update hash-remove</td>
-        </tr>
-      </table>
+        </dl>
     </div>
+
     <div>
       <h2>Vector</h2>
-      <table>
-        <tr>
+        <dl>
           <td>Create</td>
           <td>build-vector vector make-vector list-&gt;vector</td>
-        </tr>
-        <tr>
+        </dl>
+        <dl>
           <td>Observe</td>
           <td>vector? vector-length vector-ref in-vector</td>
-        </tr>
-        <tr>
+        </dl>
+        <dl>
           <td>Modify</td>
           <td>vector-set! vector-fill! vector-copy! vector-map!</td>
-        </tr>
-        <tr>
+        </dl>
+        <dl>
           <td>Match Pattern</td>
           <td>(vector x y z) (vector x y calabi-yau ...)</td>
-        </tr>
-      </table>
+        </dl>
     </div>
+
     <div>
       <h2>Streams</h2>
-      <table>
-        <tr>
+        <dl>
           <td>Create</td>
           <td>stream stream* empty-stream</td>
-        </tr>
-        <tr>
+        </dl>
+        <dl>
           <td>Observe</td>
           <td>stream-empty? stream-first stream-rest in-stream</td>
-        </tr>
-      </table>
+        </dl>
     </div>
+
     <div>
       <h2>Mutable Hash</h2>
-      <table>
-        <tr>
+        <dl>
           <td>Create</td>
           <td>make-hash make-hasheq</td>
-        </tr>
-        <tr>
+        </dl>
+        <dl>
           <td>Observe</td>
           <td>hash? hash-ref hash-has-key? hash-count in-hash in-hash-keys in-hash-values</td>
-        </tr>
-        <tr>
+        </dl>
+        <dl>
           <td>Modify</td>
           <td>hash-set! hash-ref! hash-update! hash-remove!</td>
-        </tr>
-      </table>
+        </dl>
     </div>
   </div>
+
   <div>
-    Systems
+    <h1>Systems</h1>
     <div>
       <h2>Input/Output</h2>
-      <table>
-        <tr>
+        <dl>
           <td>Formatting</td>
           <td>~a ~v ~s ~e ~r pretty-format</td>
-        </tr>
-        <tr>
+        </dl>
+        <dl>
           <td>Input</td>
           <td>read read-bytes peek-byte</td>
-        </tr>
-        <tr>
+        </dl>
+        <dl>
           <td>Output</td>
           <td>write write-bytes display displayln pretty-print</td>
-        </tr>
-        <tr>
+        </dl>
+        <dl>
           <td>Ports and Files</td>
           <td>with-input-from-file with-output-to-file flush-output file-position make-pipe with-output-to-string with-input-from-string port-&gt;bytes port-&gt;lines ...</td>
-        </tr>
-      </table>
+        </dl>
     </div>
+
     <div>
       <h2>Files</h2>
-      <table>
-        <tr>
+        <dl>
           <td>Paths</td>
           <td>build-path bytes-&gt;path path-&gt;bytes path-replace-suffix ...</td>
-        </tr>
-        <tr>
+        </dl>
+        <dl>
           <td>Files</td>
           <td>file-exists? rename-file-or-directory copy-directory/files current-directory make-directory delete-directory/files directory-list filesystem-change-evt file-&gt;bytes file-&gt;lines make-temporary-file</td>
-        </tr>
-      </table>
+        </dl>
     </div>
+
     <div>
       <h2>Miscellaneous</h2>
-      <table>
-        <tr>
+        <dl>
           <td>Time</td>
           <td>current-seconds current-inexact-milliseconds date-&gt;string date-display-format</td>
-        </tr>
-        <tr>
+        </dl>
+        <dl>
           <td>Command-Line Parsing</td>
           <td>command-line</td>
-        </tr>
-        <tr>
+        </dl>
+        <dl>
           <td>FFI</td>
           <td>ffi-lib _uint32 ... _fun malloc free</td>
-        </tr>
-      </table>
+        </dl>
     </div>
+
     <div>
       <h2>Networking</h2>
-      <table>
-        <tr>
+        <dl>
           <td>TCP</td>
           <td>tcp-listen tcp-connect tcp-accept tcp-close</td>
-        </tr>
-        <tr>
+        </dl>
+        <dl>
           <td>HTTP</td>
           <td>http-conn http-conn-open! http-conn-send! http-conn-recv! http-conn-sendrecv! http-sendrecv</td>
-        </tr>
-        <tr>
+        </dl>
+        <dl>
           <td>URLs</td>
           <td>string-&gt;url url-&gt;string url-query</td>
-        </tr>
-        <tr>
+        </dl>
+        <dl>
           <td>Email</td>
           <td>smtp-send-message imap-connect ...</td>
-        </tr>
-        <tr>
+        </dl>
+        <dl>
           <td>JSON</td>
           <td>write-json read-json</td>
-        </tr>
-        <tr>
+        </dl>
+        <dl>
           <td>XML</td>
           <td>read-xml write-xml write-xexpr</td>
-        </tr>
-        <tr>
+        </dl>
+        <dl>
           <td>Databases</td>
           <td>postgresql-connect mysql-connect sqlite3-connect query-exec query-rows prepare start-transaction ...</td>
-        </tr>
-      </table>
+        </dl>
     </div>
+
     <div>
       <h2>Security</h2>
-      <table>
-        <tr>
+        <dl>
           <td>Custodians</td>
           <td>make-custodian custodian-shutdown-all current-custodian</td>
-        </tr>
-        <tr>
+        </dl>
+        <dl>
           <td>Sandboxes</td>
           <td>make-evaluator make-module-evaluator</td>
-        </tr>
-      </table>
+        </dl>
     </div>
+
     <div>
       <h2>Concurrency</h2>
-      <table>
-        <tr>
+        <dl>
           <td>Threads</td>
           <td>thread kill-thread thread-wait make-thread-group</td>
-        </tr>
-        <tr>
+        </dl>
+        <dl>
           <td>Events</td>
           <td>sync choice-evt wrap-evt handle-evt alarm-evt ...</td>
-        </tr>
-        <tr>
+        </dl>
+        <dl>
           <td>Channels</td>
           <td>make-channel channel-get channel-put</td>
-        </tr>
-        <tr>
+        </dl>
+        <dl>
           <td>Semaphores</td>
           <td>make-semaphore semaphore-post semaphore-wait</td>
-        </tr>
-        <tr>
+        </dl>
+        <dl>
           <td>Async Channels</td>
           <td>make-async-channel async-channel-get async-channel-put</td>
-        </tr>
-      </table>
+        </dl>
     </div>
+
     <div>
       <h2>Parallelism</h2>
-      <table>
-        <tr>
+        <dl>
           <td>Futures</td>
           <td>future touch processor-count make-fsemaphore ...</td>
-        </tr>
-        <tr>
+        </dl>
+        <dl>
           <td>Places</td>
           <td>dynamic-place place place-wait place-wait place-channel ...</td>
-        </tr>
-        <tr>
+        </dl>
+        <dl>
           <td>Processes</td>
           <td>subprocess system*</td>
-        </tr>
-      </table>
+        </dl>
     </div>
   </div>
+
   <div>
     <div>
-      Syntax (Beginner)
+      <h1>Syntax (Beginner)</h1>
       <div>
         <h2>Basics</h2>
-        <table>
-          <tr>
+          <dl>
             <td>Modules</td>
             <td>(module+ main body ...)<br>
             (module+ test body ...)<br>
             (require mod-path) (provide id)</td>
-          </tr>
-          <tr>
+          </dl>
+          <dl>
             <td>S-expressions</td>
             <td>quote '(a b c) quasiquote unquote `(1 2 ,(+ 1 2))</td>
-          </tr>
-          <tr>
+          </dl>
+          <dl>
             <td>Procedure Applications</td>
             <td>(fn arg1 arg2)<br>
             keyword args (fn arg1 #:key arg2)<br>
             (apply fn arg1 (list arg2))</td>
-          </tr>
-          <tr>
+          </dl>
+          <dl>
             <td>Procedures</td>
             <td>(lambda (x) x) (λ (x) x)<br>
             (λ (x [opt 1]) (+ x opt))<br>
             (λ (x #:req key) (+ x key))<br>
             (λ (x #:opt [key 1]) (+ x key))</td>
-          </tr>
-          <tr>
+          </dl>
+          <dl>
             <td>Binding</td>
             <td>(let ([x 1] [y 2]) (+ x y))<br>
             (let* ([x 1] [x (+ x 1)]) x)</td>
-          </tr>
-          <tr>
+          </dl>
+          <dl>
             <td>Conditionals</td>
             <td>(if (zero? x) 0 (/ 1 x))<br>
             (cond [(even? x) 0] [(odd? x) 1]<br>
             [else "impossible!"])<br>
             and or</td>
-          </tr>
-          <tr>
+          </dl>
+          <dl>
             <td>Definitions</td>
             <td>(define x 1)<br>
             (define (f y) (+ x y))</td>
-          </tr>
-          <tr>
+          </dl>
+          <dl>
             <td>Iteration</td>
             <td>for for/list for*</td>
-          </tr>
-          <tr>
+          </dl>
+          <dl>
             <td>Blocks</td>
             <td>begin when unless</td>
-          </tr>
-          <tr>
+          </dl>
+          <dl>
             <td>Require Sub-forms</td>
             <td>prefix-in only-in except-in rename-in for-syntax for-label ...</td>
-          </tr>
-          <tr>
+          </dl>
+          <dl>
             <td>Provide Sub-forms</td>
             <td>all-defined-out all-from-out rename-out ... contract-out</td>
-          </tr>
-        </table>
+          </dl>
       </div>
+
       <div>
         <h2>Structures</h2>
-        <table>
-          <tr>
+          <dl>
             <td>Definition</td>
             <td>(struct dillo (weight color))</td>
-          </tr>
-          <tr>
+          </dl>
+          <dl>
             <td>Create</td>
             <td>(define danny (dillo 17.5 'purple))</td>
-          </tr>
-          <tr>
+          </dl>
+          <dl>
             <td>Observe</td>
             <td>(dillo? danny) (dillo-weight danny) (dillo-color danny)</td>
-          </tr>
-          <tr>
+          </dl>
+          <dl>
             <td>Modify</td>
             <td>(struct-copy dillo danny ([weight 18.0]))</td>
-          </tr>
-          <tr>
+          </dl>
+          <dl>
             <td>Match Pattern</td>
             <td>(dillo w c)</td>
-          </tr>
-        </table>
+          </dl>
       </div>
+
       <div>
         <h2>Pattern Matching</h2>
-        <table>
-          <tr>
+          <dl>
             <td>Basics</td>
             <td>(match value [pat body] ...)</td>
-          </tr>
-          <tr>
+          </dl>
+          <dl>
             <td>Definitions</td>
             <td>(match-define pat value)</td>
-          </tr>
-          <tr>
+          </dl>
+          <dl>
             <td>Patterns</td>
             <td>(quote datum) (list lvp ...) (list-no-order pat ...) (vector lvp ...) (struct-id pat ...) (regexp rx-expr pat) (or pat ...) (and pat ...) (? expr pat ...)</td>
-          </tr>
-        </table>
+          </dl>
       </div>
     </div>
+
     <div>
-      Syntax (Intermediate)
+      <h1>Syntax (Intermediate)</h1>
       <div>
         <h2>Basics</h2>
-        <table>
-          <tr>
+          <dl>
             <td>Mutation</td>
             <td>set!</td>
-          </tr>
-          <tr>
+          </dl>
+          <dl>
             <td>Exceptions</td>
             <td>error with-handlers raise exit</td>
-          </tr>
-          <tr>
+          </dl>
+          <dl>
             <td>Promises</td>
             <td>promise? delay force</td>
-          </tr>
-          <tr>
+          </dl>
+          <dl>
             <td>Continuations</td>
             <td>let/cc let/ec dynamic-wind call-with-continuation-prompt abort-current-continuation call-with-composable-continuation</td>
-          </tr>
-          <tr>
+          </dl>
+          <dl>
             <td>Parameters</td>
             <td>make-parameter parameterize</td>
-          </tr>
-          <tr>
+          </dl>
+          <dl>
             <td>External Files Needed at Runtime</td>
             <td>define-runtime-path</td>
-          </tr>
-          <tr>
+          </dl>
+          <dl>
             <td>Continuation Marks</td>
             <td>continuation-marks with-continuation-mark continuation-mark-set-&gt;list</td>
-          </tr>
-          <tr>
+          </dl>
+          <dl>
             <td>Multiple Values</td>
             <td>values let-values define-values call-with-values</td>
-          </tr>
-        </table>
+          </dl>
       </div>
+
       <div>
         <h2>Contracts</h2>
-        <table>
-          <tr>
+          <dl>
             <td>Basics</td>
             <td>any/c or/c and/c false/c integer-in vector/c listof list/c ...</td>
-          </tr>
-          <tr>
+          </dl>
+          <dl>
             <td>Functions</td>
             <td>-&gt; -&gt;* -&gt;i</td>
-          </tr>
-          <tr>
+          </dl>
+          <dl>
             <td>Application</td>
             <td>contract-out recontract-out with-contract define/contract</td>
-          </tr>
-        </table>
+          </dl>
       </div>
+
       <div>
         <h2>Iteration</h2>
-        <table>
-          <tr>
+          <dl>
             <td>Sequences</td>
             <td>in-range in-naturals in-list in-vector in-port in-lines in-hash in-hash-keys in-hash-values in-directory in-cycle stop-before stop-after in-stream</td>
-          </tr>
-          <tr>
+          </dl>
+          <dl>
             <td>Generators</td>
             <td>generator yield in-generator</td>
-          </tr>
-        </table>
+          </dl>
       </div>
+
       <div>
         <h2>Structures</h2>
-        <table>
-          <tr>
+          <dl>
             <td>Sub-structures</td>
             <td>(struct 2d (x y)) (struct 3d 2d (z)) (2d-x (3d 1 2 3))</td>
-          </tr>
-          <tr>
+          </dl>
+          <dl>
             <td>Mutation</td>
             <td>(struct monster (type [hp #:mutable])) (define healie (monster 'slime 10)) (set-monster-hp! healie 0)</td>
-          </tr>
-          <tr>
+          </dl>
+          <dl>
             <td>Transparency</td>
             <td>(struct cash ($ ¢) #:transparent) (struct-&gt;vector (cash 5 95))</td>
-          </tr>
-          <tr>
+          </dl>
+          <dl>
             <td>Printing</td>
             <td>(struct nickname [n v] #:methods gen:custom-write [(define (write-proc nn p mode) (fprintf p (nickname-n nn)))]) (displayln (nickname "evens" (in-range 0 100 2)))</td>
-          </tr>
-          <tr>
+          </dl>
+          <dl>
             <td>Serialization</td>
             <td>(struct txn (who what where) #:prefab) (write (txn "Mustard" "Spatula" "Observatory"))</td>
-          </tr>
-        </table>
+          </dl>
       </div>
+
       <div>
         <h2>Generics</h2>
-        <table>
-          <tr>
+          <dl>
             <td>Definition</td>
             <td>define-generics</td>
-          </tr>
-          <tr>
+          </dl>
+          <dl>
             <td>Instantiation</td>
             <td>(struct even-set () #:methods gen:set [(define (set-member? st i) (even? i))])</td>
-          </tr>
-        </table>
+          </dl>
       </div>
+
       <div>
         <h2>Classes</h2>
-        <table>
-          <tr>
+          <dl>
             <td>Definition</td>
             <td>interface class*</td>
-          </tr>
-          <tr>
+          </dl>
+          <dl>
             <td>Instantiation</td>
             <td>make-object new instantiate</td>
-          </tr>
-          <tr>
+          </dl>
+          <dl>
             <td>Methods</td>
             <td>send send/apply send/keyword-apply send* send+</td>
-          </tr>
-          <tr>
+          </dl>
+          <dl>
             <td>Fields</td>
             <td>get-field set-field!</td>
-          </tr>
-          <tr>
+          </dl>
+          <dl>
             <td>Mixins</td>
             <td>mixin</td>
-          </tr>
-          <tr>
+          </dl>
+          <dl>
             <td>Traits</td>
             <td>trait trait-sum trait-exclude trait-rename ...</td>
-          </tr>
-          <tr>
+          </dl>
+          <dl>
             <td>Contracts</td>
             <td>class/c instanceof/c is-a?/c implementation?/c subclass?/c</td>
-          </tr>
-        </table>
+          </dl>
       </div>
     </div>
+
     <div>
-      Syntactic Abstractions
+      <h1>Syntactic Abstractions</h1>
       <div>
-        <table>
-          <tr>
+          <dl>
             <td>Definition</td>
             <td>define-syntax define-simple-macro begin-for-syntax for-syntax</td>
-          </tr>
-          <tr>
+          </dl>
+          <dl>
             <td>Templates</td>
             <td>syntax syntax/loc with-syntax</td>
-          </tr>
-          <tr>
+          </dl>
+          <dl>
             <td>Parsing ()-Syntax</td>
             <td>syntax-parse define-syntax-class pattern</td>
-          </tr>
-          <tr>
+          </dl>
+          <dl>
             <td>Syntax Objects</td>
             <td>syntax-source syntax-line ... syntax-&gt;datum datum-&gt;syntax generate-temporaries format-id</td>
-          </tr>
-          <tr>
+          </dl>
+          <dl>
             <td>Transformers</td>
             <td>make-set!-transformer make-rename-transformer local-expand syntax-local-value syntax-local-name syntax-local-lift-expression ...</td>
-          </tr>
-          <tr>
+          </dl>
+          <dl>
             <td>Syntax Parameters</td>
             <td>define-syntax-parameter syntax-parameterize syntax-parameter-value</td>
-          </tr>
-          <tr>
+          </dl>
+          <dl>
             <td>Parsing Raw Syntax</td>
             <td>lexer parser cfg-parser</td>
-          </tr>
-        </table>
+          </dl>
       </div>
     </div>
+
     <div>
-      Tools
+      <h1>Tools</h1>
       <div>
         <h2>Packages</h2>
-        <table>
-          <tr>
+          <dl>
             <td>Inspection</td>
             <td>raco pkg show</td>
-          </tr>
-          <tr>
+          </dl>
+          <dl>
             <td>Finding</td>
             <td>pkgs.racket-lang.org</td>
-          </tr>
-          <tr>
+          </dl>
+          <dl>
             <td>Installing</td>
             <td>raco pkg install</td>
-          </tr>
-          <tr>
+          </dl>
+          <dl>
             <td>Updating</td>
             <td>raco pkg update</td>
-          </tr>
-          <tr>
+          </dl>
+          <dl>
             <td>Removing</td>
             <td>raco pkg remove</td>
-          </tr>
-        </table>
+          </dl>
       </div>
+
       <div>
         <h2>Miscellaneous</h2>
-        <table>
-          <tr>
+          <dl>
             <td>Compiling</td>
             <td>raco make program.rkt</td>
-          </tr>
-          <tr>
+          </dl>
+          <dl>
             <td>Testing</td>
             <td>raco test program.rkt a-directory</td>
-          </tr>
-          <tr>
+          </dl>
+          <dl>
             <td>Building Executables</td>
             <td>raco exe program.rkt</td>
-          </tr>
-          <tr>
+          </dl>
+          <dl>
             <td>Extending DrRacket</td>
             <td>drracket:language:simple-module-based-language-&gt;module-based-language-mixin</td>
-          </tr>
-          <tr>
+          </dl>
+          <dl>
             <td>Slides</td>
             <td>slide standard-fish code</td>
-          </tr>
-        </table>
+          </dl>
       </div>
     </div>
   </div>
