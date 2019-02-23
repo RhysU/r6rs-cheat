@@ -304,20 +304,35 @@
       <h2>Streams</h2>
       <dl>
         <dt>Create</dt>
-        <dd>stream stream* empty-stream</dd>
+        <dd>stream</dd>
+        <dd>stream*</dd>
+        <dd>empty-stream</dd>
         <dt>Observe</dt>
-        <dd>stream-empty? stream-first stream-rest in-stream</dd>
+        <dd>stream-empty?</dd>
+        <dd>stream-first</dd>
+        <dd>stream-rest</dd>
+        <dd>in-stream</dd>
       </dl>
     </div>
     <div>
       <h2>Mutable Hash</h2>
       <dl>
         <dt>Create</dt>
-        <dd>make-hash make-hasheq</dd>
+        <dd>make-hash</dd>
+        <dd>make-hasheq</dd>
         <dt>Observe</dt>
-        <dd>hash? hash-ref hash-has-key? hash-count in-hash in-hash-keys in-hash-values</dd>
+        <dd>hash?</dd>
+        <dd>hash-ref</dd>
+        <dd>hash-has-key?</dd>
+        <dd>hash-count</dd>
+        <dd>in-hash</dd>
+        <dd>in-hash-keys</dd>
+        <dd>in-hash-values</dd>
         <dt>Modify</dt>
-        <dd>hash-set! hash-ref! hash-update! hash-remove!</dd>
+        <dd>hash-set!</dd>
+        <dd>hash-ref!</dd>
+        <dd>hash-update!</dd>
+        <dd>hash-remove!</dd>
       </dl>
     </div>
   </div>
@@ -327,87 +342,177 @@
       <h2>Input/Output</h2>
       <dl>
         <dt>Formatting</dt>
-        <dd>~a ~v ~s ~e ~r pretty-format</dd>
+        <dd>~a</dd>
+        <dd>~v</dd>
+        <dd>~s</dd>
+        <dd>~e</dd>
+        <dd>~r</dd>
+        <dd>pretty-format</dd>
         <dt>Input</dt>
-        <dd>read read-bytes peek-byte</dd>
+        <dd>read</dd>
+        <dd>read-bytes</dd>
+        <dd>peek-byte</dd>
         <dt>Output</dt>
-        <dd>write write-bytes display displayln pretty-print</dd>
+        <dd>write</dd>
+        <dd>write-bytes</dd>
+        <dd>display</dd>
+        <dd>displayln</dd>
+        <dd>pretty-print</dd>
         <dt>Ports and Files</dt>
-        <dd>with-input-from-file with-output-to-file flush-output file-position make-pipe with-output-to-string with-input-from-string port-&gt;bytes port-&gt;lines ...</dd>
+        <dd>with-input-from-file</dd>
+        <dd>with-output-to-file</dd>
+        <dd>flush-output</dd>
+        <dd>file-position</dd>
+        <dd>make-pipe</dd>
+        <dd>with-output-to-string</dd>
+        <dd>with-input-from-string</dd>
+        <dd>port-&gt;bytes</dd>
+        <dd>port-&gt;lines</dd>
+        <dd>...</dd>
       </dl>
     </div>
     <div>
       <h2>Files</h2>
       <dl>
         <dt>Paths</dt>
-        <dd>build-path bytes-&gt;path path-&gt;bytes path-replace-suffix ...</dd>
+        <dd>build-path</dd>
+        <dd>bytes-&gt;path</dd>
+        <dd>path-&gt;bytes</dd>
+        <dd>path-replace-suffix</dd>
+        <dd>...</dd>
         <dt>Files</dt>
-        <dd>file-exists? rename-file-or-directory copy-directory/files current-directory make-directory delete-directory/files directory-list filesystem-change-evt file-&gt;bytes file-&gt;lines make-temporary-file</dd>
+        <dd>file-exists?</dd>
+        <dd>rename-file-or-directory</dd>
+        <dd>copy-directory/files</dd>
+        <dd>current-directory</dd>
+        <dd>make-directory</dd>
+        <dd>delete-directory/files</dd>
+        <dd>directory-list</dd>
+        <dd>filesystem-change-evt</dd>
+        <dd>file-&gt;bytes</dd>
+        <dd>file-&gt;lines</dd>
+        <dd>make-temporary-file</dd>
       </dl>
     </div>
     <div>
       <h2>Miscellaneous</h2>
       <dl>
         <dt>Time</dt>
-        <dd>current-seconds current-inexact-milliseconds date-&gt;string date-display-format</dd>
+        <dd>current-seconds</dd>
+        <dd>current-inexact-milliseconds</dd>
+        <dd>date-&gt;string</dd>
+        <dd>date-display-format</dd>
         <dt>Command-Line Parsing</dt>
         <dd>command-line</dd>
         <dt>FFI</dt>
-        <dd>ffi-lib _uint32 ... _fun malloc free</dd>
+        <dd>ffi-lib</dd>
+        <dd>_uint32</dd>
+        <dd>...</dd>
+        <dd>_fun</dd>
+        <dd>malloc</dd>
+        <dd>free</dd>
       </dl>
     </div>
     <div>
       <h2>Networking</h2>
       <dl>
         <dt>TCP</dt>
-        <dd>tcp-listen tcp-connect tcp-accept tcp-close</dd>
+        <dd>tcp-listen</dd>
+        <dd>tcp-connect</dd>
+        <dd>tcp-accept</dd>
+        <dd>tcp-close</dd>
         <dt>HTTP</dt>
-        <dd>http-conn http-conn-open! http-conn-send! http-conn-recv! http-conn-sendrecv! http-sendrecv</dd>
+        <dd>http-conn</dd>
+        <dd>http-conn-open!</dd>
+        <dd>http-conn-send!</dd>
+        <dd>http-conn-recv!</dd>
+        <dd>http-conn-sendrecv!</dd>
+        <dd>http-sendrecv</dd>
         <dt>URLs</dt>
-        <dd>string-&gt;url url-&gt;string url-query</dd>
+        <dd>string-&gt;url</dd>
+        <dd>url-&gt;string</dd>
+        <dd>url-query</dd>
         <dt>Email</dt>
-        <dd>smtp-send-message imap-connect ...</dd>
+        <dd>smtp-send-message</dd>
+        <dd>imap-connect</dd>
+        <dd>...</dd>
         <dt>JSON</dt>
-        <dd>write-json read-json</dd>
+        <dd>write-json</dd>
+        <dd>read-json</dd>
         <dt>XML</dt>
-        <dd>read-xml write-xml write-xexpr</dd>
+        <dd>read-xml</dd>
+        <dd>write-xml</dd>
+        <dd>write-xexpr</dd>
         <dt>Databases</dt>
-        <dd>postgresql-connect mysql-connect sqlite3-connect query-exec query-rows prepare start-transaction ...</dd>
+        <dd>postgresql-connect</dd>
+        <dd>mysql-connect</dd>
+        <dd>sqlite3-connect</dd>
+        <dd>query-exec</dd>
+        <dd>query-rows</dd>
+        <dd>prepare</dd>
+        <dd>start-transaction</dd>
+        <dd>...</dd>
       </dl>
     </div>
     <div>
       <h2>Security</h2>
       <dl>
         <dt>Custodians</dt>
-        <dd>make-custodian custodian-shutdown-all current-custodian</dd>
+        <dd>make-custodian</dd>
+        <dd>custodian-shutdown-all</dd>
+        <dd>current-custodian</dd>
         <dt>Sandboxes</dt>
-        <dd>make-evaluator make-module-evaluator</dd>
+        <dd>make-evaluator</dd>
+        <dd>make-module-evaluator</dd>
       </dl>
     </div>
     <div>
       <h2>Concurrency</h2>
       <dl>
         <dt>Threads</dt>
-        <dd>thread kill-thread thread-wait make-thread-group</dd>
+        <dd>thread</dd>
+        <dd>kill-thread</dd>
+        <dd>thread-wait</dd>
+        <dd>make-thread-group</dd>
         <dt>Events</dt>
-        <dd>sync choice-evt wrap-evt handle-evt alarm-evt ...</dd>
+        <dd>sync</dd>
+        <dd>choice-evt</dd>
+        <dd>wrap-evt</dd>
+        <dd>handle-evt</dd>
+        <dd>alarm-evt</dd>
+        <dd>...</dd>
         <dt>Channels</dt>
-        <dd>make-channel channel-get channel-put</dd>
+        <dd>make-channel</dd>
+        <dd>channel-get</dd>
+        <dd>channel-put</dd>
         <dt>Semaphores</dt>
-        <dd>make-semaphore semaphore-post semaphore-wait</dd>
+        <dd>make-semaphore</dd>
+        <dd>semaphore-post</dd>
+        <dd>semaphore-wait</dd>
         <dt>Async Channels</dt>
-        <dd>make-async-channel async-channel-get async-channel-put</dd>
+        <dd>make-async-channel</dd>
+        <dd>async-channel-get</dd>
+        <dd>async-channel-put</dd>
       </dl>
     </div>
     <div>
       <h2>Parallelism</h2>
       <dl>
         <dt>Futures</dt>
-        <dd>future touch processor-count make-fsemaphore ...</dd>
+        <dd>future</dd>
+        <dd>touch</dd>
+        <dd>processor-count</dd>
+        <dd>make-fsemaphore</dd>
+        <dd>...</dd>
         <dt>Places</dt>
-        <dd>dynamic-place place place-wait place-wait place-channel ...</dd>
+        <dd>dynamic-place</dd>
+        <dd>place</dd>
+        <dd>place-wait</dd>
+        <dd>place-wait</dd>
+        <dd>place-channel ...</dd>
         <dt>Processes</dt>
-        <dd>subprocess system*</dd>
+        <dd>subprocess</dd>
+        <dd>system*</dd>
       </dl>
     </div>
   </div>
@@ -417,29 +522,61 @@
       <h2>Basics</h2>
       <dl>
         <dt>Modules</dt>
-        <dd>(module+ main body ...) (module+ test body ...) (require mod-path) (provide id)</dd>
+        <dd>(module+ main body ...)</dd>
+        <dd>(module+ test body ...)</dd>
+        <dd>(require mod-path)</dd>
+        <dd>(provide id)</dd>
         <dt>S-expressions</dt>
-        <dd>quote '(a b c) quasiquote unquote `(1 2 ,(+ 1 2))</dd>
+        <dd>quote</dd>
+        <dd>'(a b c)</dd>
+        <dd>quasiquote</dd>
+        <dd>unquote</dd>
+        <dd>`(1 2 ,(+ 1 2))</dd>
         <dt>Procedure Applications</dt>
-        <dd>(fn arg1 arg2) keyword args (fn arg1 #:key arg2) (apply fn arg1 (list arg2))</dd>
+        <dd>(fn arg1 arg2)</dd>
+        <dd>fn arg1 #:key arg2)</dd>
+        <dd>(apply fn arg1 (list arg2))</dd>
         <dt>Procedures</dt>
-        <dd>(lambda (x) x) (λ (x) x) (λ (x [opt 1]) (+ x opt)) (λ (x #:req key) (+ x key)) (λ (x #:opt [key 1]) (+ x key))</dd>
+        <dd>(lambda (x) x)</dd>
+        <dd>(λ (x) x)</dd>
+        <dd>(λ (x [opt 1]) (+ x opt))</dd>
+        <dd>(λ (x #:req key) (+ x key))</dd>
+        <dd>(λ (x #:opt [key 1]) (+ x key))</dd>
         <dt>Binding</dt>
-        <dd>(let ([x 1] [y 2]) (+ x y)) (let* ([x 1] [x (+ x 1)]) x)</dd>
+        <dd>(let ([x 1] [y 2]) (+ x y))</dd>
+        <dd>(let* ([x 1] [x (+ x 1)]) x)</dd>
         <dt>Conditionals</dt>
-        <dd>(if (zero? x) 0 (/ 1 x)) (cond [(even? x) 0] [(odd? x) 1] [else "impossible!"]) and or</dd>
+        <dd>(if (zero? x) 0 (/ 1 x))</dd>
+        <dd>(cond [(even? x) 0] [(odd? x) 1] [else "impossible!"])</dd>
+        <dd>and</dd>
+        <dd>or</dd>
       </dl>
       <dl>
         <dt>Definitions</dt>
-        <dd>(define x 1) (define (f y) (+ x y))</dd>
+        <dd>(define x 1)</dd>
+        <dd>(define (f y) (+ x y))</dd>
         <dt>Iteration</dt>
-        <dd>for for/list for*</dd>
+        <dd>for</dd>
+        <dd>for/list</dd>
+        <dd>for*</dd>
         <dt>Blocks</dt>
-        <dd>begin when unless</dd>
+        <dd>begin</dd>
+        <dd>when</dd>
+        <dd>unless</dd>
         <dt>Require Sub-forms</dt>
-        <dd>prefix-in only-in except-in rename-in for-syntax for-label ...</dd>
+        <dd>prefix-in</dd>
+        <dd>only-in</dd>
+        <dd>except-in</dd>
+        <dd>rename-in</dd>
+        <dd>for-syntax</dd>
+        <dd>for-label</dd>
+        <dd>...</dd>
         <dt>Provide Sub-forms</dt>
-        <dd>all-defined-out all-from-out rename-out ... contract-out</dd>
+        <dd>all-defined-out</dd>
+        <dd>all-from-out</dd>
+        <dd>rename-out</dd>
+        <dd>...</dd>
+        <dd>contract-out</dd>
       </dl>
     </div>
     <div>
@@ -450,7 +587,9 @@
         <dt>Create</dt>
         <dd>(define danny (dillo 17.5 'purple))</dd>
         <dt>Observe</dt>
-        <dd>(dillo? danny) (dillo-weight danny) (dillo-color danny)</dd>
+        <dd>(dillo? danny)</dd>
+        <dd>(dillo-weight danny)</dd>
+        <dd>(dillo-color danny)</dd>
         <dt>Modify</dt>
         <dd>(struct-copy dillo danny ([weight 18.0]))</dd>
         <dt>Match Pattern</dt>
@@ -465,7 +604,15 @@
         <dt>Definitions</dt>
         <dd>(match-define pat value)</dd>
         <dt>Patterns</dt>
-        <dd>(quote datum) (list lvp ...) (list-no-order pat ...) (vector lvp ...) (struct-id pat ...) (regexp rx-expr pat) (or pat ...) (and pat ...) (? expr pat ...)</dd>
+        <dd>(quote datum)</dd>
+        <dd>(list lvp ...)</dd>
+        <dd>(list-no-order pat ...)</dd>
+        <dd>(vector lvp ...)</dd>
+        <dd>(struct-id pat ...)</dd>
+        <dd>(regexp rx-expr pat)</dd>
+        <dd>(or pat ...)</dd>
+        <dd>(and pat ...)</dd>
+        <dd>(? expr pat ...)</dd>
       </dl>
     </div>
   </div>
@@ -477,54 +624,105 @@
         <dt>Mutation</dt>
         <dd>set!</dd>
         <dt>Exceptions</dt>
-        <dd>error with-handlers raise exit</dd>
+        <dd>error</dd>
+        <dd>with-handlers</dd>
+        <dd>raise</dd>
+        <dd>exit</dd>
         <dt>Promises</dt>
-        <dd>promise? delay force</dd>
+        <dd>promise?</dd>
+        <dd>delay</dd>
+        <dd>force</dd>
         <dt>Continuations</dt>
-        <dd>let/cc let/ec dynamic-wind call-with-continuation-prompt abort-current-continuation call-with-composable-continuation</dd>
+        <dd>let/cc</dd>
+        <dd>let/ec</dd>
+        <dd>dynamic-wind</dd>
+        <dd>call-with-continuation-prompt</dd>
+        <dd>abort-current-continuation</dd>
+        <dd>call-with-composable-continuation</dd>
         <dt>Parameters</dt>
-        <dd>make-parameter parameterize</dd>
+        <dd>make-parameter</dd>
+        <dd>parameterize</dd>
         <dt>External Files Needed at Runtime</dt>
         <dd>define-runtime-path</dd>
         <dt>Continuation Marks</dt>
-        <dd>continuation-marks with-continuation-mark continuation-mark-set-&gt;list</dd>
+        <dd>continuation-marks</dd>
+        <dd>with-continuation-mark</dd>
+        <dd>continuation-mark-set-&gt;list</dd>
         <dt>Multiple Values</dt>
-        <dd>values let-values define-values call-with-values</dd>
+        <dd>values</dd>
+        <dd>let-values</dd>
+        <dd>define-values</dd>
+        <dd>call-with-values</dd>
       </dl>
     </div>
     <div>
       <h2>Contracts</h2>
       <dl>
         <dt>Basics</dt>
-        <dd>any/c or/c and/c false/c integer-in vector/c listof list/c ...</dd>
+        <dd>any/c</dd>
+        <dd>or/c</dd>
+        <dd>and/c</dd>
+        <dd>false/c</dd>
+        <dd>integer-in</dd>
+        <dd>vector/c</dd>
+        <dd>listof</dd>
+        <dd>list/c</dd>
+        <dd>...</dd>
         <dt>Functions</dt>
-        <dd>-&gt; -&gt;* -&gt;i</dd>
+        <dd>-&gt;</dd>
+        <dd>-&gt;*</dd>
+        <dd>-&gt;i</dd>
         <dt>Application</dt>
-        <dd>contract-out recontract-out with-contract define/contract</dd>
+        <dd>contract-out</dd>
+        <dd>recontract-out</dd>
+        <dd>with-contract</dd>
+        <dd>define/contract</dd>
       </dl>
     </div>
     <div>
       <h2>Iteration</h2>
       <dl>
         <dt>Sequences</dt>
-        <dd>in-range in-naturals in-list in-vector in-port in-lines in-hash in-hash-keys in-hash-values in-directory in-cycle stop-before stop-after in-stream</dd>
+        <dd>in-range</dd>
+        <dd>in-naturals</dd>
+        <dd>in-list</dd>
+        <dd>in-vector</dd>
+        <dd>in-port</dd>
+        <dd>in-lines</dd>
+        <dd>in-hash</dd>
+        <dd>in-hash-keys</dd>
+        <dd>in-hash-values</dd>
+        <dd>in-directory</dd>
+        <dd>in-cycle</dd>
+        <dd>stop-before</dd>
+        <dd>stop-after</dd>
+        <dd>in-stream</dd>
         <dt>Generators</dt>
-        <dd>generator yield in-generator</dd>
+        <dd>generator</dd>
+        <dd>yield</dd>
+        <dd>in-generator</dd>
       </dl>
     </div>
     <div>
       <h2>Structures</h2>
       <dl>
         <dt>Sub-structures</dt>
-        <dd>(struct 2d (x y)) (struct 3d 2d (z)) (2d-x (3d 1 2 3))</dd>
+        <dd>(struct 2d (x y))</dd>
+        <dd>(struct 3d 2d (z))</dd>
+        <dd>(2d-x (3d 1 2 3))</dd>
         <dt>Mutation</dt>
-        <dd>(struct monster (type [hp #:mutable])) (define healie (monster 'slime 10)) (set-monster-hp! healie 0)</dd>
+        <dd>(struct monster (type [hp #:mutable]))</dd>
+        <dd>(define healie (monster 'slime 10))</dd>
+        <dd>(set-monster-hp! healie 0)</dd>
         <dt>Transparency</dt>
-        <dd>(struct cash ($ ¢) #:transparent) (struct-&gt;vector (cash 5 95))</dd>
+        <dd>(struct cash ($ ¢) #:transparent)</dd>
+        <dd>(struct-&gt;vector (cash 5 95))</dd>
         <dt>Printing</dt>
-        <dd>(struct nickname [n v] #:methods gen:custom-write [(define (write-proc nn p mode) (fprintf p (nickname-n nn)))]) (displayln (nickname "evens" (in-range 0 100 2)))</dd>
+        <dd>(struct nickname [n v] #:methods gen:custom-write [(define (write-proc nn p mode) (fprintf p (nickname-n nn)))])</dd>
+        <dd>(displayln (nickname "evens" (in-range 0 100 2)))</dd>
         <dt>Serialization</dt>
-        <dd>(struct txn (who what where) #:prefab) (write (txn "Mustard" "Spatula" "Observatory"))</dd>
+        <dd>(struct txn (who what where) #:prefab)</dd>
+        <dd>(write (txn "Mustard" "Spatula" "Observatory"))</dd>
       </dl>
     </div>
     <div>
@@ -542,17 +740,32 @@
         <dt>Definition</dt>
         <dd>interface class*</dd>
         <dt>Instantiation</dt>
-        <dd>make-object new instantiate</dd>
+        <dd>make-object</dd>
+        <dd>new</dd>
+        <dd>instantiate</dd>
         <dt>Methods</dt>
-        <dd>send send/apply send/keyword-apply send* send+</dd>
+        <dd>send</dd>
+        <dd>send/apply</dd>
+        <dd>send/keyword-apply</dd>
+        <dd>send*</dd>
+        <dd>send+</dd>
         <dt>Fields</dt>
-        <dd>get-field set-field!</dd>
+        <dd>get-field</dd>
+        <dd>set-field!</dd>
         <dt>Mixins</dt>
         <dd>mixin</dd>
         <dt>Traits</dt>
-        <dd>trait trait-sum trait-exclude trait-rename ...</dd>
+        <dd>trait</dd>
+        <dd>trait-sum</dd>
+        <dd>trait-exclude</dd>
+        <dd>trait-rename</dd>
+        <dd>...</dd>
         <dt>Contracts</dt>
-        <dd>class/c instanceof/c is-a?/c implementation?/c subclass?/c</dd>
+        <dd>class/c</dd>
+        <dd>instanceof/c</dd>
+        <dd>is-a?/c</dd>
+        <dd>implementation?/c</dd>
+        <dd>subclass?/c</dd>
       </dl>
     </div>
   </div>
@@ -561,19 +774,42 @@
     <div>
       <dl>
         <dt>Definition</dt>
-        <dd>define-syntax define-simple-macro begin-for-syntax for-syntax</dd>
+        <dd>define-syntax</dd>
+        <dd>define-simple-macro</dd>
+        <dd>begin-for-syntax</dd>
+        <dd>for-syntax</dd>
         <dt>Templates</dt>
-        <dd>syntax syntax/loc with-syntax</dd>
+        <dd>syntax</dd>
+        <dd>syntax/loc</dd>
+        <dd>with-syntax</dd>
         <dt>Parsing ()-Syntax</dt>
-        <dd>syntax-parse define-syntax-class pattern</dd>
+        <dd>syntax-parse</dd>
+        <dd>define-syntax-class</dd>
+        <dd>pattern</dd>
         <dt>Syntax Objects</dt>
-        <dd>syntax-source syntax-line ... syntax-&gt;datum datum-&gt;syntax generate-temporaries format-id</dd>
+        <dd>syntax-source</dd>
+        <dd>syntax-line</dd>
+        <dd>...</dd>
+        <dd>syntax-&gt;datum</dd>
+        <dd>datum-&gt;syntax</dd>
+        <dd>generate-temporaries</dd>
+        <dd>format-id</dd>
         <dt>Transformers</dt>
-        <dd>make-set!-transformer make-rename-transformer local-expand syntax-local-value syntax-local-name syntax-local-lift-expression ...</dd>
+        <dd>make-set!-transformer</dd>
+        <dd>make-rename-transformer</dd>
+        <dd>local-expand</dd>
+        <dd>syntax-local-value</dd>
+        <dd>syntax-local-name</dd>
+        <dd>syntax-local-lift-expression</dd>
+        <dd>...</dd>
         <dt>Syntax Parameters</dt>
-        <dd>define-syntax-parameter syntax-parameterize syntax-parameter-value</dd>
+        <dd>define-syntax-parameter</dd>
+        <dd>syntax-parameterize</dd>
+        <dd>syntax-parameter-value</dd>
         <dt>Parsing Raw Syntax</dt>
-        <dd>lexer parser cfg-parser</dd>
+        <dd>lexer</dd>
+        <dd>parser</dd>
+        <dd>cfg-parser</dd>
       </dl>
     </div>
   </div>
