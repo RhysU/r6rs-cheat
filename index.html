@@ -7,474 +7,448 @@
 </head>
 <body>
 
-<h1>Essentials</h1>
-<dl>
-  <dt>Sites</dt>
-  <dd>main download docs git</dd>
-  <dt>Community</dt>
-  <dd>packages irc slack twitter</dd>
-  <dt>Running</dt>
-  <dd>Put #lang racket "Hello, world!" in hello.rkt and run racket hello.rkt</dd>
-</dl>
+  <h1>Essentials</h1>
+  <dl>
+    <dt>Sites</dt>
+    <dd>main download docs git</dd>
+    <dt>Community</dt>
+    <dd>packages irc slack twitter</dd>
+    <dt>Running</dt>
+    <dd>Put #lang racket "Hello, world!" in hello.rkt and run racket hello.rkt</dd>
+  </dl>
 
   <div>
     <h1>Primitives</h1>
-      <h2>Numbers</h2>
-        <dl>
-          <dt>Literals</dt>
-          <dd>integer 1 rational 1/2 complex 1+2i floating 3.14 double 6.02e+23 hex #x29 octal #o32 binary #b010101</dd>
-          <dt>Arithmetic</dt>
-          <dd>+ - * / quotient remainder modulo add1 sub1 max min round floor ceiling sqrt expt exp log sin ... atan</dd>
-          <dt>Compare</dt>
-          <dd>= &lt; &lt;= &gt; &gt;=</dd>
-          <dt>Bitwise</dt>
-          <dd>bitwise-ior bitwise-and bitwise-xor bitwise-not arithmetic-shift integer-length</dd>
-          <dt>Format</dt>
-          <dd>number-&gt;string string-&gt;number real-&gt;decimal-string</dd>
-          <dt>Test</dt>
-          <dd>number? complex? ... exact-nonnegative-integer? ... zero? positive? negative? even? odd? exact? inexact?</dd>
-          <dt>Misc</dt>
-          <dd>random</dd>
-          <dt>Match Pattern</dt>
-          <dd>(? number? n) 42</dd>
-        </dl>
+    <h2>Numbers</h2>
+    <dl>
+      <dt>Literals</dt>
+      <dd>integer 1 rational 1/2 complex 1+2i floating 3.14 double 6.02e+23 hex #x29 octal #o32 binary #b010101</dd>
+      <dt>Arithmetic</dt>
+      <dd>+ - * / quotient remainder modulo add1 sub1 max min round floor ceiling sqrt expt exp log sin ... atan</dd>
+      <dt>Compare</dt>
+      <dd>= &lt; &lt;= &gt; &gt;=</dd>
+      <dt>Bitwise</dt>
+      <dd>bitwise-ior bitwise-and bitwise-xor bitwise-not arithmetic-shift integer-length</dd>
+      <dt>Format</dt>
+      <dd>number-&gt;string string-&gt;number real-&gt;decimal-string</dd>
+      <dt>Test</dt>
+      <dd>number? complex? ... exact-nonnegative-integer? ... zero? positive? negative? even? odd? exact? inexact?</dd>
+      <dt>Misc</dt>
+      <dd>random</dd>
+      <dt>Match Pattern</dt>
+      <dd>(? number? n) 42</dd>
+    </dl>
 
     <div>
       <h2>Strings</h2>
-        <dl>
-          <dt>Literals</dt>
-          <dd>"Racket" quoting "a \" approaches!" unicode "λx:(μα.α→α).xx"</dd>
-          <dt>Create</dt>
-          <dd>make-string string string-append build-string string-join</dd>
-          <dt>Observe</dt>
-          <dd>string-length string-ref substring string-split in-string</dd>
-          <dt>Modify</dt>
-          <dd>string-downcase string-upcase string-trim</dd>
-          <dt>Test</dt>
-          <dd>string? string=? string&lt;=? string-ci&lt;=?</dd>
-          <dt>Regexp</dt>
-          <dd>#rx"a|b" #rx"^c(a|d)+r$" regexp-quote regexp-match regexp-split regexp-replace regexp-replace*</dd>
-          <dt>Match Pattern</dt>
-          <dd>(? string? s) "Banana?"</dd>
-        </dl>
+      <dl>
+        <dt>Literals</dt>
+        <dd>"Racket" quoting "a \" approaches!" unicode "λx:(μα.α→α).xx"</dd>
+        <dt>Create</dt>
+        <dd>make-string string string-append build-string string-join</dd>
+        <dt>Observe</dt>
+        <dd>string-length string-ref substring string-split in-string</dd>
+        <dt>Modify</dt>
+        <dd>string-downcase string-upcase string-trim</dd>
+        <dt>Test</dt>
+        <dd>string? string=? string&lt;=? string-ci&lt;=?</dd>
+        <dt>Regexp</dt>
+        <dd>#rx"a|b" #rx"^c(a|d)+r$" regexp-quote regexp-match regexp-split regexp-replace regexp-replace*</dd>
+        <dt>Match Pattern</dt>
+        <dd>(? string? s) "Banana?"</dd>
+      </dl>
     </div>
-
     <div>
       <h2>Bytes</h2>
-        <dl>
-          <dt>Literals</dt>
-          <dd>#"rawbytes\0"</dd>
-          <dt>Create</dt>
-          <dd>make-bytes bytes</dd>
-          <dt>Numbers</dt>
-          <dd>integer-&gt;integer-bytes real-&gt;floating-point-bytes</dd>
-          <dt>Observe</dt>
-          <dd>bytes-length bytes-ref subbytes in-bytes</dd>
-          <dt>Modify</dt>
-          <dd>bytes-set! bytes-copy! bytes-fill!</dd>
-          <dt>Conversion</dt>
-          <dd>bytes-&gt;string/utf-8 string-&gt;bytes/utf-8</dd>
-          <dt>Test</dt>
-          <dd>bytes? bytes=?</dd>
-          <dt>Match Pattern</dt>
-          <dd>(? bytes? b) #"0xDEADBEEF"</dd>
-        </dl>
+      <dl>
+        <dt>Literals</dt>
+        <dd>#"rawbytes\0"</dd>
+        <dt>Create</dt>
+        <dd>make-bytes bytes</dd>
+        <dt>Numbers</dt>
+        <dd>integer-&gt;integer-bytes real-&gt;floating-point-bytes</dd>
+        <dt>Observe</dt>
+        <dd>bytes-length bytes-ref subbytes in-bytes</dd>
+        <dt>Modify</dt>
+        <dd>bytes-set! bytes-copy! bytes-fill!</dd>
+        <dt>Conversion</dt>
+        <dd>bytes-&gt;string/utf-8 string-&gt;bytes/utf-8</dd>
+        <dt>Test</dt>
+        <dd>bytes? bytes=?</dd>
+        <dt>Match Pattern</dt>
+        <dd>(? bytes? b) #"0xDEADBEEF"</dd>
+      </dl>
     </div>
-
     <div>
       <h2>Other</h2>
-        <dl>
-          <dt>Booleans</dt>
-          <dd>#t #f not equal?</dd>
-          <dt>Characters</dt>
-          <dd>#\a #\tab #\λ char? char-&gt;integer integer-&gt;char char&lt;=? ... char-alphabetic? ...</dd>
-          <dt>Symbols</dt>
-          <dd>'Racket symbol? eq? string-&gt;symbol gensym</dd>
-          <dt>Boxes</dt>
-          <dd>box? box unbox set-box! box-cas!</dd>
-          <dt>Procedures</dt>
-          <dd>procedure? apply compose compose1 keyword-apply procedure-rename procedure-arity curry arity-includes?</dd>
-          <dt>Void</dt>
-          <dd>void? void</dd>
-          <dt>Undefined</dt>
-          <dd>undefined</dd>
-        </dl>
+      <dl>
+        <dt>Booleans</dt>
+        <dd>#t #f not equal?</dd>
+        <dt>Characters</dt>
+        <dd>#\a #\tab #\λ char? char-&gt;integer integer-&gt;char char&lt;=? ... char-alphabetic? ...</dd>
+        <dt>Symbols</dt>
+        <dd>'Racket symbol? eq? string-&gt;symbol gensym</dd>
+        <dt>Boxes</dt>
+        <dd>box? box unbox set-box! box-cas!</dd>
+        <dt>Procedures</dt>
+        <dd>procedure? apply compose compose1 keyword-apply procedure-rename procedure-arity curry arity-includes?</dd>
+        <dt>Void</dt>
+        <dd>void? void</dd>
+        <dt>Undefined</dt>
+        <dd>undefined</dd>
+      </dl>
     </div>
   </div>
-
   <div>
     <h1>Data</h1>
     <div>
       <h2>Lists</h2>
-        <dl>
-          <dt>Create</dt>
-          <dd>empty list list* build-list for/list</dd>
-          <dt>Observe</dt>
-          <dd>empty? list? pair? length list-ref member count argmin argmax</dd>
-          <dt>Use</dt>
-          <dd>append reverse map andmap ormap foldr in-list</dd>
-          <dt>Modify</dt>
-          <dd>filter remove ... sort take drop split-at partition remove-duplicates shuffle</dd>
-          <dt>Match Pattern</dt>
-          <dd>(list a b c) (list* a b more) (list top more ...)</dd>
-        </dl>
+      <dl>
+        <dt>Create</dt>
+        <dd>empty list list* build-list for/list</dd>
+        <dt>Observe</dt>
+        <dd>empty? list? pair? length list-ref member count argmin argmax</dd>
+        <dt>Use</dt>
+        <dd>append reverse map andmap ormap foldr in-list</dd>
+        <dt>Modify</dt>
+        <dd>filter remove ... sort take drop split-at partition remove-duplicates shuffle</dd>
+        <dt>Match Pattern</dt>
+        <dd>(list a b c) (list* a b more) (list top more ...)</dd>
+      </dl>
     </div>
-
     <div>
       <h2>Immutable Hash</h2>
-        <dl>
-          <dt>Create</dt>
-          <dd>hash hasheq</dd>
-          <dt>Observe</dt>
-          <dd>hash? hash-ref hash-has-key? hash-count in-hash in-hash-keys in-hash-values</dd>
-          <dt>Modify</dt>
-          <dd>hash-set hash-update hash-remove</dd>
-        </dl>
+      <dl>
+        <dt>Create</dt>
+        <dd>hash hasheq</dd>
+        <dt>Observe</dt>
+        <dd>hash? hash-ref hash-has-key? hash-count in-hash in-hash-keys in-hash-values</dd>
+        <dt>Modify</dt>
+        <dd>hash-set hash-update hash-remove</dd>
+      </dl>
     </div>
-
     <div>
       <h2>Vector</h2>
-        <dl>
-          <dt>Create</dt>
-          <dd>build-vector vector make-vector list-&gt;vector</dd>
-          <dt>Observe</dt>
-          <dd>vector? vector-length vector-ref in-vector</dd>
-          <dt>Modify</dt>
-          <dd>vector-set! vector-fill! vector-copy! vector-map!</dd>
-          <dt>Match Pattern</dt>
-          <dd>(vector x y z) (vector x y calabi-yau ...)</dd>
-        </dl>
+      <dl>
+        <dt>Create</dt>
+        <dd>build-vector vector make-vector list-&gt;vector</dd>
+        <dt>Observe</dt>
+        <dd>vector? vector-length vector-ref in-vector</dd>
+        <dt>Modify</dt>
+        <dd>vector-set! vector-fill! vector-copy! vector-map!</dd>
+        <dt>Match Pattern</dt>
+        <dd>(vector x y z) (vector x y calabi-yau ...)</dd>
+      </dl>
     </div>
-
     <div>
       <h2>Streams</h2>
-        <dl>
-          <dt>Create</dt>
-          <dd>stream stream* empty-stream</dd>
-          <dt>Observe</dt>
-          <dd>stream-empty? stream-first stream-rest in-stream</dd>
-        </dl>
+      <dl>
+        <dt>Create</dt>
+        <dd>stream stream* empty-stream</dd>
+        <dt>Observe</dt>
+        <dd>stream-empty? stream-first stream-rest in-stream</dd>
+      </dl>
     </div>
-
     <div>
       <h2>Mutable Hash</h2>
-        <dl>
-          <dt>Create</dt>
-          <dd>make-hash make-hasheq</dd>
-          <dt>Observe</dt>
-          <dd>hash? hash-ref hash-has-key? hash-count in-hash in-hash-keys in-hash-values</dd>
-          <dt>Modify</dt>
-          <dd>hash-set! hash-ref! hash-update! hash-remove!</dd>
-        </dl>
+      <dl>
+        <dt>Create</dt>
+        <dd>make-hash make-hasheq</dd>
+        <dt>Observe</dt>
+        <dd>hash? hash-ref hash-has-key? hash-count in-hash in-hash-keys in-hash-values</dd>
+        <dt>Modify</dt>
+        <dd>hash-set! hash-ref! hash-update! hash-remove!</dd>
+      </dl>
     </div>
   </div>
-
   <div>
     <h1>Systems</h1>
     <div>
       <h2>Input/Output</h2>
-        <dl>
-          <dt>Formatting</dt>
-          <dd>~a ~v ~s ~e ~r pretty-format</dd>
-          <dt>Input</dt>
-          <dd>read read-bytes peek-byte</dd>
-          <dt>Output</dt>
-          <dd>write write-bytes display displayln pretty-print</dd>
-          <dt>Ports and Files</dt>
-          <dd>with-input-from-file with-output-to-file flush-output file-position make-pipe with-output-to-string with-input-from-string port-&gt;bytes port-&gt;lines ...</dd>
-        </dl>
+      <dl>
+        <dt>Formatting</dt>
+        <dd>~a ~v ~s ~e ~r pretty-format</dd>
+        <dt>Input</dt>
+        <dd>read read-bytes peek-byte</dd>
+        <dt>Output</dt>
+        <dd>write write-bytes display displayln pretty-print</dd>
+        <dt>Ports and Files</dt>
+        <dd>with-input-from-file with-output-to-file flush-output file-position make-pipe with-output-to-string with-input-from-string port-&gt;bytes port-&gt;lines ...</dd>
+      </dl>
     </div>
-
     <div>
       <h2>Files</h2>
-        <dl>
-          <dt>Paths</dt>
-          <dd>build-path bytes-&gt;path path-&gt;bytes path-replace-suffix ...</dd>
-          <dt>Files</dt>
-          <dd>file-exists? rename-file-or-directory copy-directory/files current-directory make-directory delete-directory/files directory-list filesystem-change-evt file-&gt;bytes file-&gt;lines make-temporary-file</dd>
-        </dl>
+      <dl>
+        <dt>Paths</dt>
+        <dd>build-path bytes-&gt;path path-&gt;bytes path-replace-suffix ...</dd>
+        <dt>Files</dt>
+        <dd>file-exists? rename-file-or-directory copy-directory/files current-directory make-directory delete-directory/files directory-list filesystem-change-evt file-&gt;bytes file-&gt;lines make-temporary-file</dd>
+      </dl>
     </div>
-
     <div>
       <h2>Miscellaneous</h2>
-        <dl>
-          <dt>Time</dt>
-          <dd>current-seconds current-inexact-milliseconds date-&gt;string date-display-format</dd>
-          <dt>Command-Line Parsing</dt>
-          <dd>command-line</dd>
-          <dt>FFI</dt>
-          <dd>ffi-lib _uint32 ... _fun malloc free</dd>
-        </dl>
+      <dl>
+        <dt>Time</dt>
+        <dd>current-seconds current-inexact-milliseconds date-&gt;string date-display-format</dd>
+        <dt>Command-Line Parsing</dt>
+        <dd>command-line</dd>
+        <dt>FFI</dt>
+        <dd>ffi-lib _uint32 ... _fun malloc free</dd>
+      </dl>
     </div>
-
     <div>
       <h2>Networking</h2>
-        <dl>
-          <dt>TCP</dt>
-          <dd>tcp-listen tcp-connect tcp-accept tcp-close</dd>
-          <dt>HTTP</dt>
-          <dd>http-conn http-conn-open! http-conn-send! http-conn-recv! http-conn-sendrecv! http-sendrecv</dd>
-          <dt>URLs</dt>
-          <dd>string-&gt;url url-&gt;string url-query</dd>
-          <dt>Email</dt>
-          <dd>smtp-send-message imap-connect ...</dd>
-          <dt>JSON</dt>
-          <dd>write-json read-json</dd>
-          <dt>XML</dt>
-          <dd>read-xml write-xml write-xexpr</dd>
-          <dt>Databases</dt>
-          <dd>postgresql-connect mysql-connect sqlite3-connect query-exec query-rows prepare start-transaction ...</dd>
-        </dl>
+      <dl>
+        <dt>TCP</dt>
+        <dd>tcp-listen tcp-connect tcp-accept tcp-close</dd>
+        <dt>HTTP</dt>
+        <dd>http-conn http-conn-open! http-conn-send! http-conn-recv! http-conn-sendrecv! http-sendrecv</dd>
+        <dt>URLs</dt>
+        <dd>string-&gt;url url-&gt;string url-query</dd>
+        <dt>Email</dt>
+        <dd>smtp-send-message imap-connect ...</dd>
+        <dt>JSON</dt>
+        <dd>write-json read-json</dd>
+        <dt>XML</dt>
+        <dd>read-xml write-xml write-xexpr</dd>
+        <dt>Databases</dt>
+        <dd>postgresql-connect mysql-connect sqlite3-connect query-exec query-rows prepare start-transaction ...</dd>
+      </dl>
     </div>
-
     <div>
       <h2>Security</h2>
-        <dl>
-          <dt>Custodians</dt>
-          <dd>make-custodian custodian-shutdown-all current-custodian</dd>
-          <dt>Sandboxes</dt>
-          <dd>make-evaluator make-module-evaluator</dd>
-        </dl>
+      <dl>
+        <dt>Custodians</dt>
+        <dd>make-custodian custodian-shutdown-all current-custodian</dd>
+        <dt>Sandboxes</dt>
+        <dd>make-evaluator make-module-evaluator</dd>
+      </dl>
     </div>
-
     <div>
       <h2>Concurrency</h2>
-        <dl>
-          <dt>Threads</dt>
-          <dd>thread kill-thread thread-wait make-thread-group</dd>
-          <dt>Events</dt>
-          <dd>sync choice-evt wrap-evt handle-evt alarm-evt ...</dd>
-          <dt>Channels</dt>
-          <dd>make-channel channel-get channel-put</dd>
-          <dt>Semaphores</dt>
-          <dd>make-semaphore semaphore-post semaphore-wait</dd>
-          <dt>Async Channels</dt>
-          <dd>make-async-channel async-channel-get async-channel-put</dd>
-        </dl>
+      <dl>
+        <dt>Threads</dt>
+        <dd>thread kill-thread thread-wait make-thread-group</dd>
+        <dt>Events</dt>
+        <dd>sync choice-evt wrap-evt handle-evt alarm-evt ...</dd>
+        <dt>Channels</dt>
+        <dd>make-channel channel-get channel-put</dd>
+        <dt>Semaphores</dt>
+        <dd>make-semaphore semaphore-post semaphore-wait</dd>
+        <dt>Async Channels</dt>
+        <dd>make-async-channel async-channel-get async-channel-put</dd>
+      </dl>
     </div>
-
     <div>
       <h2>Parallelism</h2>
-        <dl>
-          <dt>Futures</dt>
-          <dd>future touch processor-count make-fsemaphore ...</dd>
-          <dt>Places</dt>
-          <dd>dynamic-place place place-wait place-wait place-channel ...</dd>
-          <dt>Processes</dt>
-          <dd>subprocess system*</dd>
-        </dl>
+      <dl>
+        <dt>Futures</dt>
+        <dd>future touch processor-count make-fsemaphore ...</dd>
+        <dt>Places</dt>
+        <dd>dynamic-place place place-wait place-wait place-channel ...</dd>
+        <dt>Processes</dt>
+        <dd>subprocess system*</dd>
+      </dl>
     </div>
   </div>
-
   <div>
     <div>
       <h1>Syntax (Beginner)</h1>
       <div>
         <h2>Basics</h2>
-          <dl>
-            <dt>Modules</dt>
-            <dd>(module+ main body ...) (module+ test body ...) (require mod-path) (provide id)</dd>
-            <dt>S-expressions</dt>
-            <dd>quote '(a b c) quasiquote unquote `(1 2 ,(+ 1 2))</dd>
-            <dt>Procedure Applications</dt>
-            <dd>(fn arg1 arg2) keyword args (fn arg1 #:key arg2) (apply fn arg1 (list arg2))</dd>
-            <dt>Procedures</dt>
-            <dd>(lambda (x) x) (λ (x) x) (λ (x [opt 1]) (+ x opt)) (λ (x #:req key) (+ x key)) (λ (x #:opt [key 1]) (+ x key))</dd>
-            <dt>Binding</dt>
-            <dd>(let ([x 1] [y 2]) (+ x y)) (let* ([x 1] [x (+ x 1)]) x)</dd>
-            <dt>Conditionals</dt>
-            <dd>(if (zero? x) 0 (/ 1 x)) (cond [(even? x) 0] [(odd? x) 1] [else "impossible!"]) and or</dd>
-          </dl>
-          <dl>
-            <dt>Definitions</dt>
-            <dd>(define x 1) (define (f y) (+ x y))</dd>
-            <dt>Iteration</dt>
-            <dd>for for/list for*</dd>
-            <dt>Blocks</dt>
-            <dd>begin when unless</dd>
-            <dt>Require Sub-forms</dt>
-            <dd>prefix-in only-in except-in rename-in for-syntax for-label ...</dd>
-            <dt>Provide Sub-forms</dt>
-            <dd>all-defined-out all-from-out rename-out ... contract-out</dd>
-          </dl>
+        <dl>
+          <dt>Modules</dt>
+          <dd>(module+ main body ...) (module+ test body ...) (require mod-path) (provide id)</dd>
+          <dt>S-expressions</dt>
+          <dd>quote '(a b c) quasiquote unquote `(1 2 ,(+ 1 2))</dd>
+          <dt>Procedure Applications</dt>
+          <dd>(fn arg1 arg2) keyword args (fn arg1 #:key arg2) (apply fn arg1 (list arg2))</dd>
+          <dt>Procedures</dt>
+          <dd>(lambda (x) x) (λ (x) x) (λ (x [opt 1]) (+ x opt)) (λ (x #:req key) (+ x key)) (λ (x #:opt [key 1]) (+ x key))</dd>
+          <dt>Binding</dt>
+          <dd>(let ([x 1] [y 2]) (+ x y)) (let* ([x 1] [x (+ x 1)]) x)</dd>
+          <dt>Conditionals</dt>
+          <dd>(if (zero? x) 0 (/ 1 x)) (cond [(even? x) 0] [(odd? x) 1] [else "impossible!"]) and or</dd>
+        </dl>
+        <dl>
+          <dt>Definitions</dt>
+          <dd>(define x 1) (define (f y) (+ x y))</dd>
+          <dt>Iteration</dt>
+          <dd>for for/list for*</dd>
+          <dt>Blocks</dt>
+          <dd>begin when unless</dd>
+          <dt>Require Sub-forms</dt>
+          <dd>prefix-in only-in except-in rename-in for-syntax for-label ...</dd>
+          <dt>Provide Sub-forms</dt>
+          <dd>all-defined-out all-from-out rename-out ... contract-out</dd>
+        </dl>
       </div>
-
       <div>
         <h2>Structures</h2>
-          <dl>
-            <dt>Definition</dt>
-            <dd>(struct dillo (weight color))</dd>
-            <dt>Create</dt>
-            <dd>(define danny (dillo 17.5 'purple))</dd>
-            <dt>Observe</dt>
-            <dd>(dillo? danny) (dillo-weight danny) (dillo-color danny)</dd>
-            <dt>Modify</dt>
-            <dd>(struct-copy dillo danny ([weight 18.0]))</dd>
-            <dt>Match Pattern</dt>
-            <dd>(dillo w c)</dd>
-          </dl>
+        <dl>
+          <dt>Definition</dt>
+          <dd>(struct dillo (weight color))</dd>
+          <dt>Create</dt>
+          <dd>(define danny (dillo 17.5 'purple))</dd>
+          <dt>Observe</dt>
+          <dd>(dillo? danny) (dillo-weight danny) (dillo-color danny)</dd>
+          <dt>Modify</dt>
+          <dd>(struct-copy dillo danny ([weight 18.0]))</dd>
+          <dt>Match Pattern</dt>
+          <dd>(dillo w c)</dd>
+        </dl>
       </div>
-
       <div>
         <h2>Pattern Matching</h2>
-          <dl>
-            <dt>Basics</dt>
-            <dd>(match value [pat body] ...)</dd>
-            <dt>Definitions</dt>
-            <dd>(match-define pat value)</dd>
-            <dt>Patterns</dt>
-            <dd>(quote datum) (list lvp ...) (list-no-order pat ...) (vector lvp ...) (struct-id pat ...) (regexp rx-expr pat) (or pat ...) (and pat ...) (? expr pat ...)</dd>
-          </dl>
+        <dl>
+          <dt>Basics</dt>
+          <dd>(match value [pat body] ...)</dd>
+          <dt>Definitions</dt>
+          <dd>(match-define pat value)</dd>
+          <dt>Patterns</dt>
+          <dd>(quote datum) (list lvp ...) (list-no-order pat ...) (vector lvp ...) (struct-id pat ...) (regexp rx-expr pat) (or pat ...) (and pat ...) (? expr pat ...)</dd>
+        </dl>
       </div>
     </div>
-
     <div>
       <h1>Syntax (Intermediate)</h1>
       <div>
         <h2>Basics</h2>
-          <dl>
-            <dt>Mutation</dt>
-            <dd>set!</dd>
-            <dt>Exceptions</dt>
-            <dd>error with-handlers raise exit</dd>
-            <dt>Promises</dt>
-            <dd>promise? delay force</dd>
-            <dt>Continuations</dt>
-            <dd>let/cc let/ec dynamic-wind call-with-continuation-prompt abort-current-continuation call-with-composable-continuation</dd>
-            <dt>Parameters</dt>
-            <dd>make-parameter parameterize</dd>
-            <dt>External Files Needed at Runtime</dt>
-            <dd>define-runtime-path</dd>
-            <dt>Continuation Marks</dt>
-            <dd>continuation-marks with-continuation-mark continuation-mark-set-&gt;list</dd>
-            <dt>Multiple Values</dt>
-            <dd>values let-values define-values call-with-values</dd>
-          </dl>
+        <dl>
+          <dt>Mutation</dt>
+          <dd>set!</dd>
+          <dt>Exceptions</dt>
+          <dd>error with-handlers raise exit</dd>
+          <dt>Promises</dt>
+          <dd>promise? delay force</dd>
+          <dt>Continuations</dt>
+          <dd>let/cc let/ec dynamic-wind call-with-continuation-prompt abort-current-continuation call-with-composable-continuation</dd>
+          <dt>Parameters</dt>
+          <dd>make-parameter parameterize</dd>
+          <dt>External Files Needed at Runtime</dt>
+          <dd>define-runtime-path</dd>
+          <dt>Continuation Marks</dt>
+          <dd>continuation-marks with-continuation-mark continuation-mark-set-&gt;list</dd>
+          <dt>Multiple Values</dt>
+          <dd>values let-values define-values call-with-values</dd>
+        </dl>
       </div>
-
       <div>
         <h2>Contracts</h2>
-          <dl>
-            <dt>Basics</dt>
-            <dd>any/c or/c and/c false/c integer-in vector/c listof list/c ...</dd>
-            <dt>Functions</dt>
-            <dd>-&gt; -&gt;* -&gt;i</dd>
-            <dt>Application</dt>
-            <dd>contract-out recontract-out with-contract define/contract</dd>
-          </dl>
+        <dl>
+          <dt>Basics</dt>
+          <dd>any/c or/c and/c false/c integer-in vector/c listof list/c ...</dd>
+          <dt>Functions</dt>
+          <dd>-&gt; -&gt;* -&gt;i</dd>
+          <dt>Application</dt>
+          <dd>contract-out recontract-out with-contract define/contract</dd>
+        </dl>
       </div>
-
       <div>
         <h2>Iteration</h2>
-          <dl>
-            <dt>Sequences</dt>
-            <dd>in-range in-naturals in-list in-vector in-port in-lines in-hash in-hash-keys in-hash-values in-directory in-cycle stop-before stop-after in-stream</dd>
-            <dt>Generators</dt>
-            <dd>generator yield in-generator</dd>
-          </dl>
+        <dl>
+          <dt>Sequences</dt>
+          <dd>in-range in-naturals in-list in-vector in-port in-lines in-hash in-hash-keys in-hash-values in-directory in-cycle stop-before stop-after in-stream</dd>
+          <dt>Generators</dt>
+          <dd>generator yield in-generator</dd>
+        </dl>
       </div>
-
       <div>
         <h2>Structures</h2>
-          <dl>
-            <dt>Sub-structures</dt>
-            <dd>(struct 2d (x y)) (struct 3d 2d (z)) (2d-x (3d 1 2 3))</dd>
-            <dt>Mutation</dt>
-            <dd>(struct monster (type [hp #:mutable])) (define healie (monster 'slime 10)) (set-monster-hp! healie 0)</dd>
-            <dt>Transparency</dt>
-            <dd>(struct cash ($ ¢) #:transparent) (struct-&gt;vector (cash 5 95))</dd>
-            <dt>Printing</dt>
-            <dd>(struct nickname [n v] #:methods gen:custom-write [(define (write-proc nn p mode) (fprintf p (nickname-n nn)))]) (displayln (nickname "evens" (in-range 0 100 2)))</dd>
-            <dt>Serialization</dt>
-            <dd>(struct txn (who what where) #:prefab) (write (txn "Mustard" "Spatula" "Observatory"))</dd>
-          </dl>
+        <dl>
+          <dt>Sub-structures</dt>
+          <dd>(struct 2d (x y)) (struct 3d 2d (z)) (2d-x (3d 1 2 3))</dd>
+          <dt>Mutation</dt>
+          <dd>(struct monster (type [hp #:mutable])) (define healie (monster 'slime 10)) (set-monster-hp! healie 0)</dd>
+          <dt>Transparency</dt>
+          <dd>(struct cash ($ ¢) #:transparent) (struct-&gt;vector (cash 5 95))</dd>
+          <dt>Printing</dt>
+          <dd>(struct nickname [n v] #:methods gen:custom-write [(define (write-proc nn p mode) (fprintf p (nickname-n nn)))]) (displayln (nickname "evens" (in-range 0 100 2)))</dd>
+          <dt>Serialization</dt>
+          <dd>(struct txn (who what where) #:prefab) (write (txn "Mustard" "Spatula" "Observatory"))</dd>
+        </dl>
       </div>
-
       <div>
         <h2>Generics</h2>
-          <dl>
-            <dt>Definition</dt>
-            <dd>define-generics</dd>
-            <dt>Instantiation</dt>
-            <dd>(struct even-set () #:methods gen:set [(define (set-member? st i) (even? i))])</dd>
-          </dl>
+        <dl>
+          <dt>Definition</dt>
+          <dd>define-generics</dd>
+          <dt>Instantiation</dt>
+          <dd>(struct even-set () #:methods gen:set [(define (set-member? st i) (even? i))])</dd>
+        </dl>
       </div>
-
       <div>
         <h2>Classes</h2>
-          <dl>
-            <dt>Definition</dt>
-            <dd>interface class*</dd>
-            <dt>Instantiation</dt>
-            <dd>make-object new instantiate</dd>
-            <dt>Methods</dt>
-            <dd>send send/apply send/keyword-apply send* send+</dd>
-            <dt>Fields</dt>
-            <dd>get-field set-field!</dd>
-            <dt>Mixins</dt>
-            <dd>mixin</dd>
-            <dt>Traits</dt>
-            <dd>trait trait-sum trait-exclude trait-rename ...</dd>
-            <dt>Contracts</dt>
-            <dd>class/c instanceof/c is-a?/c implementation?/c subclass?/c</dd>
-          </dl>
+        <dl>
+          <dt>Definition</dt>
+          <dd>interface class*</dd>
+          <dt>Instantiation</dt>
+          <dd>make-object new instantiate</dd>
+          <dt>Methods</dt>
+          <dd>send send/apply send/keyword-apply send* send+</dd>
+          <dt>Fields</dt>
+          <dd>get-field set-field!</dd>
+          <dt>Mixins</dt>
+          <dd>mixin</dd>
+          <dt>Traits</dt>
+          <dd>trait trait-sum trait-exclude trait-rename ...</dd>
+          <dt>Contracts</dt>
+          <dd>class/c instanceof/c is-a?/c implementation?/c subclass?/c</dd>
+        </dl>
       </div>
     </div>
-
     <div>
       <h1>Syntactic Abstractions</h1>
       <div>
-          <dl>
-            <dt>Definition</dt>
-            <dd>define-syntax define-simple-macro begin-for-syntax for-syntax</dd>
-            <dt>Templates</dt>
-            <dd>syntax syntax/loc with-syntax</dd>
-            <dt>Parsing ()-Syntax</dt>
-            <dd>syntax-parse define-syntax-class pattern</dd>
-            <dt>Syntax Objects</dt>
-            <dd>syntax-source syntax-line ... syntax-&gt;datum datum-&gt;syntax generate-temporaries format-id</dd>
-            <dt>Transformers</dt>
-            <dd>make-set!-transformer make-rename-transformer local-expand syntax-local-value syntax-local-name syntax-local-lift-expression ...</dd>
-            <dt>Syntax Parameters</dt>
-            <dd>define-syntax-parameter syntax-parameterize syntax-parameter-value</dd>
-            <dt>Parsing Raw Syntax</dt>
-            <dd>lexer parser cfg-parser</dd>
-          </dl>
+        <dl>
+          <dt>Definition</dt>
+          <dd>define-syntax define-simple-macro begin-for-syntax for-syntax</dd>
+          <dt>Templates</dt>
+          <dd>syntax syntax/loc with-syntax</dd>
+          <dt>Parsing ()-Syntax</dt>
+          <dd>syntax-parse define-syntax-class pattern</dd>
+          <dt>Syntax Objects</dt>
+          <dd>syntax-source syntax-line ... syntax-&gt;datum datum-&gt;syntax generate-temporaries format-id</dd>
+          <dt>Transformers</dt>
+          <dd>make-set!-transformer make-rename-transformer local-expand syntax-local-value syntax-local-name syntax-local-lift-expression ...</dd>
+          <dt>Syntax Parameters</dt>
+          <dd>define-syntax-parameter syntax-parameterize syntax-parameter-value</dd>
+          <dt>Parsing Raw Syntax</dt>
+          <dd>lexer parser cfg-parser</dd>
+        </dl>
       </div>
     </div>
-
     <div>
       <h1>Tools</h1>
       <div>
         <h2>Packages</h2>
-          <dl>
-            <dt>Inspection</dt>
-            <dd>raco pkg show</dd>
-            <dt>Finding</dt>
-            <dd>pkgs.racket-lang.org</dd>
-            <dt>Installing</dt>
-            <dd>raco pkg install</dd>
-            <dt>Updating</dt>
-            <dd>raco pkg update</dd>
-            <dt>Removing</dt>
-            <dd>raco pkg remove</dd>
-          </dl>
+        <dl>
+          <dt>Inspection</dt>
+          <dd>raco pkg show</dd>
+          <dt>Finding</dt>
+          <dd>pkgs.racket-lang.org</dd>
+          <dt>Installing</dt>
+          <dd>raco pkg install</dd>
+          <dt>Updating</dt>
+          <dd>raco pkg update</dd>
+          <dt>Removing</dt>
+          <dd>raco pkg remove</dd>
+        </dl>
       </div>
-
       <div>
         <h2>Miscellaneous</h2>
-          <dl>
-            <dt>Compiling</dt>
-            <dd>raco make program.rkt</dd>
-            <dt>Testing</dt>
-            <dd>raco test program.rkt a-directory</dd>
-            <dt>Building Executables</dt>
-            <dd>raco exe program.rkt</dd>
-            <dt>Extending DrRacket</dt>
-            <dd>drracket:language:simple-module-based-language-&gt;module-based-language-mixin</dd>
-            <dt>Slides</dt>
-            <dd>slide standard-fish code</dd>
-          </dl>
+        <dl>
+          <dt>Compiling</dt>
+          <dd>raco make program.rkt</dd>
+          <dt>Testing</dt>
+          <dd>raco test program.rkt a-directory</dd>
+          <dt>Building Executables</dt>
+          <dd>raco exe program.rkt</dd>
+          <dt>Extending DrRacket</dt>
+          <dd>drracket:language:simple-module-based-language-&gt;module-based-language-mixin</dd>
+          <dt>Slides</dt>
+          <dd>slide standard-fish code</dd>
+        </dl>
       </div>
     </div>
   </div>
