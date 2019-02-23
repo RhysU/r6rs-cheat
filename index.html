@@ -11,23 +11,15 @@
     <table>
       <tr>
         <td>Sites</td>
-        <td>
-          main download docs git
-        </td>
+        <td>main download docs git</td>
       </tr>
       <tr>
         <td>Community</td>
-        <td>
-          packages irc slack twitter
-        </td>
+        <td>packages irc slack twitter</td>
       </tr>
       <tr>
-        <td>
-          Running
-        </td>
-        <td>
-          Put <span>#lang</span> <span>racket</span> <span>"Hello, world!"</span> in <span>hello.rkt</span> and run <span>racket hello.rkt</span>
-        </td>
+        <td>Running</td>
+        <td>Put #lang racket "Hello, world!" in hello.rkt and run racket hello.rkt</td>
       </tr>
     </table>
   </div>
@@ -37,38 +29,36 @@
       <h2>Numbers</h2>
       <table>
         <tr>
-          <td>
-            Literals
-          </td>
-          <td>integer <span>1</span> rational <span>1/2</span> complex <span>1+2i</span> floating <span>3.14</span> double <span>6.02e+23</span> hex <span>#x29</span> octal <span>#o32</span> binary <span>#b010101</span></td>
+          <td>Literals</td>
+          <td>integer 1 rational 1/2 complex 1+2i floating 3.14 double 6.02e+23 hex #x29 octal #o32 binary #b010101</td>
         </tr>
         <tr>
           <td>Arithmetic</td>
-          <td><span>+</span> <span><span>-</span></span> <span>*</span> <span>/</span> <span>quotient</span> <span>remainder</span> <span>modulo</span> <span>add1</span> <span>sub1</span> <span>max</span> <span>min</span> <span>round</span> <span>floor</span> <span>ceiling</span> <span>sqrt</span> <span>expt</span> <span>exp</span> <span>log</span> <span>sin</span> <span>...</span> <span>atan</span></td>
+          <td>+ - * / quotient remainder modulo add1 sub1 max min round floor ceiling sqrt expt exp log sin ... atan</td>
         </tr>
         <tr>
           <td>Compare</td>
-          <td><span>=</span> <span>&lt;</span> <span>&lt;=</span> <span>&gt;</span> <span>&gt;=</span></td>
+          <td>= &lt; &lt;= &gt; &gt;=</td>
         </tr>
         <tr>
           <td>Bitwise</td>
-          <td><span>bitwise-ior</span> <span>bitwise-and</span> <span>bitwise-xor</span> <span>bitwise-not</span> <span>arithmetic-shift</span> <span>integer-length</span></td>
+          <td>bitwise-ior bitwise-and bitwise-xor bitwise-not arithmetic-shift integer-length</td>
         </tr>
         <tr>
           <td>Format</td>
-          <td><span>number-&gt;string</span> <span>string-&gt;number</span> <span>real-&gt;decimal-string</span></td>
+          <td>number-&gt;string string-&gt;number real-&gt;decimal-string</td>
         </tr>
         <tr>
           <td>Test</td>
-          <td><span>number?</span> <span>complex?</span> <span>...</span> <span>exact-nonnegative-integer?</span> <span>...</span> <span>zero?</span> <span>positive?</span> <span>negative?</span> <span>even?</span> <span>odd?</span> <span>exact?</span> <span>inexact?</span></td>
+          <td>number? complex? ... exact-nonnegative-integer? ... zero? positive? negative? even? odd? exact? inexact?</td>
         </tr>
         <tr>
           <td>Misc</td>
-          <td><span>random</span></td>
+          <td>random</td>
         </tr>
         <tr>
           <td>Match Pattern</td>
-          <td><span>(</span><span>?</span> <span>number?</span> <span>n</span><span>)</span> <span>42</span></td>
+          <td>(? number? n) 42</td>
         </tr>
       </table>
     </div>
@@ -76,36 +66,32 @@
       <h2>Strings</h2>
       <table>
         <tr>
-          <td>
-            Literals
-          </td>
-          <td><span>"Racket"</span> quoting <span>"a \" approaches!"</span> unicode <span>"λx:(μα.α→α).xx"</span></td>
+          <td>Literals</td>
+          <td>"Racket" quoting "a \" approaches!" unicode "λx:(μα.α→α).xx"</td>
         </tr>
         <tr>
           <td>Create</td>
-          <td><span>make-string</span> <span>string</span> <span>string-append</span> <span>build-string</span> <span>string-join</span></td>
+          <td>make-string string string-append build-string string-join</td>
         </tr>
         <tr>
           <td>Observe</td>
-          <td><span>string-length</span> <span>string-ref</span> <span>substring</span> <span>string-split</span> <span>in-string</span></td>
+          <td>string-length string-ref substring string-split in-string</td>
         </tr>
         <tr>
           <td>Modify</td>
-          <td><span>string-downcase</span> <span>string-upcase</span> <span>string-trim</span></td>
+          <td>string-downcase string-upcase string-trim</td>
         </tr>
         <tr>
           <td>Test</td>
-          <td><span>string?</span> <span>string=?</span> <span>string&lt;=?</span> <span>string-ci&lt;=?</span></td>
+          <td>string? string=? string&lt;=? string-ci&lt;=?</td>
         </tr>
         <tr>
-          <td>
-            Regexp
-          </td>
-          <td><span>#rx"a|b"</span> <span>#rx"^c(a|d)+r$"</span> <span>regexp-quote</span> <span>regexp-match</span> <span>regexp-split</span> <span>regexp-replace</span> <span>regexp-replace*</span></td>
+          <td>Regexp</td>
+          <td>#rx"a|b" #rx"^c(a|d)+r$" regexp-quote regexp-match regexp-split regexp-replace regexp-replace*</td>
         </tr>
         <tr>
           <td>Match Pattern</td>
-          <td><span>(</span><span>?</span> <span>string?</span> <span>s</span><span>)</span> <span>"Banana?"</span></td>
+          <td>(? string? s) "Banana?"</td>
         </tr>
       </table>
     </div>
@@ -113,39 +99,37 @@
       <h2>Bytes</h2>
       <table>
         <tr>
-          <td>
-            Literals
-          </td>
-          <td><span>#"rawbytes\0"</span></td>
+          <td>Literals</td>
+          <td>#"rawbytes\0"</td>
         </tr>
         <tr>
           <td>Create</td>
-          <td><span>make-bytes</span> <span>bytes</span></td>
+          <td>make-bytes bytes</td>
         </tr>
         <tr>
           <td>Numbers</td>
-          <td><span>integer-&gt;integer-bytes</span> <span>real-&gt;floating-point-bytes</span></td>
+          <td>integer-&gt;integer-bytes real-&gt;floating-point-bytes</td>
         </tr>
         <tr>
           <td>Observe</td>
-          <td><span>bytes-length</span> <span>bytes-ref</span> <span>subbytes</span> <span>in-bytes</span></td>
+          <td>bytes-length bytes-ref subbytes in-bytes</td>
         </tr>
         <tr>
           <td>Modify</td>
-          <td><span>bytes-set!</span> <span>bytes-copy!</span> <span>bytes-fill!</span></td>
+          <td>bytes-set! bytes-copy! bytes-fill!</td>
         </tr>
         <tr>
           <td>Conversion</td>
-          <td><span>bytes-&gt;string/utf-8</span><br>
-          <span>string-&gt;bytes/utf-8</span></td>
+          <td>bytes-&gt;string/utf-8<br>
+          string-&gt;bytes/utf-8</td>
         </tr>
         <tr>
           <td>Test</td>
-          <td><span>bytes?</span> <span>bytes=?</span></td>
+          <td>bytes? bytes=?</td>
         </tr>
         <tr>
           <td>Match Pattern</td>
-          <td><span>(</span><span>?</span> <span>bytes?</span> <span>b</span><span>)</span> <span>#"0xDEADBEEF"</span></td>
+          <td>(? bytes? b) #"0xDEADBEEF"</td>
         </tr>
       </table>
     </div>
@@ -154,35 +138,31 @@
       <table>
         <tr>
           <td>Booleans</td>
-          <td><span>#t</span> <span>#f</span> <span>not</span> <span>equal?</span></td>
+          <td>#t #f not equal?</td>
         </tr>
         <tr>
-          <td>
-            Characters
-          </td>
-          <td><span>#\a</span> <span>#\tab</span> <span>#\λ</span> <span>char?</span> <span>char-&gt;integer</span> <span>integer-&gt;char</span> <span>char&lt;=?</span> <span>...</span> <span>char-alphabetic?</span> <span>...</span></td>
+          <td>Characters</td>
+          <td>#\a #\tab #\λ char? char-&gt;integer integer-&gt;char char&lt;=? ... char-alphabetic? ...</td>
         </tr>
         <tr>
-          <td>
-            Symbols
-          </td>
-          <td><span>'</span><span>Racket</span> <span>symbol?</span> <span>eq?</span> <span>string-&gt;symbol</span> <span>gensym</span></td>
+          <td>Symbols</td>
+          <td>'Racket symbol? eq? string-&gt;symbol gensym</td>
         </tr>
         <tr>
           <td>Boxes</td>
-          <td><span>box?</span> <span>box</span> <span>unbox</span> <span>set-box!</span> <span>box-cas!</span></td>
+          <td>box? box unbox set-box! box-cas!</td>
         </tr>
         <tr>
           <td>Procedures</td>
-          <td><span>procedure?</span> <span>apply</span> <span>compose</span> <span>compose1</span> <span>keyword-apply</span> <span>procedure-rename</span> <span>procedure-arity</span> <span>curry</span> <span>arity-includes?</span></td>
+          <td>procedure? apply compose compose1 keyword-apply procedure-rename procedure-arity curry arity-includes?</td>
         </tr>
         <tr>
           <td>Void</td>
-          <td><span>void?</span> <span>void</span></td>
+          <td>void? void</td>
         </tr>
         <tr>
           <td>Undefined</td>
-          <td><span>undefined</span></td>
+          <td>undefined</td>
         </tr>
       </table>
     </div>
@@ -194,23 +174,23 @@
       <table>
         <tr>
           <td>Create</td>
-          <td><span>empty</span> <span>list</span> <span>list*</span> <span>build-list</span> <span>for/list</span></td>
+          <td>empty list list* build-list for/list</td>
         </tr>
         <tr>
           <td>Observe</td>
-          <td><span>empty?</span> <span>list?</span> <span>pair?</span> <span>length</span> <span>list-ref</span> <span>member</span> <span>count</span> <span>argmin</span> <span>argmax</span></td>
+          <td>empty? list? pair? length list-ref member count argmin argmax</td>
         </tr>
         <tr>
           <td>Use</td>
-          <td><span>append</span> <span>reverse</span> <span>map</span> <span>andmap</span> <span>ormap</span> <span>foldr</span> <span>in-list</span></td>
+          <td>append reverse map andmap ormap foldr in-list</td>
         </tr>
         <tr>
           <td>Modify</td>
-          <td><span>filter</span> <span>remove</span> <span>...</span> <span>sort</span> <span>take</span> <span>drop</span> <span>split-at</span> <span>partition</span> <span>remove-duplicates</span> <span>shuffle</span></td>
+          <td>filter remove ... sort take drop split-at partition remove-duplicates shuffle</td>
         </tr>
         <tr>
           <td>Match Pattern</td>
-          <td><span>(</span><span>list</span> <span>a</span> <span>b</span> <span>c</span><span>)</span> <span>(</span><span>list*</span> <span>a</span> <span>b</span> <span>more</span><span>)</span> <span>(</span><span>list</span> <span>top</span> <span>more</span> <span>...</span><span>)</span></td>
+          <td>(list a b c) (list* a b more) (list top more ...)</td>
         </tr>
       </table>
     </div>
@@ -219,15 +199,15 @@
       <table>
         <tr>
           <td>Create</td>
-          <td><span>hash</span> <span>hasheq</span></td>
+          <td>hash hasheq</td>
         </tr>
         <tr>
           <td>Observe</td>
-          <td><span>hash?</span> <span>hash-ref</span> <span>hash-has-key?</span> <span>hash-count</span> <span>in-hash</span> <span>in-hash-keys</span> <span>in-hash-values</span></td>
+          <td>hash? hash-ref hash-has-key? hash-count in-hash in-hash-keys in-hash-values</td>
         </tr>
         <tr>
           <td>Modify</td>
-          <td><span>hash-set</span> <span>hash-update</span> <span>hash-remove</span></td>
+          <td>hash-set hash-update hash-remove</td>
         </tr>
       </table>
     </div>
@@ -236,19 +216,19 @@
       <table>
         <tr>
           <td>Create</td>
-          <td><span>build-vector</span> <span>vector</span> <span>make-vector</span> <span>list-&gt;vector</span></td>
+          <td>build-vector vector make-vector list-&gt;vector</td>
         </tr>
         <tr>
           <td>Observe</td>
-          <td><span>vector?</span> <span>vector-length</span> <span>vector-ref</span> <span>in-vector</span></td>
+          <td>vector? vector-length vector-ref in-vector</td>
         </tr>
         <tr>
           <td>Modify</td>
-          <td><span>vector-set!</span> <span>vector-fill!</span> <span>vector-copy!</span> <span>vector-map!</span></td>
+          <td>vector-set! vector-fill! vector-copy! vector-map!</td>
         </tr>
         <tr>
           <td>Match Pattern</td>
-          <td><span>(</span><span>vector</span> <span>x</span> <span>y</span> <span>z</span><span>)</span> <span>(</span><span>vector</span> <span>x</span> <span>y</span> <span>calabi-yau</span> <span>...</span><span>)</span></td>
+          <td>(vector x y z) (vector x y calabi-yau ...)</td>
         </tr>
       </table>
     </div>
@@ -257,11 +237,11 @@
       <table>
         <tr>
           <td>Create</td>
-          <td><span>stream</span> <span>stream*</span> <span>empty-stream</span></td>
+          <td>stream stream* empty-stream</td>
         </tr>
         <tr>
           <td>Observe</td>
-          <td><span>stream-empty?</span> <span>stream-first</span> <span>stream-rest</span> <span>in-stream</span></td>
+          <td>stream-empty? stream-first stream-rest in-stream</td>
         </tr>
       </table>
     </div>
@@ -270,15 +250,15 @@
       <table>
         <tr>
           <td>Create</td>
-          <td><span>make-hash</span> <span>make-hasheq</span></td>
+          <td>make-hash make-hasheq</td>
         </tr>
         <tr>
           <td>Observe</td>
-          <td><span>hash?</span> <span>hash-ref</span> <span>hash-has-key?</span> <span>hash-count</span> <span>in-hash</span> <span>in-hash-keys</span> <span>in-hash-values</span></td>
+          <td>hash? hash-ref hash-has-key? hash-count in-hash in-hash-keys in-hash-values</td>
         </tr>
         <tr>
           <td>Modify</td>
-          <td><span>hash-set!</span> <span>hash-ref!</span> <span>hash-update!</span> <span>hash-remove!</span></td>
+          <td>hash-set! hash-ref! hash-update! hash-remove!</td>
         </tr>
       </table>
     </div>
@@ -290,19 +270,19 @@
       <table>
         <tr>
           <td>Formatting</td>
-          <td><span>~a</span> <span>~v</span> <span>~s</span> <span>~e</span> <span>~r</span> <span>pretty-format</span></td>
+          <td>~a ~v ~s ~e ~r pretty-format</td>
         </tr>
         <tr>
           <td>Input</td>
-          <td><span>read</span> <span>read-bytes</span> <span>peek-byte</span></td>
+          <td>read read-bytes peek-byte</td>
         </tr>
         <tr>
           <td>Output</td>
-          <td><span>write</span> <span>write-bytes</span> <span>display</span> <span>displayln</span> <span>pretty-print</span></td>
+          <td>write write-bytes display displayln pretty-print</td>
         </tr>
         <tr>
           <td>Ports and Files</td>
-          <td><span>with-input-from-file</span> <span>with-output-to-file</span> <span>flush-output</span> <span>file-position</span> <span>make-pipe</span> <span>with-output-to-string</span> <span>with-input-from-string</span> <span>port-&gt;bytes</span> <span>port-&gt;lines</span> <span>...</span></td>
+          <td>with-input-from-file with-output-to-file flush-output file-position make-pipe with-output-to-string with-input-from-string port-&gt;bytes port-&gt;lines ...</td>
         </tr>
       </table>
     </div>
@@ -311,11 +291,11 @@
       <table>
         <tr>
           <td>Paths</td>
-          <td><span>build-path</span> <span>bytes-&gt;path</span> <span>path-&gt;bytes</span> <span>path-replace-suffix</span> <span>...</span></td>
+          <td>build-path bytes-&gt;path path-&gt;bytes path-replace-suffix ...</td>
         </tr>
         <tr>
           <td>Files</td>
-          <td><span>file-exists?</span> <span>rename-file-or-directory</span> <span>copy-directory/files</span> <span>current-directory</span> <span>make-directory</span> <span>delete-directory/files</span> <span>directory-list</span> <span>filesystem-change-evt</span> <span>file-&gt;bytes</span> <span>file-&gt;lines</span> <span>make-temporary-file</span></td>
+          <td>file-exists? rename-file-or-directory copy-directory/files current-directory make-directory delete-directory/files directory-list filesystem-change-evt file-&gt;bytes file-&gt;lines make-temporary-file</td>
         </tr>
       </table>
     </div>
@@ -324,15 +304,15 @@
       <table>
         <tr>
           <td>Time</td>
-          <td><span>current-seconds</span> <span>current-inexact-milliseconds</span> <span>date-&gt;string</span> <span>date-display-format</span></td>
+          <td>current-seconds current-inexact-milliseconds date-&gt;string date-display-format</td>
         </tr>
         <tr>
           <td>Command-Line Parsing</td>
-          <td><span>command-line</span></td>
+          <td>command-line</td>
         </tr>
         <tr>
           <td>FFI</td>
-          <td><span>ffi-lib</span> <span>_uint32</span> <span>...</span> <span>_fun</span> <span>malloc</span> <span>free</span></td>
+          <td>ffi-lib _uint32 ... _fun malloc free</td>
         </tr>
       </table>
     </div>
@@ -341,31 +321,31 @@
       <table>
         <tr>
           <td>TCP</td>
-          <td><span>tcp-listen</span> <span>tcp-connect</span> <span>tcp-accept</span> <span>tcp-close</span></td>
+          <td>tcp-listen tcp-connect tcp-accept tcp-close</td>
         </tr>
         <tr>
           <td>HTTP</td>
-          <td><span>http-conn</span> <span>http-conn-open!</span> <span>http-conn-send!</span> <span>http-conn-recv!</span> <span>http-conn-sendrecv!</span> <span>http-sendrecv</span></td>
+          <td>http-conn http-conn-open! http-conn-send! http-conn-recv! http-conn-sendrecv! http-sendrecv</td>
         </tr>
         <tr>
           <td>URLs</td>
-          <td><span>string-&gt;url</span> <span>url-&gt;string</span> <span>url-query</span></td>
+          <td>string-&gt;url url-&gt;string url-query</td>
         </tr>
         <tr>
           <td>Email</td>
-          <td><span>smtp-send-message</span> <span>imap-connect</span> <span>...</span></td>
+          <td>smtp-send-message imap-connect ...</td>
         </tr>
         <tr>
           <td>JSON</td>
-          <td><span>write-json</span> <span>read-json</span></td>
+          <td>write-json read-json</td>
         </tr>
         <tr>
           <td>XML</td>
-          <td><span>read-xml</span> <span>write-xml</span> <span>write-xexpr</span></td>
+          <td>read-xml write-xml write-xexpr</td>
         </tr>
         <tr>
           <td>Databases</td>
-          <td><span>postgresql-connect</span> <span>mysql-connect</span> <span>sqlite3-connect</span> <span>query-exec</span> <span>query-rows</span> <span>prepare</span> <span>start-transaction</span> <span>...</span></td>
+          <td>postgresql-connect mysql-connect sqlite3-connect query-exec query-rows prepare start-transaction ...</td>
         </tr>
       </table>
     </div>
@@ -374,11 +354,11 @@
       <table>
         <tr>
           <td>Custodians</td>
-          <td><span>make-custodian</span> <span>custodian-shutdown-all</span> <span>current-custodian</span></td>
+          <td>make-custodian custodian-shutdown-all current-custodian</td>
         </tr>
         <tr>
           <td>Sandboxes</td>
-          <td><span>make-evaluator</span> <span>make-module-evaluator</span></td>
+          <td>make-evaluator make-module-evaluator</td>
         </tr>
       </table>
     </div>
@@ -387,23 +367,23 @@
       <table>
         <tr>
           <td>Threads</td>
-          <td><span>thread</span> <span>kill-thread</span> <span>thread-wait</span> <span>make-thread-group</span></td>
+          <td>thread kill-thread thread-wait make-thread-group</td>
         </tr>
         <tr>
           <td>Events</td>
-          <td><span>sync</span> <span>choice-evt</span> <span>wrap-evt</span> <span>handle-evt</span> <span>alarm-evt</span> <span>...</span></td>
+          <td>sync choice-evt wrap-evt handle-evt alarm-evt ...</td>
         </tr>
         <tr>
           <td>Channels</td>
-          <td><span>make-channel</span> <span>channel-get</span> <span>channel-put</span></td>
+          <td>make-channel channel-get channel-put</td>
         </tr>
         <tr>
           <td>Semaphores</td>
-          <td><span>make-semaphore</span> <span>semaphore-post</span> <span>semaphore-wait</span></td>
+          <td>make-semaphore semaphore-post semaphore-wait</td>
         </tr>
         <tr>
           <td>Async Channels</td>
-          <td><span>make-async-channel</span> <span>async-channel-get</span> <span>async-channel-put</span></td>
+          <td>make-async-channel async-channel-get async-channel-put</td>
         </tr>
       </table>
     </div>
@@ -412,15 +392,15 @@
       <table>
         <tr>
           <td>Futures</td>
-          <td><span>future</span> <span>touch</span> <span>processor-count</span> <span>make-fsemaphore</span> <span>...</span></td>
+          <td>future touch processor-count make-fsemaphore ...</td>
         </tr>
         <tr>
           <td>Places</td>
-          <td><span>dynamic-place</span> <span>place</span> <span>place-wait</span> <span>place-wait</span> <span>place-channel</span> <span>...</span></td>
+          <td>dynamic-place place place-wait place-wait place-channel ...</td>
         </tr>
         <tr>
           <td>Processes</td>
-          <td><span>subprocess</span> <span>system*</span></td>
+          <td>subprocess system*</td>
         </tr>
       </table>
     </div>
@@ -433,61 +413,59 @@
         <table>
           <tr>
             <td>Modules</td>
-            <td><span>(</span><span>module+</span> <span>main</span> <span>body</span> <span>...</span><span>)</span><br>
-            <span>(</span><span>module+</span> <span>test</span> <span>body</span> <span>...</span><span>)</span><br>
-            <span>(</span><span>require</span> <span>mod-path</span><span>)</span> <span>(</span><span>provide</span> <span>id</span><span>)</span></td>
+            <td>(module+ main body ...)<br>
+            (module+ test body ...)<br>
+            (require mod-path) (provide id)</td>
           </tr>
           <tr>
             <td>S-expressions</td>
-            <td><span>quote</span> <span>'</span><span>(</span><span>a</span> <span>b</span> <span>c</span><span>)</span> <span>quasiquote</span> <span>unquote</span> <span>`</span><span>(</span><span>1</span> <span>2</span> <span>,</span><span>(</span><span>+</span> <span>1</span> <span>2</span><span>)</span><span>)</span></td>
+            <td>quote '(a b c) quasiquote unquote `(1 2 ,(+ 1 2))</td>
           </tr>
           <tr>
             <td>Procedure Applications</td>
-            <td>
-              <span>(</span><span>fn</span> <span>arg1</span> <span>arg2</span><span>)</span><br>
-              keyword args <span>(</span><span>fn</span> <span>arg1</span> <span>#:key</span> <span>arg2</span><span>)</span><br>
-              <span>(</span><span>apply</span> <span>fn</span> <span>arg1</span> <span>(</span><span>list</span> <span>arg2</span><span>)</span><span>)</span>
-            </td>
+            <td>(fn arg1 arg2)<br>
+            keyword args (fn arg1 #:key arg2)<br>
+            (apply fn arg1 (list arg2))</td>
           </tr>
           <tr>
             <td>Procedures</td>
-            <td><span>(</span><span>lambda</span> <span>(</span><span>x</span><span>)</span> <span>x</span><span>)</span> <span>(</span><span>λ</span> <span>(</span><span>x</span><span>)</span> <span>x</span><span>)</span><br>
-            <span>(</span><span>λ</span> <span>(</span><span>x</span> <span>[</span><span>opt</span> <span>1</span><span>]</span><span>)</span> <span>(</span><span>+</span> <span>x</span> <span>opt</span><span>)</span><span>)</span><br>
-            <span>(</span><span>λ</span> <span>(</span><span>x</span> <span>#:req</span> <span>key</span><span>)</span> <span>(</span><span>+</span> <span>x</span> <span>key</span><span>)</span><span>)</span><br>
-            <span>(</span><span>λ</span> <span>(</span><span>x</span> <span>#:opt</span> <span>[</span><span>key</span> <span>1</span><span>]</span><span>)</span> <span>(</span><span>+</span> <span>x</span> <span>key</span><span>)</span><span>)</span></td>
+            <td>(lambda (x) x) (λ (x) x)<br>
+            (λ (x [opt 1]) (+ x opt))<br>
+            (λ (x #:req key) (+ x key))<br>
+            (λ (x #:opt [key 1]) (+ x key))</td>
           </tr>
           <tr>
             <td>Binding</td>
-            <td><span>(</span><span>let</span> <span>(</span><span>[</span><span>x</span> <span>1</span><span>]</span> <span>[</span><span>y</span> <span>2</span><span>]</span><span>)</span> <span>(</span><span>+</span> <span>x</span> <span>y</span><span>)</span><span>)</span><br>
-            <span>(</span><span>let*</span> <span>(</span><span>[</span><span>x</span> <span>1</span><span>]</span> <span>[</span><span>x</span> <span>(</span><span>+</span> <span>x</span> <span>1</span><span>)</span><span>]</span><span>)</span> <span>x</span><span>)</span></td>
+            <td>(let ([x 1] [y 2]) (+ x y))<br>
+            (let* ([x 1] [x (+ x 1)]) x)</td>
           </tr>
           <tr>
             <td>Conditionals</td>
-            <td><span>(</span><span>if</span> <span>(</span><span>zero?</span> <span>x</span><span>)</span> <span>0</span> <span>(</span><span>/</span> <span>1</span> <span>x</span><span>)</span><span>)</span><br>
-            <span>(</span><span>cond</span> <span>[</span><span>(</span><span>even?</span> <span>x</span><span>)</span> <span>0</span><span>]</span> <span>[</span><span>(</span><span>odd?</span> <span>x</span><span>)</span> <span>1</span><span>]</span><br>
-            <span>[</span><span>else</span> <span>"impossible!"</span><span>]</span><span>)</span><br>
-            <span>and</span> <span>or</span></td>
+            <td>(if (zero? x) 0 (/ 1 x))<br>
+            (cond [(even? x) 0] [(odd? x) 1]<br>
+            [else "impossible!"])<br>
+            and or</td>
           </tr>
           <tr>
             <td>Definitions</td>
-            <td><span>(</span><span>define</span> <span>x</span> <span>1</span><span>)</span><br>
-            <span>(</span><span>define</span> <span>(</span><span>f</span> <span>y</span><span>)</span> <span>(</span><span>+</span> <span>x</span> <span>y</span><span>)</span><span>)</span></td>
+            <td>(define x 1)<br>
+            (define (f y) (+ x y))</td>
           </tr>
           <tr>
             <td>Iteration</td>
-            <td><span>for</span> <span>for/list</span> <span>for*</span></td>
+            <td>for for/list for*</td>
           </tr>
           <tr>
             <td>Blocks</td>
-            <td><span>begin</span> <span>when</span> <span>unless</span></td>
+            <td>begin when unless</td>
           </tr>
           <tr>
             <td>Require Sub-forms</td>
-            <td><span>prefix-in</span> <span>only-in</span> <span>except-in</span> <span>rename-in</span> <span>for-syntax</span> <span>for-label</span> <span>...</span></td>
+            <td>prefix-in only-in except-in rename-in for-syntax for-label ...</td>
           </tr>
           <tr>
             <td>Provide Sub-forms</td>
-            <td><span>all-defined-out</span> <span>all-from-out</span> <span>rename-out</span> <span>...</span> <span>contract-out</span></td>
+            <td>all-defined-out all-from-out rename-out ... contract-out</td>
           </tr>
         </table>
       </div>
@@ -496,23 +474,23 @@
         <table>
           <tr>
             <td>Definition</td>
-            <td><span>(</span><span>struct</span> <span>dillo</span> <span>(</span><span>weight</span> <span>color</span><span>)</span><span>)</span></td>
+            <td>(struct dillo (weight color))</td>
           </tr>
           <tr>
             <td>Create</td>
-            <td><span>(</span><span>define</span> <span>danny</span> <span>(</span><span>dillo</span> <span>17.5</span> <span>'</span><span>purple</span><span>)</span><span>)</span></td>
+            <td>(define danny (dillo 17.5 'purple))</td>
           </tr>
           <tr>
             <td>Observe</td>
-            <td><span>(</span><span>dillo?</span> <span>danny</span><span>)</span> <span>(</span><span>dillo-weight</span> <span>danny</span><span>)</span> <span>(</span><span>dillo-color</span> <span>danny</span><span>)</span></td>
+            <td>(dillo? danny) (dillo-weight danny) (dillo-color danny)</td>
           </tr>
           <tr>
             <td>Modify</td>
-            <td><span>(</span><span>struct-copy</span> <span>dillo</span> <span>danny</span> <span>(</span><span>[</span><span>weight</span> <span>18.0</span><span>]</span><span>)</span><span>)</span></td>
+            <td>(struct-copy dillo danny ([weight 18.0]))</td>
           </tr>
           <tr>
             <td>Match Pattern</td>
-            <td><span>(</span><span>dillo</span> <span>w</span> <span>c</span><span>)</span></td>
+            <td>(dillo w c)</td>
           </tr>
         </table>
       </div>
@@ -521,15 +499,15 @@
         <table>
           <tr>
             <td>Basics</td>
-            <td><span>(</span><span>match</span> <span>value</span> <span>[</span><span>pat</span> <span>body</span><span>]</span> <span>...</span><span>)</span></td>
+            <td>(match value [pat body] ...)</td>
           </tr>
           <tr>
             <td>Definitions</td>
-            <td><span>(</span><span>match-define</span> <span>pat</span> <span>value</span><span>)</span></td>
+            <td>(match-define pat value)</td>
           </tr>
           <tr>
             <td>Patterns</td>
-            <td><span>(</span><span>quote</span> <span>datum</span><span>)</span> <span>(</span><span>list</span> <span>lvp</span> <span>...</span><span>)</span> <span>(</span><span>list-no-order</span> <span>pat</span> <span>...</span><span>)</span> <span>(</span><span>vector</span> <span>lvp</span> <span>...</span><span>)</span> <span>(</span><span>struct-id</span> <span>pat</span> <span>...</span><span>)</span> <span>(</span><span>regexp</span> <span>rx-expr</span> <span>pat</span><span>)</span> <span>(</span><span>or</span> <span>pat</span> <span>...</span><span>)</span> <span>(</span><span>and</span> <span>pat</span> <span>...</span><span>)</span> <span>(</span><span>?</span> <span>expr</span> <span>pat</span> <span>...</span><span>)</span></td>
+            <td>(quote datum) (list lvp ...) (list-no-order pat ...) (vector lvp ...) (struct-id pat ...) (regexp rx-expr pat) (or pat ...) (and pat ...) (? expr pat ...)</td>
           </tr>
         </table>
       </div>
@@ -541,35 +519,35 @@
         <table>
           <tr>
             <td>Mutation</td>
-            <td><span>set!</span></td>
+            <td>set!</td>
           </tr>
           <tr>
             <td>Exceptions</td>
-            <td><span>error</span> <span>with-handlers</span> <span>raise</span> <span>exit</span></td>
+            <td>error with-handlers raise exit</td>
           </tr>
           <tr>
             <td>Promises</td>
-            <td><span>promise?</span> <span>delay</span> <span>force</span></td>
+            <td>promise? delay force</td>
           </tr>
           <tr>
             <td>Continuations</td>
-            <td><span>let/cc</span> <span>let/ec</span> <span>dynamic-wind</span> <span>call-with-continuation-prompt</span> <span>abort-current-continuation</span> <span>call-with-composable-continuation</span></td>
+            <td>let/cc let/ec dynamic-wind call-with-continuation-prompt abort-current-continuation call-with-composable-continuation</td>
           </tr>
           <tr>
             <td>Parameters</td>
-            <td><span>make-parameter</span> <span>parameterize</span></td>
+            <td>make-parameter parameterize</td>
           </tr>
           <tr>
             <td>External Files Needed at Runtime</td>
-            <td><span>define-runtime-path</span></td>
+            <td>define-runtime-path</td>
           </tr>
           <tr>
             <td>Continuation Marks</td>
-            <td><span>continuation-marks</span> <span>with-continuation-mark</span> <span>continuation-mark-set-&gt;list</span></td>
+            <td>continuation-marks with-continuation-mark continuation-mark-set-&gt;list</td>
           </tr>
           <tr>
             <td>Multiple Values</td>
-            <td><span>values</span> <span>let-values</span> <span>define-values</span> <span>call-with-values</span></td>
+            <td>values let-values define-values call-with-values</td>
           </tr>
         </table>
       </div>
@@ -578,15 +556,15 @@
         <table>
           <tr>
             <td>Basics</td>
-            <td><span>any/c</span> <span>or/c</span> <span>and/c</span> <span>false/c</span> <span>integer-in</span> <span>vector/c</span> <span>listof</span> <span>list/c</span> <span>...</span></td>
+            <td>any/c or/c and/c false/c integer-in vector/c listof list/c ...</td>
           </tr>
           <tr>
             <td>Functions</td>
-            <td><span><span>-&gt;</span></span> <span><span>-&gt;</span>*</span> <span><span>-&gt;</span>i</span></td>
+            <td>-&gt; -&gt;* -&gt;i</td>
           </tr>
           <tr>
             <td>Application</td>
-            <td><span>contract-out</span> <span>recontract-out</span> <span>with-contract</span> <span>define/contract</span></td>
+            <td>contract-out recontract-out with-contract define/contract</td>
           </tr>
         </table>
       </div>
@@ -595,11 +573,11 @@
         <table>
           <tr>
             <td>Sequences</td>
-            <td><span>in-range</span> <span>in-naturals</span> <span>in-list</span> <span>in-vector</span> <span>in-port</span> <span>in-lines</span> <span>in-hash</span> <span>in-hash-keys</span> <span>in-hash-values</span> <span>in-directory</span> <span>in-cycle</span> <span>stop-before</span> <span>stop-after</span> <span>in-stream</span></td>
+            <td>in-range in-naturals in-list in-vector in-port in-lines in-hash in-hash-keys in-hash-values in-directory in-cycle stop-before stop-after in-stream</td>
           </tr>
           <tr>
             <td>Generators</td>
-            <td><span>generator</span> <span>yield</span> <span>in-generator</span></td>
+            <td>generator yield in-generator</td>
           </tr>
         </table>
       </div>
@@ -608,23 +586,23 @@
         <table>
           <tr>
             <td>Sub-structures</td>
-            <td><span>(</span><span>struct</span> <span>2d</span> <span>(</span><span>x</span> <span>y</span><span>)</span><span>)</span> <span>(</span><span>struct</span> <span>3d</span> <span>2d</span> <span>(</span><span>z</span><span>)</span><span>)</span> <span>(</span><span>2d-x</span> <span>(</span><span>3d</span> <span>1</span> <span>2</span> <span>3</span><span>)</span><span>)</span></td>
+            <td>(struct 2d (x y)) (struct 3d 2d (z)) (2d-x (3d 1 2 3))</td>
           </tr>
           <tr>
             <td>Mutation</td>
-            <td><span>(</span><span>struct</span> <span>monster</span> <span>(</span><span>type</span> <span>[</span><span>hp</span> <span>#:mutable</span><span>]</span><span>)</span><span>)</span> <span>(</span><span>define</span> <span>healie</span> <span>(</span><span>monster</span> <span>'</span><span>slime</span> <span>10</span><span>)</span><span>)</span> <span>(</span><span>set-monster-hp!</span> <span>healie</span> <span>0</span><span>)</span></td>
+            <td>(struct monster (type [hp #:mutable])) (define healie (monster 'slime 10)) (set-monster-hp! healie 0)</td>
           </tr>
           <tr>
             <td>Transparency</td>
-            <td><span>(</span><span>struct</span> <span>cash</span> <span>(</span><span>$</span> <span>¢</span><span>)</span> <span>#:transparent</span><span>)</span> <span>(</span><span>struct-&gt;vector</span> <span>(</span><span>cash</span> <span>5</span> <span>95</span><span>)</span><span>)</span></td>
+            <td>(struct cash ($ ¢) #:transparent) (struct-&gt;vector (cash 5 95))</td>
           </tr>
           <tr>
             <td>Printing</td>
-            <td><span>(</span><span>struct</span> <span>nickname</span> <span>[</span><span>n</span> <span>v</span><span>]</span> <span>#:methods</span> <span>gen:custom-write</span> <span>[</span><span>(</span><span>define</span> <span>(</span><span>write-proc</span> <span>nn</span> <span>p</span> <span>mode</span><span>)</span> <span>(</span><span>fprintf</span> <span>p</span> <span>(</span><span>nickname-n</span> <span>nn</span><span>)</span><span>)</span><span>)</span><span>]</span><span>)</span> <span>(</span><span>displayln</span> <span>(</span><span>nickname</span> <span>"evens"</span> <span>(</span><span>in-range</span> <span>0</span> <span>100</span> <span>2</span><span>)</span><span>)</span><span>)</span></td>
+            <td>(struct nickname [n v] #:methods gen:custom-write [(define (write-proc nn p mode) (fprintf p (nickname-n nn)))]) (displayln (nickname "evens" (in-range 0 100 2)))</td>
           </tr>
           <tr>
             <td>Serialization</td>
-            <td><span>(</span><span>struct</span> <span>txn</span> <span>(</span><span>who</span> <span>what</span> <span>where</span><span>)</span> <span>#:prefab</span><span>)</span> <span>(</span><span>write</span> <span>(</span><span>txn</span> <span>"Mustard"</span> <span>"Spatula"</span> <span>"Observatory"</span><span>)</span><span>)</span></td>
+            <td>(struct txn (who what where) #:prefab) (write (txn "Mustard" "Spatula" "Observatory"))</td>
           </tr>
         </table>
       </div>
@@ -633,11 +611,11 @@
         <table>
           <tr>
             <td>Definition</td>
-            <td><span>define-generics</span></td>
+            <td>define-generics</td>
           </tr>
           <tr>
             <td>Instantiation</td>
-            <td><span>(</span><span>struct</span> <span>even-set</span> <span>(</span><span>)</span> <span>#:methods</span> <span>gen:set</span> <span>[</span><span>(</span><span>define</span> <span>(</span><span>set-member?</span> <span>st</span> <span>i</span><span>)</span> <span>(</span><span>even?</span> <span>i</span><span>)</span><span>)</span><span>]</span><span>)</span></td>
+            <td>(struct even-set () #:methods gen:set [(define (set-member? st i) (even? i))])</td>
           </tr>
         </table>
       </div>
@@ -646,31 +624,31 @@
         <table>
           <tr>
             <td>Definition</td>
-            <td><span>interface</span> <span>class*</span></td>
+            <td>interface class*</td>
           </tr>
           <tr>
             <td>Instantiation</td>
-            <td><span>make-object</span> <span>new</span> <span>instantiate</span></td>
+            <td>make-object new instantiate</td>
           </tr>
           <tr>
             <td>Methods</td>
-            <td><span>send</span> <span>send/apply</span> <span>send/keyword-apply</span> <span>send*</span> <span>send+</span></td>
+            <td>send send/apply send/keyword-apply send* send+</td>
           </tr>
           <tr>
             <td>Fields</td>
-            <td><span>get-field</span> <span>set-field!</span></td>
+            <td>get-field set-field!</td>
           </tr>
           <tr>
             <td>Mixins</td>
-            <td><span>mixin</span></td>
+            <td>mixin</td>
           </tr>
           <tr>
             <td>Traits</td>
-            <td><span>trait</span> <span>trait-sum</span> <span>trait-exclude</span> <span>trait-rename</span> <span>...</span></td>
+            <td>trait trait-sum trait-exclude trait-rename ...</td>
           </tr>
           <tr>
             <td>Contracts</td>
-            <td><span>class/c</span> <span>instanceof/c</span> <span>is-a?/c</span> <span>implementation?/c</span> <span>subclass?/c</span></td>
+            <td>class/c instanceof/c is-a?/c implementation?/c subclass?/c</td>
           </tr>
         </table>
       </div>
@@ -681,31 +659,31 @@
         <table>
           <tr>
             <td>Definition</td>
-            <td><span>define-syntax</span> <span>define-simple-macro</span> <span>begin-for-syntax</span> <span>for-syntax</span></td>
+            <td>define-syntax define-simple-macro begin-for-syntax for-syntax</td>
           </tr>
           <tr>
             <td>Templates</td>
-            <td><span>syntax</span> <span>syntax/loc</span> <span>with-syntax</span></td>
+            <td>syntax syntax/loc with-syntax</td>
           </tr>
           <tr>
             <td>Parsing ()-Syntax</td>
-            <td><span>syntax-parse</span> <span>define-syntax-class</span> <span>pattern</span></td>
+            <td>syntax-parse define-syntax-class pattern</td>
           </tr>
           <tr>
             <td>Syntax Objects</td>
-            <td><span>syntax-source</span> <span>syntax-line</span> <span>...</span> <span>syntax-&gt;datum</span> <span>datum-&gt;syntax</span> <span>generate-temporaries</span> <span>format-id</span></td>
+            <td>syntax-source syntax-line ... syntax-&gt;datum datum-&gt;syntax generate-temporaries format-id</td>
           </tr>
           <tr>
             <td>Transformers</td>
-            <td><span>make-set!-transformer</span> <span>make-rename-transformer</span> <span>local-expand</span> <span>syntax-local-value</span> <span>syntax-local-name</span> <span>syntax-local-lift-expression</span> <span>...</span></td>
+            <td>make-set!-transformer make-rename-transformer local-expand syntax-local-value syntax-local-name syntax-local-lift-expression ...</td>
           </tr>
           <tr>
             <td>Syntax Parameters</td>
-            <td><span>define-syntax-parameter</span> <span>syntax-parameterize</span> <span>syntax-parameter-value</span></td>
+            <td>define-syntax-parameter syntax-parameterize syntax-parameter-value</td>
           </tr>
           <tr>
             <td>Parsing Raw Syntax</td>
-            <td><span>lexer</span> <span>parser</span> <span>cfg-parser</span></td>
+            <td>lexer parser cfg-parser</td>
           </tr>
         </table>
       </div>
@@ -717,25 +695,23 @@
         <table>
           <tr>
             <td>Inspection</td>
-            <td><span>raco pkg show</span></td>
+            <td>raco pkg show</td>
           </tr>
           <tr>
             <td>Finding</td>
-            <td>
-              pkgs.racket-lang.org
-            </td>
+            <td>pkgs.racket-lang.org</td>
           </tr>
           <tr>
             <td>Installing</td>
-            <td><span>raco pkg install</span></td>
+            <td>raco pkg install</td>
           </tr>
           <tr>
             <td>Updating</td>
-            <td><span>raco pkg update</span></td>
+            <td>raco pkg update</td>
           </tr>
           <tr>
             <td>Removing</td>
-            <td><span>raco pkg remove</span></td>
+            <td>raco pkg remove</td>
           </tr>
         </table>
       </div>
@@ -743,30 +719,24 @@
         <h2>Miscellaneous</h2>
         <table>
           <tr>
-            <td>
-              Compiling
-            </td>
-            <td><span>raco make program.rkt</span></td>
+            <td>Compiling</td>
+            <td>raco make program.rkt</td>
           </tr>
           <tr>
-            <td>
-              Testing
-            </td>
-            <td><span>raco test program.rkt a-directory</span></td>
+            <td>Testing</td>
+            <td>raco test program.rkt a-directory</td>
           </tr>
           <tr>
-            <td>
-              Building Executables
-            </td>
-            <td><span>raco exe program.rkt</span></td>
+            <td>Building Executables</td>
+            <td>raco exe program.rkt</td>
           </tr>
           <tr>
             <td>Extending DrRacket</td>
-            <td><span>drracket:language:simple-module-based-language-&gt;module-based-language-mixin</span></td>
+            <td>drracket:language:simple-module-based-language-&gt;module-based-language-mixin</td>
           </tr>
           <tr>
             <td>Slides</td>
-            <td><span>slide</span> <span>standard-fish</span> <span>code</span></td>
+            <td>slide standard-fish code</td>
           </tr>
         </table>
       </div>
