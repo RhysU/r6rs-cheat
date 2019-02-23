@@ -6,39 +6,40 @@
   <title>R6RS Cheat Sheet</title>
 </head>
 <body>
-
-  <h1>Essentials</h1>
-  <dl>
-    <dt>Sites</dt>
-    <dd>main download docs git</dd>
-    <dt>Community</dt>
-    <dd>packages irc slack twitter</dd>
-    <dt>Running</dt>
-    <dd>Put #lang racket "Hello, world!" in hello.rkt and run racket hello.rkt</dd>
-  </dl>
-
+  <div>
+    <h1>Essentials</h1>
+    <dl>
+      <dt>Sites</dt>
+      <dd>main download docs git</dd>
+      <dt>Community</dt>
+      <dd>packages irc slack twitter</dd>
+      <dt>Running</dt>
+      <dd>Put #lang racket "Hello, world!" in hello.rkt and run racket hello.rkt</dd>
+    </dl>
+  </div>
   <div>
     <h1>Primitives</h1>
-    <h2>Numbers</h2>
-    <dl>
-      <dt>Literals</dt>
-      <dd>integer 1 rational 1/2 complex 1+2i floating 3.14 double 6.02e+23 hex #x29 octal #o32 binary #b010101</dd>
-      <dt>Arithmetic</dt>
-      <dd>+ - * / quotient remainder modulo add1 sub1 max min round floor ceiling sqrt expt exp log sin ... atan</dd>
-      <dt>Compare</dt>
-      <dd>= &lt; &lt;= &gt; &gt;=</dd>
-      <dt>Bitwise</dt>
-      <dd>bitwise-ior bitwise-and bitwise-xor bitwise-not arithmetic-shift integer-length</dd>
-      <dt>Format</dt>
-      <dd>number-&gt;string string-&gt;number real-&gt;decimal-string</dd>
-      <dt>Test</dt>
-      <dd>number? complex? ... exact-nonnegative-integer? ... zero? positive? negative? even? odd? exact? inexact?</dd>
-      <dt>Misc</dt>
-      <dd>random</dd>
-      <dt>Match Pattern</dt>
-      <dd>(? number? n) 42</dd>
-    </dl>
-
+    <div>
+      <h2>Numbers</h2>
+      <dl>
+        <dt>Literals</dt>
+        <dd>integer 1 rational 1/2 complex 1+2i floating 3.14 double 6.02e+23 hex #x29 octal #o32 binary #b010101</dd>
+        <dt>Arithmetic</dt>
+        <dd>+ - * / quotient remainder modulo add1 sub1 max min round floor ceiling sqrt expt exp log sin ... atan</dd>
+        <dt>Compare</dt>
+        <dd>= &lt; &lt;= &gt; &gt;=</dd>
+        <dt>Bitwise</dt>
+        <dd>bitwise-ior bitwise-and bitwise-xor bitwise-not arithmetic-shift integer-length</dd>
+        <dt>Format</dt>
+        <dd>number-&gt;string string-&gt;number real-&gt;decimal-string</dd>
+        <dt>Test</dt>
+        <dd>number? complex? ... exact-nonnegative-integer? ... zero? positive? negative? even? odd? exact? inexact?</dd>
+        <dt>Misc</dt>
+        <dd>random</dd>
+        <dt>Match Pattern</dt>
+        <dd>(? number? n) 42</dd>
+      </dl>
+    </div>
     <div>
       <h2>Strings</h2>
       <dl>
@@ -252,204 +253,202 @@
     </div>
   </div>
   <div>
+    <h1>Syntax (Beginner)</h1>
     <div>
-      <h1>Syntax (Beginner)</h1>
-      <div>
-        <h2>Basics</h2>
-        <dl>
-          <dt>Modules</dt>
-          <dd>(module+ main body ...) (module+ test body ...) (require mod-path) (provide id)</dd>
-          <dt>S-expressions</dt>
-          <dd>quote '(a b c) quasiquote unquote `(1 2 ,(+ 1 2))</dd>
-          <dt>Procedure Applications</dt>
-          <dd>(fn arg1 arg2) keyword args (fn arg1 #:key arg2) (apply fn arg1 (list arg2))</dd>
-          <dt>Procedures</dt>
-          <dd>(lambda (x) x) (λ (x) x) (λ (x [opt 1]) (+ x opt)) (λ (x #:req key) (+ x key)) (λ (x #:opt [key 1]) (+ x key))</dd>
-          <dt>Binding</dt>
-          <dd>(let ([x 1] [y 2]) (+ x y)) (let* ([x 1] [x (+ x 1)]) x)</dd>
-          <dt>Conditionals</dt>
-          <dd>(if (zero? x) 0 (/ 1 x)) (cond [(even? x) 0] [(odd? x) 1] [else "impossible!"]) and or</dd>
-        </dl>
-        <dl>
-          <dt>Definitions</dt>
-          <dd>(define x 1) (define (f y) (+ x y))</dd>
-          <dt>Iteration</dt>
-          <dd>for for/list for*</dd>
-          <dt>Blocks</dt>
-          <dd>begin when unless</dd>
-          <dt>Require Sub-forms</dt>
-          <dd>prefix-in only-in except-in rename-in for-syntax for-label ...</dd>
-          <dt>Provide Sub-forms</dt>
-          <dd>all-defined-out all-from-out rename-out ... contract-out</dd>
-        </dl>
-      </div>
-      <div>
-        <h2>Structures</h2>
-        <dl>
-          <dt>Definition</dt>
-          <dd>(struct dillo (weight color))</dd>
-          <dt>Create</dt>
-          <dd>(define danny (dillo 17.5 'purple))</dd>
-          <dt>Observe</dt>
-          <dd>(dillo? danny) (dillo-weight danny) (dillo-color danny)</dd>
-          <dt>Modify</dt>
-          <dd>(struct-copy dillo danny ([weight 18.0]))</dd>
-          <dt>Match Pattern</dt>
-          <dd>(dillo w c)</dd>
-        </dl>
-      </div>
-      <div>
-        <h2>Pattern Matching</h2>
-        <dl>
-          <dt>Basics</dt>
-          <dd>(match value [pat body] ...)</dd>
-          <dt>Definitions</dt>
-          <dd>(match-define pat value)</dd>
-          <dt>Patterns</dt>
-          <dd>(quote datum) (list lvp ...) (list-no-order pat ...) (vector lvp ...) (struct-id pat ...) (regexp rx-expr pat) (or pat ...) (and pat ...) (? expr pat ...)</dd>
-        </dl>
-      </div>
+      <h2>Basics</h2>
+      <dl>
+        <dt>Modules</dt>
+        <dd>(module+ main body ...) (module+ test body ...) (require mod-path) (provide id)</dd>
+        <dt>S-expressions</dt>
+        <dd>quote '(a b c) quasiquote unquote `(1 2 ,(+ 1 2))</dd>
+        <dt>Procedure Applications</dt>
+        <dd>(fn arg1 arg2) keyword args (fn arg1 #:key arg2) (apply fn arg1 (list arg2))</dd>
+        <dt>Procedures</dt>
+        <dd>(lambda (x) x) (λ (x) x) (λ (x [opt 1]) (+ x opt)) (λ (x #:req key) (+ x key)) (λ (x #:opt [key 1]) (+ x key))</dd>
+        <dt>Binding</dt>
+        <dd>(let ([x 1] [y 2]) (+ x y)) (let* ([x 1] [x (+ x 1)]) x)</dd>
+        <dt>Conditionals</dt>
+        <dd>(if (zero? x) 0 (/ 1 x)) (cond [(even? x) 0] [(odd? x) 1] [else "impossible!"]) and or</dd>
+      </dl>
+      <dl>
+        <dt>Definitions</dt>
+        <dd>(define x 1) (define (f y) (+ x y))</dd>
+        <dt>Iteration</dt>
+        <dd>for for/list for*</dd>
+        <dt>Blocks</dt>
+        <dd>begin when unless</dd>
+        <dt>Require Sub-forms</dt>
+        <dd>prefix-in only-in except-in rename-in for-syntax for-label ...</dd>
+        <dt>Provide Sub-forms</dt>
+        <dd>all-defined-out all-from-out rename-out ... contract-out</dd>
+      </dl>
     </div>
     <div>
-      <h1>Syntax (Intermediate)</h1>
-      <div>
-        <h2>Basics</h2>
-        <dl>
-          <dt>Mutation</dt>
-          <dd>set!</dd>
-          <dt>Exceptions</dt>
-          <dd>error with-handlers raise exit</dd>
-          <dt>Promises</dt>
-          <dd>promise? delay force</dd>
-          <dt>Continuations</dt>
-          <dd>let/cc let/ec dynamic-wind call-with-continuation-prompt abort-current-continuation call-with-composable-continuation</dd>
-          <dt>Parameters</dt>
-          <dd>make-parameter parameterize</dd>
-          <dt>External Files Needed at Runtime</dt>
-          <dd>define-runtime-path</dd>
-          <dt>Continuation Marks</dt>
-          <dd>continuation-marks with-continuation-mark continuation-mark-set-&gt;list</dd>
-          <dt>Multiple Values</dt>
-          <dd>values let-values define-values call-with-values</dd>
-        </dl>
-      </div>
-      <div>
-        <h2>Contracts</h2>
-        <dl>
-          <dt>Basics</dt>
-          <dd>any/c or/c and/c false/c integer-in vector/c listof list/c ...</dd>
-          <dt>Functions</dt>
-          <dd>-&gt; -&gt;* -&gt;i</dd>
-          <dt>Application</dt>
-          <dd>contract-out recontract-out with-contract define/contract</dd>
-        </dl>
-      </div>
-      <div>
-        <h2>Iteration</h2>
-        <dl>
-          <dt>Sequences</dt>
-          <dd>in-range in-naturals in-list in-vector in-port in-lines in-hash in-hash-keys in-hash-values in-directory in-cycle stop-before stop-after in-stream</dd>
-          <dt>Generators</dt>
-          <dd>generator yield in-generator</dd>
-        </dl>
-      </div>
-      <div>
-        <h2>Structures</h2>
-        <dl>
-          <dt>Sub-structures</dt>
-          <dd>(struct 2d (x y)) (struct 3d 2d (z)) (2d-x (3d 1 2 3))</dd>
-          <dt>Mutation</dt>
-          <dd>(struct monster (type [hp #:mutable])) (define healie (monster 'slime 10)) (set-monster-hp! healie 0)</dd>
-          <dt>Transparency</dt>
-          <dd>(struct cash ($ ¢) #:transparent) (struct-&gt;vector (cash 5 95))</dd>
-          <dt>Printing</dt>
-          <dd>(struct nickname [n v] #:methods gen:custom-write [(define (write-proc nn p mode) (fprintf p (nickname-n nn)))]) (displayln (nickname "evens" (in-range 0 100 2)))</dd>
-          <dt>Serialization</dt>
-          <dd>(struct txn (who what where) #:prefab) (write (txn "Mustard" "Spatula" "Observatory"))</dd>
-        </dl>
-      </div>
-      <div>
-        <h2>Generics</h2>
-        <dl>
-          <dt>Definition</dt>
-          <dd>define-generics</dd>
-          <dt>Instantiation</dt>
-          <dd>(struct even-set () #:methods gen:set [(define (set-member? st i) (even? i))])</dd>
-        </dl>
-      </div>
-      <div>
-        <h2>Classes</h2>
-        <dl>
-          <dt>Definition</dt>
-          <dd>interface class*</dd>
-          <dt>Instantiation</dt>
-          <dd>make-object new instantiate</dd>
-          <dt>Methods</dt>
-          <dd>send send/apply send/keyword-apply send* send+</dd>
-          <dt>Fields</dt>
-          <dd>get-field set-field!</dd>
-          <dt>Mixins</dt>
-          <dd>mixin</dd>
-          <dt>Traits</dt>
-          <dd>trait trait-sum trait-exclude trait-rename ...</dd>
-          <dt>Contracts</dt>
-          <dd>class/c instanceof/c is-a?/c implementation?/c subclass?/c</dd>
-        </dl>
-      </div>
+      <h2>Structures</h2>
+      <dl>
+        <dt>Definition</dt>
+        <dd>(struct dillo (weight color))</dd>
+        <dt>Create</dt>
+        <dd>(define danny (dillo 17.5 'purple))</dd>
+        <dt>Observe</dt>
+        <dd>(dillo? danny) (dillo-weight danny) (dillo-color danny)</dd>
+        <dt>Modify</dt>
+        <dd>(struct-copy dillo danny ([weight 18.0]))</dd>
+        <dt>Match Pattern</dt>
+        <dd>(dillo w c)</dd>
+      </dl>
     </div>
     <div>
-      <h1>Syntactic Abstractions</h1>
-      <div>
-        <dl>
-          <dt>Definition</dt>
-          <dd>define-syntax define-simple-macro begin-for-syntax for-syntax</dd>
-          <dt>Templates</dt>
-          <dd>syntax syntax/loc with-syntax</dd>
-          <dt>Parsing ()-Syntax</dt>
-          <dd>syntax-parse define-syntax-class pattern</dd>
-          <dt>Syntax Objects</dt>
-          <dd>syntax-source syntax-line ... syntax-&gt;datum datum-&gt;syntax generate-temporaries format-id</dd>
-          <dt>Transformers</dt>
-          <dd>make-set!-transformer make-rename-transformer local-expand syntax-local-value syntax-local-name syntax-local-lift-expression ...</dd>
-          <dt>Syntax Parameters</dt>
-          <dd>define-syntax-parameter syntax-parameterize syntax-parameter-value</dd>
-          <dt>Parsing Raw Syntax</dt>
-          <dd>lexer parser cfg-parser</dd>
-        </dl>
-      </div>
+      <h2>Pattern Matching</h2>
+      <dl>
+        <dt>Basics</dt>
+        <dd>(match value [pat body] ...)</dd>
+        <dt>Definitions</dt>
+        <dd>(match-define pat value)</dd>
+        <dt>Patterns</dt>
+        <dd>(quote datum) (list lvp ...) (list-no-order pat ...) (vector lvp ...) (struct-id pat ...) (regexp rx-expr pat) (or pat ...) (and pat ...) (? expr pat ...)</dd>
+      </dl>
+    </div>
+  </div>
+  <div>
+    <h1>Syntax (Intermediate)</h1>
+    <div>
+      <h2>Basics</h2>
+      <dl>
+        <dt>Mutation</dt>
+        <dd>set!</dd>
+        <dt>Exceptions</dt>
+        <dd>error with-handlers raise exit</dd>
+        <dt>Promises</dt>
+        <dd>promise? delay force</dd>
+        <dt>Continuations</dt>
+        <dd>let/cc let/ec dynamic-wind call-with-continuation-prompt abort-current-continuation call-with-composable-continuation</dd>
+        <dt>Parameters</dt>
+        <dd>make-parameter parameterize</dd>
+        <dt>External Files Needed at Runtime</dt>
+        <dd>define-runtime-path</dd>
+        <dt>Continuation Marks</dt>
+        <dd>continuation-marks with-continuation-mark continuation-mark-set-&gt;list</dd>
+        <dt>Multiple Values</dt>
+        <dd>values let-values define-values call-with-values</dd>
+      </dl>
     </div>
     <div>
-      <h1>Tools</h1>
-      <div>
-        <h2>Packages</h2>
-        <dl>
-          <dt>Inspection</dt>
-          <dd>raco pkg show</dd>
-          <dt>Finding</dt>
-          <dd>pkgs.racket-lang.org</dd>
-          <dt>Installing</dt>
-          <dd>raco pkg install</dd>
-          <dt>Updating</dt>
-          <dd>raco pkg update</dd>
-          <dt>Removing</dt>
-          <dd>raco pkg remove</dd>
-        </dl>
-      </div>
-      <div>
-        <h2>Miscellaneous</h2>
-        <dl>
-          <dt>Compiling</dt>
-          <dd>raco make program.rkt</dd>
-          <dt>Testing</dt>
-          <dd>raco test program.rkt a-directory</dd>
-          <dt>Building Executables</dt>
-          <dd>raco exe program.rkt</dd>
-          <dt>Extending DrRacket</dt>
-          <dd>drracket:language:simple-module-based-language-&gt;module-based-language-mixin</dd>
-          <dt>Slides</dt>
-          <dd>slide standard-fish code</dd>
-        </dl>
-      </div>
+      <h2>Contracts</h2>
+      <dl>
+        <dt>Basics</dt>
+        <dd>any/c or/c and/c false/c integer-in vector/c listof list/c ...</dd>
+        <dt>Functions</dt>
+        <dd>-&gt; -&gt;* -&gt;i</dd>
+        <dt>Application</dt>
+        <dd>contract-out recontract-out with-contract define/contract</dd>
+      </dl>
+    </div>
+    <div>
+      <h2>Iteration</h2>
+      <dl>
+        <dt>Sequences</dt>
+        <dd>in-range in-naturals in-list in-vector in-port in-lines in-hash in-hash-keys in-hash-values in-directory in-cycle stop-before stop-after in-stream</dd>
+        <dt>Generators</dt>
+        <dd>generator yield in-generator</dd>
+      </dl>
+    </div>
+    <div>
+      <h2>Structures</h2>
+      <dl>
+        <dt>Sub-structures</dt>
+        <dd>(struct 2d (x y)) (struct 3d 2d (z)) (2d-x (3d 1 2 3))</dd>
+        <dt>Mutation</dt>
+        <dd>(struct monster (type [hp #:mutable])) (define healie (monster 'slime 10)) (set-monster-hp! healie 0)</dd>
+        <dt>Transparency</dt>
+        <dd>(struct cash ($ ¢) #:transparent) (struct-&gt;vector (cash 5 95))</dd>
+        <dt>Printing</dt>
+        <dd>(struct nickname [n v] #:methods gen:custom-write [(define (write-proc nn p mode) (fprintf p (nickname-n nn)))]) (displayln (nickname "evens" (in-range 0 100 2)))</dd>
+        <dt>Serialization</dt>
+        <dd>(struct txn (who what where) #:prefab) (write (txn "Mustard" "Spatula" "Observatory"))</dd>
+      </dl>
+    </div>
+    <div>
+      <h2>Generics</h2>
+      <dl>
+        <dt>Definition</dt>
+        <dd>define-generics</dd>
+        <dt>Instantiation</dt>
+        <dd>(struct even-set () #:methods gen:set [(define (set-member? st i) (even? i))])</dd>
+      </dl>
+    </div>
+    <div>
+      <h2>Classes</h2>
+      <dl>
+        <dt>Definition</dt>
+        <dd>interface class*</dd>
+        <dt>Instantiation</dt>
+        <dd>make-object new instantiate</dd>
+        <dt>Methods</dt>
+        <dd>send send/apply send/keyword-apply send* send+</dd>
+        <dt>Fields</dt>
+        <dd>get-field set-field!</dd>
+        <dt>Mixins</dt>
+        <dd>mixin</dd>
+        <dt>Traits</dt>
+        <dd>trait trait-sum trait-exclude trait-rename ...</dd>
+        <dt>Contracts</dt>
+        <dd>class/c instanceof/c is-a?/c implementation?/c subclass?/c</dd>
+      </dl>
+    </div>
+  </div>
+  <div>
+    <h1>Syntactic Abstractions</h1>
+    <div>
+      <dl>
+        <dt>Definition</dt>
+        <dd>define-syntax define-simple-macro begin-for-syntax for-syntax</dd>
+        <dt>Templates</dt>
+        <dd>syntax syntax/loc with-syntax</dd>
+        <dt>Parsing ()-Syntax</dt>
+        <dd>syntax-parse define-syntax-class pattern</dd>
+        <dt>Syntax Objects</dt>
+        <dd>syntax-source syntax-line ... syntax-&gt;datum datum-&gt;syntax generate-temporaries format-id</dd>
+        <dt>Transformers</dt>
+        <dd>make-set!-transformer make-rename-transformer local-expand syntax-local-value syntax-local-name syntax-local-lift-expression ...</dd>
+        <dt>Syntax Parameters</dt>
+        <dd>define-syntax-parameter syntax-parameterize syntax-parameter-value</dd>
+        <dt>Parsing Raw Syntax</dt>
+        <dd>lexer parser cfg-parser</dd>
+      </dl>
+    </div>
+  </div>
+  <div>
+    <h1>Tools</h1>
+    <div>
+      <h2>Packages</h2>
+      <dl>
+        <dt>Inspection</dt>
+        <dd>raco pkg show</dd>
+        <dt>Finding</dt>
+        <dd>pkgs.racket-lang.org</dd>
+        <dt>Installing</dt>
+        <dd>raco pkg install</dd>
+        <dt>Updating</dt>
+        <dd>raco pkg update</dd>
+        <dt>Removing</dt>
+        <dd>raco pkg remove</dd>
+      </dl>
+    </div>
+    <div>
+      <h2>Miscellaneous</h2>
+      <dl>
+        <dt>Compiling</dt>
+        <dd>raco make program.rkt</dd>
+        <dt>Testing</dt>
+        <dd>raco test program.rkt a-directory</dd>
+        <dt>Building Executables</dt>
+        <dd>raco exe program.rkt</dd>
+        <dt>Extending DrRacket</dt>
+        <dd>drracket:language:simple-module-based-language-&gt;module-based-language-mixin</dd>
+        <dt>Slides</dt>
+        <dd>slide standard-fish code</dd>
+      </dl>
     </div>
   </div>
 </body>
