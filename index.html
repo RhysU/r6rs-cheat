@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta http-equiv="content-type" content=
+  "text/html; charset=utf-8">
   <title>R6RS Cheat Sheet</title>
 </head>
 <body>
@@ -47,12 +48,11 @@
               <td>
                 Put <a href=
                 "https://download.racket-lang.org/releases/7.2/doc/local-redirect/index.html?doc=guide&amp;rel=Module_Syntax.html%23%2528part._hash-lang%2529&amp;version=7.2">
-                <span class="RktMod">#lang</span></a> <a href=
+                <span>#lang</span></a> <a href=
                 "https://download.racket-lang.org/releases/7.2/doc/local-redirect/index.html?doc=reference&amp;rel=index.html&amp;version=7.2">
-                <span class="RktSym">racket</span></a>
-                <span>"Hello, world!"</span> in
-                <span>hello.rkt</span> and run <span>racket
-                hello.rkt</span>
+                <span>racket</span></a> <span>"Hello,
+                world!"</span> in <span>hello.rkt</span> and run
+                <span>racket hello.rkt</span>
               </td>
             </tr>
           </table>
@@ -70,10 +70,10 @@
                 Literals</a>
               </td>
               <td>integer <span>1</span> rational <span>1/2</span>
-              complex <span class="RktVal">1+2i</span> floating
-              <span>3.14</span> double <span>6.02e+23</span> hex
-              <span class="RktVal">#x29</span> octal
-              <span>#o32</span> binary <span>#b010101</span></td>
+              complex <span>1+2i</span> floating <span>3.14</span>
+              double <span>6.02e+23</span> hex <span>#x29</span>
+              octal <span>#o32</span> binary
+              <span>#b010101</span></td>
             </tr>
             <tr>
               <td>Arithmetic</td>
@@ -81,8 +81,7 @@
               "https://download.racket-lang.org/releases/7.2/doc/local-redirect/index.html?doc=reference&amp;rel=generic-numbers.html%23%2528def._%2528%2528quote._%7E23%7E25kernel%2529._%252B%2529%2529&amp;version=7.2">
               +</a></span> <span><a href=
               "https://download.racket-lang.org/releases/7.2/doc/local-redirect/index.html?doc=reference&amp;rel=generic-numbers.html%23%2528def._%2528%2528quote._%7E23%7E25kernel%2529._-%2529%2529&amp;version=7.2">
-              <span class="nobreak">-</span></a></span>
-              <span><a href=
+              <span>-</span></a></span> <span><a href=
               "https://download.racket-lang.org/releases/7.2/doc/local-redirect/index.html?doc=reference&amp;rel=generic-numbers.html%23%2528def._%2528%2528quote._%7E23%7E25kernel%2529._%252A%2529%2529&amp;version=7.2">
               *</a></span> <span><a href=
               "https://download.racket-lang.org/releases/7.2/doc/local-redirect/index.html?doc=reference&amp;rel=generic-numbers.html%23%2528def._%2528%2528quote._%7E23%7E25kernel%2529._%252F%2529%2529&amp;version=7.2">
@@ -216,7 +215,7 @@
               </td>
               <td><span>"Racket"</span> quoting <span class=
               "RktVal">"a \" approaches!"</span> unicode
-              <span class="RktVal">"λx:(μα.α→α).xx"</span></td>
+              <span>"λx:(μα.α→α).xx"</span></td>
             </tr>
             <tr>
               <td>Create</td>
@@ -377,8 +376,7 @@
           <table>
             <tr>
               <td>Booleans</td>
-              <td><span>#t</span> <span class="RktVal">#f</span>
-              <span><a href=
+              <td><span>#t</span> <span>#f</span> <span><a href=
               "https://download.racket-lang.org/releases/7.2/doc/local-redirect/index.html?doc=reference&amp;rel=booleans.html%23%2528def._%2528%2528quote._%7E23%7E25kernel%2529._not%2529%2529&amp;version=7.2">
               not</a></span> <span><a href=
               "https://download.racket-lang.org/releases/7.2/doc/local-redirect/index.html?doc=reference&amp;rel=booleans.html%23%2528def._%2528%2528quote._%7E23%7E25kernel%2529._equal%7E3f%2529%2529&amp;version=7.2">
@@ -413,8 +411,7 @@
                 "https://download.racket-lang.org/releases/7.2/doc/local-redirect/index.html?doc=reference&amp;rel=reader.html%23%2528part._parse-symbol%2529&amp;version=7.2">
                 Symbols</a>
               </td>
-              <td><span>'</span><span class="RktVal">Racket</span>
-              <span><a href=
+              <td><span>'</span><span>Racket</span> <span><a href=
               "https://download.racket-lang.org/releases/7.2/doc/local-redirect/index.html?doc=reference&amp;rel=symbols.html%23%2528def._%2528%2528quote._%7E23%7E25kernel%2529._symbol%7E3f%2529%2529&amp;version=7.2">
               symbol?</a></span> <span><a href=
               "https://download.racket-lang.org/releases/7.2/doc/local-redirect/index.html?doc=reference&amp;rel=booleans.html%23%2528def._%2528%2528quote._%7E23%7E25kernel%2529._eq%7E3f%2529%2529&amp;version=7.2">
@@ -572,8 +569,8 @@
               <span>more</span><span>)</span>
               <span>(</span><span><a href=
               "https://download.racket-lang.org/releases/7.2/doc/local-redirect/index.html?doc=reference&amp;rel=pairs.html%23%2528def._%2528%2528quote._%7E23%7E25kernel%2529._list%2529%2529&amp;version=7.2">list</a></span>
-              <span>top</span> <span class="RktVar">more</span>
-              <span class="RktVar">...</span><span>)</span></td>
+              <span>top</span> <span>more</span>
+              <span>...</span><span>)</span></td>
             </tr>
           </table>
         </div>
@@ -666,7 +663,7 @@
               <span>(</span><span><a href=
               "https://download.racket-lang.org/releases/7.2/doc/local-redirect/index.html?doc=reference&amp;rel=vectors.html%23%2528def._%2528%2528quote._%7E23%7E25kernel%2529._vector%2529%2529&amp;version=7.2">vector</a></span>
               <span>x</span> <span>y</span> <span>calabi-yau</span>
-              <span class="RktVar">...</span><span>)</span></td>
+              <span>...</span><span>)</span></td>
             </tr>
           </table>
         </div>
@@ -1142,18 +1139,18 @@
               <td>Modules</td>
               <td><span>(</span><span><a href=
               "https://download.racket-lang.org/releases/7.2/doc/local-redirect/index.html?doc=reference&amp;rel=module.html%23%2528form._%2528%2528lib._racket%252Fprivate%252Fbase..rkt%2529._module%252B%2529%2529&amp;version=7.2">module+</a></span>
-              <span>main</span> <span class="RktVar">body</span>
-              <span class="RktVar">...</span><span>)</span><br>
+              <span>main</span> <span>body</span>
+              <span>...</span><span>)</span><br>
               <span>(</span><span><a href=
               "https://download.racket-lang.org/releases/7.2/doc/local-redirect/index.html?doc=reference&amp;rel=module.html%23%2528form._%2528%2528lib._racket%252Fprivate%252Fbase..rkt%2529._module%252B%2529%2529&amp;version=7.2">module+</a></span>
-              <span>test</span> <span class="RktVar">body</span>
-              <span class="RktVar">...</span><span>)</span><br>
+              <span>test</span> <span>body</span>
+              <span>...</span><span>)</span><br>
               <span>(</span><span><a href=
               "https://download.racket-lang.org/releases/7.2/doc/local-redirect/index.html?doc=reference&amp;rel=require.html%23%2528form._%2528%2528lib._racket%252Fprivate%252Fbase..rkt%2529._require%2529%2529&amp;version=7.2">require</a></span>
-              <span>mod-path</span><span class="RktPn">)</span>
-              <span>(</span><span class="RktSym"><a href=
+              <span>mod-path</span><span>)</span>
+              <span>(</span><span><a href=
               "https://download.racket-lang.org/releases/7.2/doc/local-redirect/index.html?doc=reference&amp;rel=require.html%23%2528form._%2528%2528lib._racket%252Fprivate%252Fbase..rkt%2529._provide%2529%2529&amp;version=7.2">provide</a></span>
-              <span>id</span><span class="RktPn">)</span></td>
+              <span>id</span><span>)</span></td>
             </tr>
             <tr>
               <td>S-expressions</td>
@@ -1179,17 +1176,17 @@
               <td>Procedure Applications</td>
               <td>
                 <span>(</span><span>fn</span> <span>arg1</span>
-                <span class="RktVar">arg2</span><span>)</span><br>
+                <span>arg2</span><span>)</span><br>
                 <a href=
                 "https://download.racket-lang.org/releases/7.2/doc/local-redirect/index.html?doc=reference&amp;rel=reader.html%23%2528part._parse-keyword%2529&amp;version=7.2">
                 keyword args</a> <span class=
                 "RktPn">(</span><span>fn</span> <span class=
                 "RktVar">arg1</span> <span>#:key</span>
-                <span>arg2</span><span class="RktPn">)</span><br>
+                <span>arg2</span><span>)</span><br>
                 <span>(</span><span><a href=
                 "https://download.racket-lang.org/releases/7.2/doc/local-redirect/index.html?doc=reference&amp;rel=procedures.html%23%2528def._%2528%2528lib._racket%252Fprivate%252Fbase..rkt%2529._apply%2529%2529&amp;version=7.2">apply</a></span>
-                <span>fn</span> <span class="RktVar">arg1</span>
-                <span class="RktPn">(</span><span><a href=
+                <span>fn</span> <span>arg1</span>
+                <span>(</span><span><a href=
                 "https://download.racket-lang.org/releases/7.2/doc/local-redirect/index.html?doc=reference&amp;rel=pairs.html%23%2528def._%2528%2528quote._%7E23%7E25kernel%2529._list%2529%2529&amp;version=7.2">list</a></span>
                 <span>arg2</span><span class=
                 "RktPn">)</span><span>)</span>
@@ -1221,8 +1218,8 @@
               <span>(</span><span><a href=
               "https://download.racket-lang.org/releases/7.2/doc/local-redirect/index.html?doc=reference&amp;rel=lambda.html%23%2528form._%2528%2528lib._racket%252Fprivate%252Fbase..rkt%2529._%7Ece%7Ebb%2529%2529&amp;version=7.2">λ</a></span>
               <span>(</span><span>x</span> <span>#:req</span>
-              <span class="RktSym">key</span><span>)</span>
-              <span class="RktPn">(</span><span><a href=
+              <span>key</span><span>)</span>
+              <span>(</span><span><a href=
               "https://download.racket-lang.org/releases/7.2/doc/local-redirect/index.html?doc=reference&amp;rel=generic-numbers.html%23%2528def._%2528%2528quote._%7E23%7E25kernel%2529._%252B%2529%2529&amp;version=7.2">+</a></span>
               <span>x</span> <span class=
               "RktSym">key</span><span>)</span><span class=
@@ -1230,8 +1227,7 @@
               <span>(</span><span><a href=
               "https://download.racket-lang.org/releases/7.2/doc/local-redirect/index.html?doc=reference&amp;rel=lambda.html%23%2528form._%2528%2528lib._racket%252Fprivate%252Fbase..rkt%2529._%7Ece%7Ebb%2529%2529&amp;version=7.2">λ</a></span>
               <span>(</span><span>x</span> <span>#:opt</span>
-              <span class="RktPn">[</span><span>key</span>
-              <span class=
+              <span>[</span><span>key</span> <span class=
               "RktVal">1</span><span>]</span><span class=
               "RktPn">)</span> <span>(</span><span class=
               "RktSym"><a href=
@@ -1275,7 +1271,7 @@
               <span>(</span><span><a href=
               "https://download.racket-lang.org/releases/7.2/doc/local-redirect/index.html?doc=reference&amp;rel=number-types.html%23%2528def._%2528%2528quote._%7E23%7E25kernel%2529._zero%7E3f%2529%2529&amp;version=7.2">zero?</a></span>
               <span>x</span><span>)</span> <span>0</span>
-              <span class="RktPn">(</span><span><a href=
+              <span>(</span><span><a href=
               "https://download.racket-lang.org/releases/7.2/doc/local-redirect/index.html?doc=reference&amp;rel=generic-numbers.html%23%2528def._%2528%2528quote._%7E23%7E25kernel%2529._%252F%2529%2529&amp;version=7.2">/</a></span>
               <span>1</span> <span class=
               "RktSym">x</span><span>)</span><span class=
@@ -1396,18 +1392,18 @@
             </tr>
             <tr>
               <td>Observe</td>
-              <td><span>(</span><span class="RktVar">dillo?</span>
-              <span class="RktVar">danny</span><span>)</span>
-              <span class="RktPn">(</span><span>dillo-weight</span>
+              <td><span>(</span><span>dillo?</span>
               <span>danny</span><span>)</span>
-              <span>(</span><span class="RktVar">dillo-color</span>
-              <span class="RktVar">danny</span><span>)</span></td>
+              <span>(</span><span>dillo-weight</span>
+              <span>danny</span><span>)</span>
+              <span>(</span><span>dillo-color</span>
+              <span>danny</span><span>)</span></td>
             </tr>
             <tr>
               <td>Modify</td>
               <td><span>(</span><span><a href=
               "https://download.racket-lang.org/releases/7.2/doc/local-redirect/index.html?doc=reference&amp;rel=struct-copy.html%23%2528form._%2528%2528lib._racket%252Fprivate%252Fbase..rkt%2529._struct-copy%2529%2529&amp;version=7.2">struct-copy</a></span>
-              <span>dillo</span> <span class="RktVar">danny</span>
+              <span>dillo</span> <span>danny</span>
               <span>(</span><span class=
               "RktPn">[</span><span>weight</span>
               <span>18.0</span><span class=
@@ -1416,8 +1412,8 @@
             </tr>
             <tr>
               <td>Match Pattern</td>
-              <td><span>(</span><span class="RktVar">dillo</span>
-              <span>w</span> <span>c</span><span>)</span></td>
+              <td><span>(</span><span>dillo</span> <span>w</span>
+              <span>c</span><span>)</span></td>
             </tr>
           </table>
         </div>
@@ -1442,9 +1438,9 @@
             </tr>
             <tr>
               <td>Patterns</td>
-              <td><span>(</span><span class="RktVar">quote</span>
-              <span class="RktVar">datum</span><span>)</span>
-              <span class="RktPn">(</span><span><a href=
+              <td><span>(</span><span>quote</span>
+              <span>datum</span><span>)</span>
+              <span>(</span><span><a href=
               "https://download.racket-lang.org/releases/7.2/doc/local-redirect/index.html?doc=reference&amp;rel=pairs.html%23%2528def._%2528%2528quote._%7E23%7E25kernel%2529._list%2529%2529&amp;version=7.2">list</a></span>
               <span>lvp</span> <span class=
               "RktVar">...</span><span>)</span> <span class=
@@ -1452,11 +1448,10 @@
               <span>pat</span> <span class=
               "RktVar">...</span><span>)</span> <span class=
               "RktPn">(</span><span>vector</span> <span>lvp</span>
+              <span>...</span><span>)</span>
+              <span>(</span><span>struct-id</span> <span>pat</span>
               <span class="RktVar">...</span><span>)</span>
-              <span class="RktPn">(</span><span>struct-id</span>
-              <span>pat</span> <span class=
-              "RktVar">...</span><span>)</span> <span class=
-              "RktPn">(</span><span>regexp</span>
+              <span class="RktPn">(</span><span>regexp</span>
               <span>rx-expr</span> <span class=
               "RktVar">pat</span><span>)</span> <span class=
               "RktPn">(</span><span>or</span> <span class=
@@ -1467,7 +1462,7 @@
               "RktVar">...</span><span>)</span> <span class=
               "RktPn">(</span><span>?</span> <span class=
               "RktVar">expr</span> <span>pat</span>
-              <span>...</span><span class="RktPn">)</span></td>
+              <span>...</span><span>)</span></td>
             </tr>
           </table>
         </div>
@@ -1593,13 +1588,11 @@
               <td>Functions</td>
               <td><span><a href=
               "https://download.racket-lang.org/releases/7.2/doc/local-redirect/index.html?doc=reference&amp;rel=function-contracts.html%23%2528form._%2528%2528lib._racket%252Fcontract%252Fbase..rkt%2529._-%7E3e%2529%2529&amp;version=7.2">
-              <span class="nobreak">-&gt;</span></a></span>
-              <span class="RktSym"><a href=
+              <span>-&gt;</span></a></span> <span><a href=
               "https://download.racket-lang.org/releases/7.2/doc/local-redirect/index.html?doc=reference&amp;rel=function-contracts.html%23%2528form._%2528%2528lib._racket%252Fcontract%252Fbase..rkt%2529._-%7E3e%252A%2529%2529&amp;version=7.2">
-              <span class="nobreak">-&gt;</span>*</a></span>
-              <span class="RktSym"><a href=
+              <span>-&gt;</span>*</a></span> <span><a href=
               "https://download.racket-lang.org/releases/7.2/doc/local-redirect/index.html?doc=reference&amp;rel=function-contracts.html%23%2528form._%2528%2528lib._racket%252Fcontract%252Fbase..rkt%2529._-%7E3ei%2529%2529&amp;version=7.2">
-              <span class="nobreak">-&gt;</span>i</a></span></td>
+              <span>-&gt;</span>i</a></span></td>
             </tr>
             <tr>
               <td>Application</td>
@@ -1715,8 +1708,7 @@
               "RktPn">#:transparent</span><span>)</span>
               <span>(</span><span><a href=
               "https://download.racket-lang.org/releases/7.2/doc/local-redirect/index.html?doc=reference&amp;rel=structutils.html%23%2528def._%2528%2528quote._%7E23%7E25kernel%2529._struct-%7E3evector%2529%2529&amp;version=7.2">struct-&gt;vector</a></span>
-              <span class="RktPn">(</span><span>cash</span>
-              <span class="RktVal">5</span>
+              <span>(</span><span>cash</span> <span>5</span>
               <span>95</span><span class=
               "RktPn">)</span><span>)</span></td>
             </tr>
@@ -1733,8 +1725,8 @@
               "RktPn">[</span><span>(</span><span class=
               "RktSym"><a href=
               "https://download.racket-lang.org/releases/7.2/doc/local-redirect/index.html?doc=reference&amp;rel=define.html%23%2528form._%2528%2528lib._racket%252Fprivate%252Fbase..rkt%2529._define%2529%2529&amp;version=7.2">define</a></span>
-              <span>(</span><span class="RktSym">write-proc</span>
-              <span>nn</span> <span>p</span> <span class=
+              <span>(</span><span>write-proc</span> <span>nn</span>
+              <span>p</span> <span class=
               "RktSym">mode</span><span>)</span> <span class=
               "RktPn">(</span><span><a href=
               "https://download.racket-lang.org/releases/7.2/doc/local-redirect/index.html?doc=reference&amp;rel=Writing.html%23%2528def._%2528%2528quote._%7E23%7E25kernel%2529._fprintf%2529%2529&amp;version=7.2">fprintf</a></span>
@@ -1746,7 +1738,7 @@
               "RktPn">)</span> <span>(</span><span class=
               "RktSym"><a href=
               "https://download.racket-lang.org/releases/7.2/doc/local-redirect/index.html?doc=reference&amp;rel=Writing.html%23%2528def._%2528%2528lib._racket%252Fprivate%252Fmisc..rkt%2529._displayln%2529%2529&amp;version=7.2">displayln</a></span>
-              <span>(</span><span class="RktSym">nickname</span>
+              <span>(</span><span>nickname</span>
               <span>"evens"</span> <span>(</span><span><a href=
               "https://download.racket-lang.org/releases/7.2/doc/local-redirect/index.html?doc=reference&amp;rel=sequences.html%23%2528def._%2528%2528lib._racket%252Fprivate%252Fbase..rkt%2529._in-range%2529%2529&amp;version=7.2">in-range</a></span>
               <span>0</span> <span>100</span>
@@ -1766,7 +1758,7 @@
               <span>(</span><span><a href=
               "https://download.racket-lang.org/releases/7.2/doc/local-redirect/index.html?doc=reference&amp;rel=Writing.html%23%2528def._%2528%2528quote._%7E23%7E25kernel%2529._write%2529%2529&amp;version=7.2">write</a></span>
               <span>(</span><span>txn</span> <span>"Mustard"</span>
-              <span class="RktVal">"Spatula"</span> <span class=
+              <span>"Spatula"</span> <span class=
               "RktVal">"Observatory"</span><span class=
               "RktPn">)</span><span>)</span></td>
             </tr>
