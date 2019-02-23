@@ -10,9 +10,15 @@
     <h1>Essentials</h1>
     <dl>
       <dt>Sites</dt>
-      <dd>main download docs git</dd>
+      <dd>main</dd>
+      <dd>download</dd>
+      <dd>docs</dd>
+      <dd>git</dd>
       <dt>Community</dt>
-      <dd>packages irc slack twitter</dd>
+      <dd>packages</dd>
+      <dd>irc</dd>
+      <dd>slack</dd>
+      <dd>twitter</dd>
       <dt>Running</dt>
       <dd>Put #lang racket "Hello, world!" in hello.rkt and run racket hello.rkt</dd>
     </dl>
@@ -23,17 +29,66 @@
       <h2>Numbers</h2>
       <dl>
         <dt>Literals</dt>
-        <dd>integer 1 rational 1/2 complex 1+2i floating 3.14 double 6.02e+23 hex #x29 octal #o32 binary #b010101</dd>
+        <dd>integer 1</dd>
+        <dd>rational 1/2</dd>
+        <dd>complex 1+2i</dd>
+        <dd>floating 3.14</dd>
+        <dd>double 6.02e+23</dd>
+        <dd>hex #x29</dd>
+        <dd>octal #o32</dd>
+        <dd>binary #b010101</dd>
         <dt>Arithmetic</dt>
-        <dd>+ - * / quotient remainder modulo add1 sub1 max min round floor ceiling sqrt expt exp log sin ... atan</dd>
+        <dd>+</dd>
+        <dd>-</dd>
+        <dd>*</dd>
+        <dd>/</dd>
+        <dd>quotient</dd>
+        <dd>remainder</dd>
+        <dd>modulo</dd>
+        <dd>add1</dd>
+        <dd>sub1</dd>
+        <dd>max</dd>
+        <dd>min</dd>
+        <dd>round</dd>
+        <dd>floor</dd>
+        <dd>ceiling</dd>
+        <dd>sqrt</dd>
+        <dd>expt</dd>
+        <dd>exp</dd>
+        <dd>log</dd>
+        <dd>sin</dd>
+        <dd>...</dd>
+        <dd>atan</dd>
         <dt>Compare</dt>
-        <dd>= &lt; &lt;= &gt; &gt;=</dd>
+        <dd>=</dd>
+        <dd>&lt;</dd>
+        <dd>&lt;=</dd>
+        <dd>&gt;</dd>
+        <dd>&gt;=</dd>
         <dt>Bitwise</dt>
-        <dd>bitwise-ior bitwise-and bitwise-xor bitwise-not arithmetic-shift integer-length</dd>
+        <dd>bitwise-ior</dd>
+        <dd>bitwise-and</dd>
+        <dd>bitwise-xor</dd>
+        <dd>bitwise-not</dd>
+        <dd>arithmetic-shift</dd>
+        <dd>integer-length</dd>
         <dt>Format</dt>
-        <dd>number-&gt;string string-&gt;number real-&gt;decimal-string</dd>
+        <dd>number-&gt;string</dd>
+        <dd>string-&gt;number</dd>
+        <dd>real-&gt;decimal-string</dd>
         <dt>Test</dt>
-        <dd>number? complex? ... exact-nonnegative-integer? ... zero? positive? negative? even? odd? exact? inexact?</dd>
+        <dd>number?</dd>
+        <dd>complex?</dd>
+        <dd>...</dd>
+        <dd>exact-nonnegative-integer?</dd>
+        <dd>...</dd>
+        <dd>zero?</dd>
+        <dd>positive?</dd>
+        <dd>negative?</dd>
+        <dd>even?</dd>
+        <dd>odd?</dd>
+        <dd>exact?</dd>
+        <dd>inexact?</dd>
         <dt>Misc</dt>
         <dd>random</dd>
         <dt>Match Pattern</dt>
@@ -44,17 +99,37 @@
       <h2>Strings</h2>
       <dl>
         <dt>Literals</dt>
-        <dd>"Racket" quoting "a \" approaches!" unicode "λx:(μα.α→α).xx"</dd>
+        <dd>"Racket" quoting "a \" approaches!"</dd>
+        <dd>unicode "λx:(μα.α→α).xx"</dd>
         <dt>Create</dt>
-        <dd>make-string string string-append build-string string-join</dd>
+        <dd>make-string</dd>
+        <dd>string</dd>
+        <dd>string-append</dd>
+        <dd>build-string</dd>
+        <dd>string-join</dd>
         <dt>Observe</dt>
-        <dd>string-length string-ref substring string-split in-string</dd>
+        <dd>string-length</dd>
+        <dd>string-ref</dd>
+        <dd>substring</dd>
+        <dd>string-split</dd>
+        <dd>in-string</dd>
         <dt>Modify</dt>
-        <dd>string-downcase string-upcase string-trim</dd>
+        <dd>string-downcase</dd>
+        <dd>string-upcase</dd>
+        <dd>string-trim</dd>
         <dt>Test</dt>
-        <dd>string? string=? string&lt;=? string-ci&lt;=?</dd>
+        <dd>string?</dd>
+        <dd>string=?</dd>
+        <dd>string&lt;=?</dd>
+        <dd>string-ci&lt;=?</dd>
         <dt>Regexp</dt>
-        <dd>#rx"a|b" #rx"^c(a|d)+r$" regexp-quote regexp-match regexp-split regexp-replace regexp-replace*</dd>
+        <dd>#rx"a|b"</dd>
+        <dd>#rx"^c(a|d)+r$"</dd>
+        <dd>regexp-quote</dd>
+        <dd>regexp-match</dd>
+        <dd>regexp-split</dd>
+        <dd>regexp-replace</dd>
+        <dd>regexp-replace*</dd>
         <dt>Match Pattern</dt>
         <dd>(? string? s) "Banana?"</dd>
       </dl>
@@ -67,15 +142,23 @@
         <dt>Create</dt>
         <dd>make-bytes bytes</dd>
         <dt>Numbers</dt>
-        <dd>integer-&gt;integer-bytes real-&gt;floating-point-bytes</dd>
+        <dd>integer-&gt;integer-bytes</dd>
+        <dd>real-&gt;floating-point-bytes</dd>
         <dt>Observe</dt>
-        <dd>bytes-length bytes-ref subbytes in-bytes</dd>
+        <dd>bytes-length</dd>
+        <dd>bytes-ref</dd>
+        <dd>subbytes</dd>
+        <dd>in-bytes</dd>
         <dt>Modify</dt>
-        <dd>bytes-set! bytes-copy! bytes-fill!</dd>
+        <dd>bytes-set!</dd>
+        <dd>bytes-copy!</dd>
+        <dd>bytes-fill!</dd>
         <dt>Conversion</dt>
-        <dd>bytes-&gt;string/utf-8 string-&gt;bytes/utf-8</dd>
+        <dd>bytes-&gt;string/utf-8</dd>
+        <dd>string-&gt;bytes/utf-8</dd>
         <dt>Test</dt>
-        <dd>bytes? bytes=?</dd>
+        <dd>bytes?</dd>
+        <dd>bytes=?</dd>
         <dt>Match Pattern</dt>
         <dd>(? bytes? b) #"0xDEADBEEF"</dd>
       </dl>
@@ -84,15 +167,43 @@
       <h2>Other</h2>
       <dl>
         <dt>Booleans</dt>
-        <dd>#t #f not equal?</dd>
+        <dd>#t</dd>
+        <dd>#f</dd>
+        <dd>not</dd>
+        <dd>equal?</dd>
         <dt>Characters</dt>
-        <dd>#\a #\tab #\λ char? char-&gt;integer integer-&gt;char char&lt;=? ... char-alphabetic? ...</dd>
+        <dd>#\a</dd>
+        <dd>#\tab</dd>
+        <dd>#\λ</dd>
+        <dd>char?</dd>
+        <dd>char-&gt;integer</dd>
+        <dd>integer-&gt;char</dd>
+        <dd>char&lt;=?</dd>
+        <dd>...</dd>
+        <dd>char-alphabetic?</dd>
+        <dd>...</dd>
         <dt>Symbols</dt>
-        <dd>'Racket symbol? eq? string-&gt;symbol gensym</dd>
+        <dd>'Racket</dd>
+        <dd>symbol?</dd>
+        <dd>eq?</dd>
+        <dd>string-&gt;symbol</dd>
+        <dd>gensym</dd>
         <dt>Boxes</dt>
-        <dd>box? box unbox set-box! box-cas!</dd>
+        <dd>box?</dd>
+        <dd>box</dd>
+        <dd>unbox</dd>
+        <dd>set-box!</dd>
+        <dd>box-cas!</dd>
         <dt>Procedures</dt>
-        <dd>procedure? apply compose compose1 keyword-apply procedure-rename procedure-arity curry arity-includes?</dd>
+        <dd>procedure?</dd>
+        <dd>apply</dd>
+        <dd>compose</dd>
+        <dd>compose1</dd>
+        <dd>keyword-apply</dd>
+        <dd>procedure-rename</dd>
+        <dd>procedure-arity</dd>
+        <dd>curry</dd>
+        <dd>arity-includes?</dd>
         <dt>Void</dt>
         <dd>void? void</dd>
         <dt>Undefined</dt>
@@ -106,39 +217,87 @@
       <h2>Lists</h2>
       <dl>
         <dt>Create</dt>
-        <dd>empty list list* build-list for/list</dd>
+        <dd>empty</dd>
+        <dd>list</dd>
+        <dd>list*</dd>
+        <dd>build-list</dd>
+        <dd>for/list</dd>
         <dt>Observe</dt>
-        <dd>empty? list? pair? length list-ref member count argmin argmax</dd>
+        <dd>empty?</dd>
+        <dd>list?</dd>
+        <dd>pair?</dd>
+        <dd>length</dd>
+        <dd>list-ref</dd>
+        <dd>member</dd>
+        <dd>count</dd>
+        <dd>argmin</dd>
+        <dd>argmax</dd>
         <dt>Use</dt>
-        <dd>append reverse map andmap ormap foldr in-list</dd>
+        <dd>append</dd>
+        <dd>reverse</dd>
+        <dd>map</dd>
+        <dd>andmap</dd>
+        <dd>ormap</dd>
+        <dd>foldr</dd>
+        <dd>in-list</dd>
         <dt>Modify</dt>
-        <dd>filter remove ... sort take drop split-at partition remove-duplicates shuffle</dd>
+        <dd>filter</dd>
+        <dd>remove</dd>
+        <dd>...</dd>
+        <dd>sort</dd>
+        <dd>take</dd>
+        <dd>drop</dd>
+        <dd>split-at</dd>
+        <dd>partition</dd>
+        <dd>remove-duplicates</dd>
+        <dd>shuffle</dd>
         <dt>Match Pattern</dt>
-        <dd>(list a b c) (list* a b more) (list top more ...)</dd>
+        <dd>(list a b c)</dd>
+        <dd>(list* a b more)</dd>
+        <dd>(list top more ...)</dd>
       </dl>
     </div>
     <div>
       <h2>Immutable Hash</h2>
       <dl>
         <dt>Create</dt>
-        <dd>hash hasheq</dd>
+        <dd>hash</dd>
+        <dd>hasheq</dd>
         <dt>Observe</dt>
-        <dd>hash? hash-ref hash-has-key? hash-count in-hash in-hash-keys in-hash-values</dd>
+        <dd>hash?</dd>
+        <dd>hash-ref</dd>
+        <dd>hash-has-key?</dd>
+        <dd>hash-count</dd>
+        <dd>in-hash</dd>
+        <dd>in-hash-keys</dd>
+        <dd>in-hash-values</dd>
         <dt>Modify</dt>
-        <dd>hash-set hash-update hash-remove</dd>
+        <dd>hash-set</dd>
+        <dd>hash-update</dd>
+        <dd>hash-remove</dd>
       </dl>
     </div>
     <div>
       <h2>Vector</h2>
       <dl>
         <dt>Create</dt>
-        <dd>build-vector vector make-vector list-&gt;vector</dd>
+        <dd>build-vector</dd>
+        <dd>vector</dd>
+        <dd>make-vector</dd>
+        <dd>list-&gt;vector</dd>
         <dt>Observe</dt>
-        <dd>vector? vector-length vector-ref in-vector</dd>
+        <dd>vector?</dd>
+        <dd>vector-length</dd>
+        <dd>vector-ref</dd>
+        <dd>in-vector</dd>
         <dt>Modify</dt>
-        <dd>vector-set! vector-fill! vector-copy! vector-map!</dd>
+        <dd>vector-set!</dd>
+        <dd>vector-fill!</dd>
+        <dd>vector-copy!</dd>
+        <dd>vector-map!</dd>
         <dt>Match Pattern</dt>
-        <dd>(vector x y z) (vector x y calabi-yau ...)</dd>
+        <dd>(vector x y z)</dd>
+        <dd>(vector x y calabi-yau ...)</dd>
       </dl>
     </div>
     <div>
