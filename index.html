@@ -123,7 +123,7 @@
       <h2>Strings</h2>
       <dl>
         <dt>Literals</dt>
-        <dd><a href="http://www.r6rs.org/final/html/r6rs/r6rs-Z-H-7.html#node_sec_4.2.7">Escaping</a> in "strings" which allow unicode "λx:(μα.α→α).xx"</dd>
+        <dd>"Strings" allow <a href="http://www.r6rs.org/final/html/r6rs/r6rs-Z-H-7.html#node_sec_4.2.7">escaping and Unicode</a></dd>
         <dt>Create</dt>
         <dd><a href="http://www.r6rs.org/final/html/r6rs/r6rs-Z-H-14.html#node_idx_688">make-string</a></dd>
         <dd><a href="http://www.r6rs.org/final/html/r6rs/r6rs-Z-H-14.html#node_idx_692">string</a></dd>
@@ -154,14 +154,18 @@
         <dd><a href="http://www.r6rs.org/final/html/r6rs/r6rs-Z-H-14.html#node_idx_704">string&lt;=?</a></dd>
         <dd><a href="http://www.r6rs.org/final/html/r6rs/r6rs-Z-H-14.html#node_idx_706">string&gt;=?</a></dd>
         <!-- <dd>string-ci&lt;=?</dd> -->
-        <dt>Regexp</dt>
-        <dd>#rx"a|b"</dd>
-        <dd>#rx"^c(a|d)+r$"</dd>
-        <dd>regexp-quote</dd>
-        <dd>regexp-match</dd>
-        <dd>regexp-split</dd>
-        <dd>regexp-replace</dd>
-        <dd>regexp-replace*</dd>
+        <dt>(import (<a href="https://srfi.schemers.org/srfi-115/srfi-115.html">srfi :115</a>))</dt>
+        <dd>(<a href="https://srfi.schemers.org/srfi-115/srfi-115.html#proc-rx">rx</a> <a href="https://srfi.schemers.org/srfi-115/srfi-115.html#SRE-Syntax"><i>sre</i></a> ...)</dd>
+        <dd><a href="https://srfi.schemers.org/srfi-115/srfi-115.html#proc-regexp-match_3f">regexp-match?</a></dd>
+        <dd><a href="https://srfi.schemers.org/srfi-115/srfi-115.html#proc-regexp-matches">regexp-matches</a></dd>
+        <dd><a href="https://srfi.schemers.org/srfi-115/srfi-115.html#proc-regexp-matches_3f">regexp-matches?</a></dd>
+        <dd><a href="https://srfi.schemers.org/srfi-115/srfi-115.html#proc-regexp-search">regexp-search</a></dd>
+        <dd><a href="https://srfi.schemers.org/srfi-115/srfi-115.html#proc-regexp-extract">regexp-extract</a></dd>
+        <dd><a href="https://srfi.schemers.org/srfi-115/srfi-115.html#proc-regexp-split">regexp-split</a></dd>
+        <dd><a href="https://srfi.schemers.org/srfi-115/srfi-115.html#proc-regexp-replace">regexp-replace</a></dd>
+        <dd><a href="https://srfi.schemers.org/srfi-115/srfi-115.html#proc-regexp-replace-all">regexp-replace-all</a></dd>
+        <dd><a href="https://srfi.schemers.org/srfi-115/srfi-115.html#proc-regexp-match-submatch">regexp-match-submatch</a></dd>
+        <dd><a href="https://srfi.schemers.org/srfi-115/srfi-115.html#proc-regexp-match-_3elist">regexp-match-&gt;list</a></dd>
         <!--
         <dt>Match Pattern</dt>
         <dd>(? string? s) "Banana?"</dd>
