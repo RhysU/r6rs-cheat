@@ -179,37 +179,6 @@
       </dl>
     </div>
     <div>
-      <h2>Bytevectors</h2>
-      <dl>
-        <dt>Literals</dt>
-        <dd>#vu8(&lt;u8&gt; ...)</dd>
-        <dt>Create</dt>
-        <dd><a href="http://www.r6rs.org/final/html/r6rs-lib/r6rs-lib-Z-H-3.html#node_idx_82">make-bytevector</a></dd>
-        <dd><a href="http://www.r6rs.org/final/html/r6rs-lib/r6rs-lib-Z-H-3.html#node_idx_122">sint-list-&gt;bytevector</a></dd>
-        <dd><a href="http://www.r6rs.org/final/html/r6rs-lib/r6rs-lib-Z-H-3.html#node_idx_120">uint-list-&gt;bytevector</a></dd>
-        <dd><a href="http://www.r6rs.org/final/html/r6rs-lib/r6rs-lib-Z-H-3.html#node_idx_106">u8-list-&gt;bytevector</a></dd>
-        <dd><a href="http://www.r6rs.org/final/html/r6rs-lib/r6rs-lib-Z-H-9.html#node_idx_632">string-&gt;bytevector</a></dd>
-        <dt>Observe</dt>
-        <dd><a href="http://www.r6rs.org/final/html/r6rs-lib/r6rs-lib-Z-H-3.html#node_idx_86">bytevector-length</a></dd>
-        <dd><a href="http://www.r6rs.org/final/html/r6rs-lib/r6rs-lib-Z-H-3.html#node_idx_96">bytevector-u8-ref</a></dd>
-        <dt>Modify</dt>
-        <dd><a href="http://www.r6rs.org/final/html/r6rs-lib/r6rs-lib-Z-H-3.html#node_idx_90">bytevector-fill!</a></dd>
-        <dd><a href="http://www.r6rs.org/final/html/r6rs-lib/r6rs-lib-Z-H-3.html#node_idx_92">bytevector-copy!</a></dd>
-        <dd><a href="http://www.r6rs.org/final/html/r6rs-lib/r6rs-lib-Z-H-3.html#node_idx_94">bytevector-copy</a></dd>
-        <dd><a href="http://www.r6rs.org/final/html/r6rs-lib/r6rs-lib-Z-H-3.html#node_idx_100">bytevector-u8-set!</a></dd>
-        <dt>Conversion</dt>
-        <dd><a href="http://www.r6rs.org/final/html/r6rs-lib/r6rs-lib-Z-H-3.html#node_idx_104">bytevector-&gt;u8-list</a></dd>
-        <dd><a href="http://www.r6rs.org/final/html/r6rs-lib/r6rs-lib-Z-H-9.html#node_idx_630">bytevector-&gt;string</a></dd>
-        <dt>Test</dt>
-        <dd><a href="http://www.r6rs.org/final/html/r6rs-lib/r6rs-lib-Z-H-3.html#node_idx_80">bytevector?</a></dd>
-        <dd><a href="http://www.r6rs.org/final/html/r6rs-lib/r6rs-lib-Z-H-3.html#node_idx_88">bytevector=?</a></dd>
-        <!--
-        <dt>Match Pattern</dt>
-        <dd>(? bytes? b) #"0xDEADBEEF"</dd>
-        -->
-      </dl>
-    </div>
-    <div>
       <h2>Other</h2>
       <dl>
         <!-- TODO Pairs? -->
@@ -361,6 +330,37 @@
         <dt>Match Pattern</dt>
         <dd>(vector x y z)</dd>
         <dd>(vector x y calabi-yau ...)</dd>
+        -->
+      </dl>
+    </div>
+    <div>
+      <h2>Bytevectors</h2>
+      <dl>
+        <dt>Literals</dt>
+        <dd>#vu8(&lt;u8&gt; ...)</dd>
+        <dt>Create</dt>
+        <dd><a href="http://www.r6rs.org/final/html/r6rs-lib/r6rs-lib-Z-H-3.html#node_idx_82">make-bytevector</a></dd>
+        <dd><a href="http://www.r6rs.org/final/html/r6rs-lib/r6rs-lib-Z-H-3.html#node_idx_122">sint-list-&gt;bytevector</a></dd>
+        <dd><a href="http://www.r6rs.org/final/html/r6rs-lib/r6rs-lib-Z-H-3.html#node_idx_120">uint-list-&gt;bytevector</a></dd>
+        <dd><a href="http://www.r6rs.org/final/html/r6rs-lib/r6rs-lib-Z-H-3.html#node_idx_106">u8-list-&gt;bytevector</a></dd>
+        <dd><a href="http://www.r6rs.org/final/html/r6rs-lib/r6rs-lib-Z-H-9.html#node_idx_632">string-&gt;bytevector</a></dd>
+        <dt>Observe</dt>
+        <dd><a href="http://www.r6rs.org/final/html/r6rs-lib/r6rs-lib-Z-H-3.html#node_idx_86">bytevector-length</a></dd>
+        <dd><a href="http://www.r6rs.org/final/html/r6rs-lib/r6rs-lib-Z-H-3.html#node_idx_96">bytevector-u8-ref</a></dd>
+        <dt>Modify</dt>
+        <dd><a href="http://www.r6rs.org/final/html/r6rs-lib/r6rs-lib-Z-H-3.html#node_idx_90">bytevector-fill!</a></dd>
+        <dd><a href="http://www.r6rs.org/final/html/r6rs-lib/r6rs-lib-Z-H-3.html#node_idx_92">bytevector-copy!</a></dd>
+        <dd><a href="http://www.r6rs.org/final/html/r6rs-lib/r6rs-lib-Z-H-3.html#node_idx_94">bytevector-copy</a></dd>
+        <dd><a href="http://www.r6rs.org/final/html/r6rs-lib/r6rs-lib-Z-H-3.html#node_idx_100">bytevector-u8-set!</a></dd>
+        <dt>Conversion</dt>
+        <dd><a href="http://www.r6rs.org/final/html/r6rs-lib/r6rs-lib-Z-H-3.html#node_idx_104">bytevector-&gt;u8-list</a></dd>
+        <dd><a href="http://www.r6rs.org/final/html/r6rs-lib/r6rs-lib-Z-H-9.html#node_idx_630">bytevector-&gt;string</a></dd>
+        <dt>Test</dt>
+        <dd><a href="http://www.r6rs.org/final/html/r6rs-lib/r6rs-lib-Z-H-3.html#node_idx_80">bytevector?</a></dd>
+        <dd><a href="http://www.r6rs.org/final/html/r6rs-lib/r6rs-lib-Z-H-3.html#node_idx_88">bytevector=?</a></dd>
+        <!--
+        <dt>Match Pattern</dt>
+        <dd>(? bytes? b) #"0xDEADBEEF"</dd>
         -->
       </dl>
     </div>
