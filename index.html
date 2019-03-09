@@ -305,23 +305,32 @@
       </dl>
     </div>
     <div>
-      <h2>Immutable Hash</h2>
+      <h2>Hashtables</h2>
       <dl>
         <dt>Create</dt>
-        <dd>hash</dd>
-        <dd>hasheq</dd>
+        <dd>make-eq-hashtable</dd>
+        <dd>make-eqv-hashtable</dd>
+        <dd>make-hashtable</dd>
         <dt>Observe</dt>
-        <dd>hash?</dd>
-        <dd>hash-ref</dd>
-        <dd>hash-has-key?</dd>
-        <dd>hash-count</dd>
-        <dd>in-hash</dd>
-        <dd>in-hash-keys</dd>
-        <dd>in-hash-values</dd>
+        <dd>hashtable?</dd>
+        <dd>hashtable-size</dd>
+        <dd>hashtable-ref</dd>
+        <dd>hashtable-keys
+        <dd>hashtable-entries</dd>
+        <dd>hashtable-contains?</dd>
+        <dd>hashtable-mutable?</dd>
         <dt>Modify</dt>
-        <dd>hash-set</dd>
-        <dd>hash-update</dd>
-        <dd>hash-remove</dd>
+        <dd>hashtable-set!</dd>
+        <dd>hashtable-delete!</dd>
+        <dd>hashtable-update!</dd>
+        <dd>hashtable-clear!</dd>
+        <dt>Hash functions</dt>
+        <dd>hashtable-hash-function</dd>
+        <dd>equal-hash</dd>
+        <dd>string-hash</dd>
+        <dd>string-ci-hash</dd>
+        <dd>symbol-hash</dd>
+        <dd>hashtable-equivalence-function</dd>
       </dl>
     </div>
     <div>
@@ -361,27 +370,6 @@
         <dd>stream-first</dd>
         <dd>stream-rest</dd>
         <dd>in-stream</dd>
-      </dl>
-    </div>
-    <div>
-      <h2>Mutable Hash</h2>
-      <dl>
-        <dt>Create</dt>
-        <dd>make-hash</dd>
-        <dd>make-hasheq</dd>
-        <dt>Observe</dt>
-        <dd>hash?</dd>
-        <dd>hash-ref</dd>
-        <dd>hash-has-key?</dd>
-        <dd>hash-count</dd>
-        <dd>in-hash</dd>
-        <dd>in-hash-keys</dd>
-        <dd>in-hash-values</dd>
-        <dt>Modify</dt>
-        <dd>hash-set!</dd>
-        <dd>hash-ref!</dd>
-        <dd>hash-update!</dd>
-        <dd>hash-remove!</dd>
       </dl>
     </div>
   </div>
