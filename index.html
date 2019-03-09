@@ -207,6 +207,7 @@
     <div>
       <h2>Other</h2>
       <dl>
+        <!-- TODO Pairs? -->
         <dt>Booleans</dt>
         <dd>#t</dd>
         <dd>#f</dd>
@@ -249,40 +250,52 @@
       <h2>Lists</h2>
       <dl>
         <dt>Create</dt>
-        <dd>empty</dd>
-        <dd>list</dd>
-        <dd>list*</dd>
-        <dd>build-list</dd>
-        <dd>for/list</dd>
-        <dt>Observe</dt>
-        <dd>empty?</dd>
-        <dd>list?</dd>
-        <dd>pair?</dd>
-        <dd>length</dd>
-        <dd>list-ref</dd>
-        <dd>member</dd>
-        <dd>count</dd>
-        <dd>argmin</dd>
-        <dd>argmax</dd>
-        <dt>Use</dt>
+        <dd>`()</dd>
+        <dd>`(1 2)</dd>
+        <dd><a href="http://www.r6rs.org/final/html/r6rs/r6rs-Z-H-14.html#node_idx_610">cons</a></dd>
+        <dd>cons*</dd>
+        <dd><a href="http://www.r6rs.org/final/html/r6rs/r6rs-Z-H-14.html#node_idx_630">list</a></dd>
+        <dd><a href="http://www.r6rs.org/final/html/r6rs/r6rs-Z-H-14.html#node_idx_712">string-&gt;list</a></dd>
+        <dd><a href="http://www.r6rs.org/final/html/r6rs/r6rs-Z-H-14.html#node_idx_736">vector-&gt;list</a></dd>
         <dd>append</dd>
         <dd>reverse</dd>
         <dd>map</dd>
-        <dd>andmap</dd>
-        <dd>ormap</dd>
-        <dd>foldr</dd>
-        <dd>in-list</dd>
-        <dt>Modify</dt>
-        <dd>filter</dd>
-        <dd>remove</dd>
+        <dt>Observe</dt>
+        <dd>pair?</dd>
+        <dd>null?</dd>
+        <dd>list?</dd>
+        <dd>for-all</dd>
+        <dd>exists</dd>
+        <dd>length</dd>
+        <dd>car</dd>
+        <dd>cdr</dd>
+        <dd>caar</dd>
         <dd>...</dd>
-        <dd>sort</dd>
-        <dd>take</dd>
-        <dd>drop</dd>
-        <dd>split-at</dd>
+        <dd>cddddr</dd>
+        <dd>list-tail</dd>
+        <dd>list-ref</dd>
+        <dd>for-each</dd>
+        <dt>Members</dt>
+        <dd>find</dd>
+        <dd>assp</dd>
+        <dd>assoc</dd>
+        <dd>assv</dd>
+        <dd>assq</dd>
+        <dd>memp</dd>
+        <dd>memq</dd>
+        <dd>memv</dd>
+        <dd>member</dd>
+        <dd>remp</dd>
+        <dd>remv</dd>
+        <dd>remq</dd>
+        <dd>remove</dd>
+        <dd>filter</dd>
         <dd>partition</dd>
-        <dd>remove-duplicates</dd>
-        <dd>shuffle</dd>
+        <dt>Transform</dt>
+        <dd><a href="http://www.r6rs.org/final/html/r6rs/r6rs-Z-H-14.html#node_idx_714">list-&gt;string</a></dd>
+        <dd><a href="http://www.r6rs.org/final/html/r6rs/r6rs-Z-H-14.html#node_idx_738">list-&gt;vector</a></dd>
+        <dd>fold-left</dd>
+        <dd>fold-right</dd>
         <!--
         <dt>Match Pattern</dt>
         <dd>(list a b c)</dd>
