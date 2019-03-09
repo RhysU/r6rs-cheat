@@ -372,17 +372,54 @@
       </dl>
     </div>
     <div>
-      <h2>Streams</h2>
+      <h2>(import (<a href="https://srfi.schemers.org/srfi-41/srfi-41.html">srfi :41 streams</a>))</h2>
+<!--
+      stream-take-while stream-unfold stream-unfolds stream-zip
+-->
       <dl>
+        <dt>Primitive</dt>
+        <dd>stream-null</dd>
+        <dd>stream-cons</dd>
+        <dd>stream?</dd>
+        <dd>stream-null?</dd>
+        <dd>stream-pair?</dd>
+        <dd>stream-car</dd>
+        <dd>stream-cdr</dd>
+        <dd>stream-lambda</dd>
         <dt>Create</dt>
-        <dd>stream</dd>
-        <dd>stream*</dd>
-        <dd>empty-stream</dd>
+        <dd>stream-append</dd>
+        <dd>stream-concat</dd>
+        <dd>stream-constant</dd>
+        <dd>stream-from</dd>
+        <dd>stream-iterate</dd>
+        <dd>stream-range</dd>
         <dt>Observe</dt>
-        <dd>stream-empty?</dd>
-        <dd>stream-first</dd>
-        <dd>stream-rest</dd>
-        <dd>in-stream</dd>
+        <dd>stream-length</dd>
+        <dt>Consume</dt>
+        <dd>stream-drop</dd>
+        <dd>stream-drop-while</dd>
+        <dd>stream-filter</dd>
+        <dd>stream-fold</dd>
+        <dd>stream-for-each</dd>
+        <dd>stream-map</dd>
+        <dd>stream-ref</dd>
+        <dd>stream-reverse</dd>
+        <dd>stream-scan</dd>
+        <dd>stream-take</dd>
+        <dd>stream-take-while</dd>
+        <dd>stream-unfold</dd>
+        <dd>stream-unfolds</dd>
+        <dd>stream-zip</dd>
+        <dt>Syntax</dt>
+        <dd>define-stream</dd>
+        <dd>stream</dd>
+        <dd>stream-let</dd>
+        <dd>stream-match</dd>
+        <dd>stream-of</dd>
+        <dt>Conversion</dt>
+        <dd>list-&gt;stream</dd>
+        <dd>port-&gt;stream</dd>
+        <dd>stream-&gt;list</dd>
       </dl>
     </div>
   </div>
