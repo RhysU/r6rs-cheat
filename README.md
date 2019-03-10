@@ -1,8 +1,5 @@
 # r6rs-cheat
 
-VERY MUCH NOT FINISHED.
-
-An [R6RS](http://www.r6rs.org/) cheat sheet, with some [Chez
-Scheme](https://cisco.github.io/ChezScheme/) specifics.  [License is
-LGPL3](https://docs.racket-lang.org/license) on account of derivation from
-[Racket documentation](http://docs.racket-lang.org/racket-cheat/).
+Directly view [the present cheat sheet
+version](http://htmlpreview.github.io/?https://github.com/RhysU/r6rs-cheat/blob/master/index.html)
+by using [htmlpreview](http://htmlpreview.github.io/).
